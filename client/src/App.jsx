@@ -10,6 +10,12 @@ function App() {
           <li>
             <Link to="home">Home</Link>
           </li>
+          <li>
+            <Link to="quizz">Quizz</Link>
+          </li>
+          <li>
+            <Link to="myplants">My Plants</Link>
+          </li>
         </ul>
       </nav>
       <h1>
