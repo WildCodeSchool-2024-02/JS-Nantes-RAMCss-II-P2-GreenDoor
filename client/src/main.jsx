@@ -10,6 +10,10 @@ const router = createBrowserRouter([
     path: "/",
     element: <App />,
   },
+  // {
+  //   path: "/home",
+  //   element: <HomePage />,
+  // }
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
