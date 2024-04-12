@@ -12,8 +12,7 @@ function App() {
             <img src={greenDoorPot} alt="Logo greendoor" />
           </button>
           <h1>
-            greenDoors
-            
+            greenDoor
           </h1>
 
           <li>
