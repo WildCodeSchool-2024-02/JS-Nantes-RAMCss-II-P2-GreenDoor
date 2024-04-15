@@ -4,8 +4,7 @@ import { Outlet, Link } from "react-router-dom"
 
 // import plantsDB from './plants.json';
 
-// this is a modificationfor test purposes, you can delete it without consequences.
-// and another test line
+
 
 
 function App() {
