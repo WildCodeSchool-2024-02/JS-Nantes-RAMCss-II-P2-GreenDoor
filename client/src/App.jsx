@@ -28,6 +28,7 @@ function App() {
           </li>
         </ul>
       </nav>
+
       <Outlet />
     </>
   );

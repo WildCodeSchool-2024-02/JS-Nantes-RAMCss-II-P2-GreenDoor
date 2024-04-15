@@ -1,5 +1,5 @@
-import Header from "./Header"
-import FiltersTutorial from './FiltersTutorial'
+import Header from "../components/Header"
+import FiltersTutorial from '../components/FiltersTutorial'
 
 function Home(){
     return(
