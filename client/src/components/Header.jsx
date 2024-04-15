@@ -1,13 +1,14 @@
 import "../styles/Header.css";
+import searchIcon from '../assets/icons/SearchIcon.png'
 
 function Header() {
   return (
     <header>
       <h1>Find the perfect plants for your interior</h1>
-      <h2>and learn to take good care of them</h2>
+      <h2>and learn to take <strong>good care</strong> of them</h2>
       <form>
         <label htmlFor="search-form" >
-          <img src="../assets/icons/SearchIcon.png" alt="Search Icon" />
+          <img src={searchIcon} alt="Search Icon" />
         </label>
         <input
           type="search"
