@@ -1,0 +1,14 @@
+.search-input {
+  background-color: red;
+}
+
+header {
+  width: 100vw;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../assets/images/headerCactus.jpg");
+  /* TODO zoom image to fit width */
+}
