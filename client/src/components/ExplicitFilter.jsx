@@ -14,7 +14,7 @@ function ExplicitFilter({
       <ul>
         {[0, 1, 2].map((index) => (
           <li key={index}>
-            <button type="button" onClick={() => setFilter(index)}>
+            <button type="button" onClick={() => setFilter(()=>index)}>
               <img
                 src={filter >= index ? iconActive : iconInactive}
                 alt={filtersDescriptions[filter]}

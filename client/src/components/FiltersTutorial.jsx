@@ -4,6 +4,7 @@ import waterIconInactive from "../assets/icons/WaterGrey.png";
 import waterIconActive from "../assets/icons/WaterBlue.png";
 import lightIconInactive from "../assets/icons/SunGrey.png";
 import lightIconActive from "../assets/icons/SunYellow.png";
+import "../styles/FiltersTutorial.css"
 
 
 function FiltersTutorial() {
@@ -16,7 +17,7 @@ function FiltersTutorial() {
 
 
   return (
-    <section>
+    <section className="filters-tutorial">
       <h2>Filter by what the plant needs</h2>
       <ExplicitFilter
         title="Watering"
