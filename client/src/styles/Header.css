@@ -10,5 +10,7 @@ header {
   justify-content: center;
   align-items: center;
   background-image: url("../assets/images/headerCactus.jpg");
-  /* TODO zoom image to fit width */
+  background-size: cover;
+  background-position-x: center;
+  background-position-y: center;
 }
