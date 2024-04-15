@@ -1,11 +1,19 @@
 import "./App.css";
 import { Outlet, Link } from "react-router-dom"
+// import { useState } from "react";
+
+// import plantsDB from './plants.json';
 
 // this is a modificationfor test purposes, you can delete it without consequences.
 // and another test line
 
 
 function App() {
+
+  // This state is used to store the whole plants database
+  // const [plants, setPlants] = useState(plantsDB);
+
+
   return (
     <>
       <nav>
