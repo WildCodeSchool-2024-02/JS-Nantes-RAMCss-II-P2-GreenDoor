@@ -1,7 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import Home from "./components/Home";
+
+
 
 import App from "./App";
 
@@ -12,7 +14,7 @@ const router = createBrowserRouter([
     children: [
       {
         path: "",
-        element: <h2>Home</h2>,
+        element: <Home />,
       },
       {
         path: "quizz",

@@ -28,11 +28,6 @@ function App() {
           </li>
         </ul>
       </nav>
-      <h1>
-        GREENDOOR
-
-      </h1>
-
       <Outlet />
     </>
   );
