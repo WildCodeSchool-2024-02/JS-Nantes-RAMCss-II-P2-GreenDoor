@@ -1,7 +1,37 @@
-nav > img {
-  width: 2px;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #393e41;
+  color: white;
+}
+
+.buttonLogo {
+  width: 84px;
+  height: 65px;
+  margin: 10px;
 }
 
 ul {
   list-style: none;
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  margin: 20px;
+  font-size: 20px;
+  color: white;
+}
+
+ul > li > a {
+  text-decoration: none;
+  color: white;
+}
+
+nav > h1 {
+  font-size: 1rem;
 }

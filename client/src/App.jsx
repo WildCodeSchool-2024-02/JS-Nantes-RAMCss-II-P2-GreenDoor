@@ -1,33 +1,16 @@
 import "./App.css";
-import { Outlet, Link } from "react-router-dom";
-import greenDoorPot from "./assets/images/greenDoorPot.svg";
+import { Outlet } from "react-router-dom";
+
 import "./styles/Import.css";
+import NavBar from "./components/NavBar";
 
 function App() {
   return (
     <>
-      <nav>
-        <ul>
-          <button type="button">
-            <img src={greenDoorPot} alt="Logo greendoor" />
-          </button>
-          <h1>
-            greenDoor
-          </h1>
-
-          <li>
-            <Link to='/'>Home</Link>
-          </li>
-          <li>
-            <Link to="quizz">Plant Quizz</Link>
-          </li>
-          <li>
-            <Link to="myplants">My Plants</Link>
-          </li>
-        </ul>
-      </nav>
-
-      <Outlet />
+      <NavBar />
+      <main>
+        <Outlet />
+      </main>
     </>
   );
 }

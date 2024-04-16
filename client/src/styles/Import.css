@@ -1,5 +1,20 @@
 @import "NavBar.css";
 
-main {
-  background-color: red;
+:root {
+  --background-color: #4f4f4f;
+  --fore-ground-color: #ffffff;
+  --dark-color: #393e41;
+  --accent-color: #49ba70;
+  --accent-hover-color: #3aab61;
+
+  --font-size-h1: 64px;
+  --font-size-h2: 48px;
+  --font-size-h3: 32px;
+  --font-size-texte: 24px;
+  /* --font-family-title: Champagne&Limousine;  */
+
+  /* --font-family-body: Roboto; */
+  --primary-font-color: black;
+  --accent-font-color: #49ba70;
+  --secondary-font-color: #726e6e;
 }
