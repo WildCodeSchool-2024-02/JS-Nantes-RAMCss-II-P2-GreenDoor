@@ -1,12 +1,60 @@
+* {
+  border: solid black 1px;
+}
 article {
-  padding: 20px;
   background-color: var(--background-color);
+  color: black;
   display: flex;
   justify-content: center;
+  padding: 40px;
 }
 
 figure {
+  display: flex;
   background-color: var(--fore-ground-color);
+  border-radius: 20px;
   width: 90%;
-  height: 10px;
+  height: 70vh;
+  font-family: "Champagne-Limousines";
+}
+
+figure > img {
+  border-radius: 20px 0 0 20px;
+  width: 40%;
+  height: auto;
+}
+
+figcaption {
+  width: 60%;
+  padding: 20px 40px;
+}
+
+figcaption > hgroup > h2 {
+  font-size: 48px;
+  font-weight: bold;
+}
+
+figcaption > hgroup > h3 {
+  font-size: 35px;
+  font-style: italic;
+}
+
+.waterIcons {
+  display: flex;
+  gap: 10px;
+}
+
+.waterIcons > img {
+  width: 40px;
+  height: auto;
+}
+
+.sunIcons {
+  display: flex;
+  gap: 10px;
+}
+
+.sunIcons > img {
+  width: 60px;
+  height: auto;
 }
