@@ -36,3 +36,7 @@
   --primary-font-color: black;
   --secondary-font-color: #726e6e;
 }
+
+main {
+  margin-top: 10vh;
+}
