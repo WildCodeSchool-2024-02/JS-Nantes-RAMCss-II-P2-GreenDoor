@@ -6,9 +6,9 @@ function NavBar() {
   return (
     <nav>
       <img className="buttonLogo" src={greenDoorPot} alt="Logo greendoor" />
-      <h1>
-        <div>green</div>Door
-      </h1>
+      <h2>
+        <strong>green</strong>Door
+      </h2>
       <ul>
         <li>
           <NavLink to="/">Home</NavLink>
