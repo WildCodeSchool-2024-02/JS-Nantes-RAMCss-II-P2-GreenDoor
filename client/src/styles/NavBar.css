@@ -4,10 +4,10 @@
   box-sizing: border-box;
 }
 nav {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  display: grid;
+  grid-template: 1fr / 3fr 1fr 3fr;
   align-items: center;
+  justify-items: center;
   background-color: #393e41;
   color: white;
 }
@@ -16,6 +16,7 @@ nav {
   width: 84px;
   height: 65px;
   margin: 10px;
+  justify-self: left;
 }
 
 nav > ul {
@@ -26,6 +27,7 @@ nav > ul {
   margin: 20px;
   font-size: 20px;
   color: white;
+  justify-self: right;
 }
 
 nav > ul > li > a {
