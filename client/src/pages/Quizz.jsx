@@ -8,13 +8,12 @@ function Quizz() {
   const [questionIndex, setQuestionIndex] = useState(0);
   const [answears, setAnswears] = useState([]);
 
-
   function handleQuizzButton(index) {
     setQuestionIndex(() => questionIndex + 1);
     setAnswears(() => {
-        const updatedAnswears = [...answears]
-        updatedAnswears.push(index);
-        return updatedAnswears;
+      const updatedAnswears = [...answears];
+      updatedAnswears.push(index);
+      return updatedAnswears;
     });
   }
 
@@ -23,20 +22,16 @@ function Quizz() {
       <figure>
         <img src={background} alt="decorative" />
       </figure>
-      <section className="right-container">
+      <section className="questions-container">
         <QuizzProgressBar
           topic={quizz[questionIndex]}
           questionIndex={questionIndex}
         />
         <h2>{quizz[questionIndex].question}</h2>
-        <ul>
+        <ul className={`layout-${quizz[questionIndex].answears.length}`}>
           {quizz[questionIndex].answears.map((answear, index) => (
             <li key={answear}>
-              <button
-                className={`layout-${quizz[questionIndex].answears.length}`}
-                type="button"
-                onClick={() => handleQuizzButton(index)}
-              >
+              <button type="button" onClick={() => handleQuizzButton(index)}>
                 {answear}
               </button>
             </li>

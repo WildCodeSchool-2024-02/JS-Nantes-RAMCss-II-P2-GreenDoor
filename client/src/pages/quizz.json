@@ -1,7 +1,7 @@
 [
   {
     "topic": "Care levels",
-    "question": "How often can you take care of your plants",
+    "question": "How often can you take care of your plants ?",
     "answears": ["Once a day", "Once a week", "Once a month", "Once a year"]
   },
   {
