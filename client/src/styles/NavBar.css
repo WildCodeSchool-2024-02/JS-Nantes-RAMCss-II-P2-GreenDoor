@@ -10,6 +10,7 @@ nav {
   justify-items: center;
   background-color: #393e41;
   color: white;
+  position: fixed;
 }
 
 .buttonLogo {
