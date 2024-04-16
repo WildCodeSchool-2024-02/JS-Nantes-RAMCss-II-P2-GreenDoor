@@ -1,0 +1,12 @@
+article {
+  padding: 20px;
+  background-color: var(--background-color);
+  display: flex;
+  justify-content: center;
+}
+
+figure {
+  background-color: var(--fore-ground-color);
+  width: 90%;
+  height: 10px;
+}
