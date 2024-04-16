@@ -7,6 +7,7 @@ nav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   background-color: #393e41;
   color: white;
 }
@@ -17,7 +18,7 @@ nav {
   margin: 10px;
 }
 
-ul {
+nav > ul {
   list-style: none;
   display: flex;
   justify-content: space-between;
@@ -27,11 +28,28 @@ ul {
   color: white;
 }
 
-ul > li > a {
+nav > ul > li > a {
   text-decoration: none;
   color: white;
+  font-family: var(--font-family-title);
+  font-weight: bold;
+  font-size: 32px;
 }
 
-nav > h1 {
-  font-size: 1rem;
+nav > ul > li > a:hover {
+  color: var(--accent-hover-color);
+}
+
+nav > ul > li > a.active {
+  color: var(--accent-color);
+}
+
+nav > h2 {
+  font-family: var(--font-family-title);
+  font-weight: bold;
+  font-size: 64px;
+}
+
+nav > h2 > strong {
+  color: var(--accent-color);
 }

@@ -41,12 +41,15 @@ header > form > label > img {
 
 header > h1 {
   color: black;
+  font-family: var(--font-family-title);
+  font-weight: bold;
   font-size: 64px;
   text-align: center;
 }
 
 header > h2 {
   color: #726e6e;
+  font-family: var(--font-family-body);
   font-size: 48px;
   margin-bottom: 25vh;
   text-align: center;
