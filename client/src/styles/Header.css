@@ -1,0 +1,58 @@
+header {
+  width: 100vw;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../assets/images/headerCactus.jpg");
+  background-size: max(150vw, 150vh);
+  background-position-x: 80%;
+  background-position-y: center;
+}
+
+header > form {
+  --height: 80px;
+  background-color: white;
+  height: var(--height);
+  border-radius: calc(var(--height) / 2);
+  padding: 0px calc(var(--height) / 2) 0px calc(var(--height) / 3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header > form > label > img {
+  height: calc(var(--height) * 0.5);
+  margin-right: 8px;
+  transform: translate(0, calc(var(--height) * 0.05));
+}
+
+.search-input {
+  background-color: transparent;
+  border: none;
+  color: black;
+  font-size: 24px;
+}
+
+.search-input:focus {
+  outline: none;
+}
+
+header > h1 {
+  color: black;
+  font-size: 64px;
+  text-align: center;
+}
+
+header > h2 {
+  color: #726e6e;
+  font-size: 48px;
+  margin-bottom: 25vh;
+  text-align: center;
+}
+
+header > h2 > strong {
+  color: #49ba70;
+  font-weight: 800;
+}
