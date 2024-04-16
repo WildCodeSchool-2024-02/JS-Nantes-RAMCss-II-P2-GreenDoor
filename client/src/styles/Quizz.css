@@ -1,0 +1,16 @@
+.full-page-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 90vh;
+}
+
+.full-page-container > figure {
+  width: 100%;
+  overflow: hidden;
+}
+
+.box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+}

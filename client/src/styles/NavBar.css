@@ -4,19 +4,20 @@
   box-sizing: border-box;
 }
 nav {
+  height: 10vh;
   display: grid;
   grid-template: 1fr / 3fr 1fr 3fr;
   align-items: center;
   justify-items: center;
   background-color: #393e41;
   color: white;
-  position: fixed;
+  position: sticky;
+  top: 0px;
+  padding: 0px 10px;
 }
 
 .buttonLogo {
-  width: 84px;
-  height: 65px;
-  margin: 10px;
+  height: 55px;
   justify-self: left;
 }
 
@@ -25,7 +26,6 @@ nav > ul {
   display: flex;
   justify-content: space-between;
   gap: 40px;
-  margin: 20px;
   font-size: 20px;
   color: white;
   justify-self: right;
@@ -50,7 +50,7 @@ nav > ul > li > a.active {
 nav > h2 {
   font-family: var(--font-family-title);
   font-weight: bold;
-  font-size: 64px;
+  font-size: 56px;
 }
 
 nav > h2 > strong {
