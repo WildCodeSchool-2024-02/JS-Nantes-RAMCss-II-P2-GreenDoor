@@ -1,11 +1,32 @@
 import PropTypes from "prop-types";
+import "../styles/QuizzProgressBar.css";
+import tick from "../assets/icons/WhiteTickbox.png";
 
-function QuizzProgressBar({ topic, questionIndex }) {
-  return <p>{`progress bar ${topic} and ${questionIndex}`}</p>;
+function QuizzProgressBar({ quizz, questionIndex }) {
+  function extractTopics(quizzObject) {
+    const topics = [];
+    quizzObject.forEach((question) => topics.push(question.topic));
+    return topics;
+  }
+
+  return (
+    <ul className="progress-bar">
+      {extractTopics(quizz).map((topic, index) => (
+        <li key={topic}>
+          <figure className={index < questionIndex ? "question-answeared" : ""}>
+            <div>
+              {index < questionIndex && <img src={tick} alt="ticked" />}
+            </div>
+            <figcaption>{topic}</figcaption>
+          </figure>
+        </li>
+      ))}
+    </ul>
+  );
 }
 
 QuizzProgressBar.propTypes = {
-  topic: PropTypes.string.isRequired,
+  quizz: PropTypes.string.isRequired,
   questionIndex: PropTypes.number.isRequired,
 };
 

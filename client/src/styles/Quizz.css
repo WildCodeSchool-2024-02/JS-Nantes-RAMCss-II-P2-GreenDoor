@@ -9,7 +9,7 @@
   overflow: hidden;
 }
 
-.full-page-container img {
+.decorative-image {
   min-height: 90vh;
 }
 
@@ -49,7 +49,7 @@
   border: 0;
 }
 
-.questions-container > ul {
+.questions-container > ul.buttons-container {
   width: 100%;
   height: 100%;
   list-style: none;

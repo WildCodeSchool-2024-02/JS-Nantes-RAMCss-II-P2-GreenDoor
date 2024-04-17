@@ -1,0 +1,46 @@
+.progress-bar {
+  display: flex;
+  list-style: none;
+  width: 90%;
+  justify-content: space-evenly;
+  transform: translateY(2vh);
+}
+
+.progress-bar figcaption {
+  font-size: calc(var(--font-size-text) / 1.5);
+  text-align: center;
+  margin-top: 24px;
+  font-family: var(--font-family-body);
+  font-weight: bold;
+}
+
+.progress-bar > li > figure > div > img {
+  width: 65%;
+}
+
+.progress-bar div {
+  --size: 64px;
+  width: var(--size);
+  height: var(--size);
+  border-radius: calc(var(--size) / 2);
+  background-color: var(--fore-ground-color);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.progress-bar > li > figure {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.progress-bar > li {
+  width: 15%;
+}
+
+.progress-bar > li > figure.question-answeared > div {
+  background-color: var(--accent-color);
+}
