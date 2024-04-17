@@ -7,13 +7,13 @@ function QuizzProgressBar({ quizz, questionIndex }) {
     return quizz ? quizzObject.map((question) => question.topic) : [];
   }
 
-  // fix :  quizzObject.forEach((question) => topics.push(question.topic));
+  //  fix :  quizzObject.forEach((question) => topics.push(question.topic));
 
   return (
     <ul className="progress-bar">
       {extractTopics(quizz).map((topic, index) => (
         <li key={topic}>
-          <figure className={index < questionIndex ? "question-answeared" : ""}>
+          <figure className={index <= questionIndex ? "question-answered" : ""}>
             <div>
               {index < questionIndex && <img src={tick} alt="ticked" />}
             </div>

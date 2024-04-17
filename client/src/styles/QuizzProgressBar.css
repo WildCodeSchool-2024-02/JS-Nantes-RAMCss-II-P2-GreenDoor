@@ -41,6 +41,6 @@
   width: 15%;
 }
 
-.progress-bar > li > figure.question-answeared > div {
+.progress-bar > li > figure.question-answered > div {
   background-color: var(--accent-color);
 }

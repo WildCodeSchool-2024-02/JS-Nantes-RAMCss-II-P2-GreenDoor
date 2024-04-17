@@ -2,17 +2,17 @@
   {
     "topic": "Care levels",
     "question": "How often can you take care of your plants ?",
-    "answears": ["Once a day", "Once a week", "Once a month", "Once a year"]
+    "answers": ["Once a day", "Once a week", "Once a month", "Once a year"]
   },
   {
     "topic": "Toxicity",
     "question": "Do you have children or pets that could chew on you plants ?",
-    "answears": ["Yes, they love to munch", "No plant eaters"]
+    "answers": ["Yes, they love to munch", "No plant eaters"]
   },
   {
     "topic": "Growth",
     "question": "Do you want a fast-growing plant ?",
-    "answears": [
+    "answers": [
       "Yes, i want to see it grow",
       "No, i prefer that it stays the same",
       "Skip question"
@@ -21,12 +21,12 @@
   {
     "topic": "Room orientation",
     "question": "What is the orientation in the room where the plant will be ?",
-    "answears": ["North", "South", "East", "West"]
+    "answers": ["North", "South", "East", "West"]
   },
   {
     "topic": "Sunlight",
     "question": "How much sunlight do you get in that room ?",
-    "answears": [
+    "answers": [
       "I'm drowning in sunlight",
       "A little bit of light",
       "I'm a vampire",
