@@ -13,9 +13,7 @@ function QuizzProgressBar({ quizz, questionIndex }) {
     <ul className="progress-bar">
       {extractTopics(quizz).map((topic, index) => (
         <li key={topic}>
-          <figure
-            className={index <= questionIndex ? "question-answeared" : ""}
-          >
+          <figure className={index <= questionIndex ? "question-answered" : ""}>
             <div>
               {index < questionIndex && <img src={tick} alt="ticked" />}
             </div>

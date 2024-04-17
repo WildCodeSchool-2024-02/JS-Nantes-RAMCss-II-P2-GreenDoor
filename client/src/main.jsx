@@ -4,6 +4,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./pages/Home";
 import App from "./App";
 import Quizz from "./pages/Quizz";
+import Results from "./pages/Results";
 
 const router = createBrowserRouter([
   {
@@ -21,6 +22,10 @@ const router = createBrowserRouter([
       {
         path: "myplants",
         element: <h2>My Plants</h2>,
+      },
+      {
+        path: "results/:answers",
+        element: <Results />,
       },
     ],
   },
