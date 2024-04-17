@@ -10,51 +10,79 @@ article {
 }
 
 figure {
-  display: flex;
+  font-family: "Champagne-Limousines";
   background-color: var(--fore-ground-color);
   border-radius: 20px;
-  width: 90%;
-  height: 70vh;
-  font-family: "Champagne-Limousines";
+  width: 100%;
+  height: 90vh;
+  display: grid;
+  grid-template: 1fr / 2fr 3fr;
 }
 
 figure > img {
-  border-radius: 20px 0 0 20px;
-  width: 40%;
-  height: auto;
+  border-radius: 40px;
+  padding: 20px;
+  width: 100%;
+  height: inherit;
+  overflow: hidden;
 }
 
 figcaption {
-  width: 60%;
+  border: solid black 1px;
+  grid-template: 1fr 1fr 2fr 2fr / 1fr;
+  width: 100%;
+  height: inherit;
   padding: 20px 40px;
+  display: grid;
+}
+
+figcaption > hgroup {
+  border: 1px solid pink;
+  /* overflow: hidden; */
 }
 
 figcaption > hgroup > h2 {
-  font-size: 48px;
   font-weight: bold;
+  font-size: 48px;
 }
 
 figcaption > hgroup > h3 {
   font-size: 35px;
   font-style: italic;
+  color: var(--secondary-font-color);
 }
 
+figcaption > h4 {
+  font-size: 24px;
+}
+
+figcaption > p {
+  font-size: 20px;
+}
+
+.needsIcons {
+  display: grid;
+  grid-template: 1fr/ 1fr 1fr; /* 1 ligne, 2 colonnes (1 pour .watericons et 1 pour .sunIcons)*/
+}
 .waterIcons {
-  display: flex;
+  display: grid;
+  grid-template: 1fr 1fr / 1fr; /* 2 lignes (1 pour .watericons>img et 1 pour .waterIcons>, 1 colonnes */
   gap: 10px;
+  list-style: none;
 }
 
-.waterIcons > img {
-  width: 40px;
+.waterIcons > li > img {
+  width: 30px;
   height: auto;
 }
 
 .sunIcons {
   display: flex;
   gap: 10px;
+  list-style: none;
 }
 
-.sunIcons > img {
+.sunIcons > li > img {
   width: 60px;
   height: auto;
 }

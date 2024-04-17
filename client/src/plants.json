@@ -22,13 +22,13 @@
     "id": "7852850e-3763-5dba-978f-c406ca6cda3c",
     "appeal": "bearing",
     "perfume": null,
-    "growth": "Regular",
+    "growth": "regular",
     "widthPotential": {
       "M": 3.05,
       "CM": 305
     },
     "commonNameFr": "Dracaena de Malaisie",
-    "pruning": "If needed",
+    "pruning": "prune if needed",
     "family": "Liliaceae",
     "heightPotential": {
       "M": 6.1,
@@ -82,13 +82,13 @@
     "id": "8f8f3d75-9f2f-5efd-8cb5-664e7618abbe",
     "appeal": "style",
     "perfume": null,
-    "growth": "Regular",
+    "growth": "regular",
     "widthPotential": {
       "M": 1.83,
       "CM": 183
     },
     "commonNameFr": "Aralia de Balfour panach, Aralia Balfouriana",
-    "pruning": "If needed",
+    "pruning": "prune if needed",
     "family": "Araliaceae",
     "heightPotential": {
       "M": 3.05,
@@ -142,13 +142,13 @@
     "id": "96befb83-ccee-5747-8c22-bbe8e6863ba1",
     "appeal": "bearing",
     "perfume": null,
-    "growth": "Regular",
+    "growth": "regular",
     "widthPotential": {
       "M": 3.05,
       "CM": 305
     },
     "commonNameFr": "Dracaena jaune de Malaisie",
-    "pruning": "If needed",
+    "pruning": "prune if needed",
     "family": "Liliaceae",
     "heightPotential": {
       "M": 4.57,
@@ -160,7 +160,7 @@
       "F": 86,
       "C": 30
     },
-    "bloomingSeason": null,
+    "bloomingSeason": "do not bloom",
     "url": "http://www.tropicopia.com/house-plant/detail.np/detail-146.html",
     "colorOfLeaf": ["Light green", "Cream yellow"],
     "watering": "Keep moist between watering & Water when soil is half dry",
@@ -202,13 +202,13 @@
     "id": "9185f14d-01a5-50ce-9bf6-6f4ad2833d96",
     "appeal": "Foliage",
     "perfume": null,
-    "growth": "Regular",
+    "growth": "regular",
     "widthPotential": {
       "M": 1.07,
       "CM": 107
     },
     "commonNameFr": "Aglaonema",
-    "pruning": "If needed",
+    "pruning": "prune if needed",
     "family": "Araceae",
     "heightPotential": {
       "M": 0.91,
@@ -262,13 +262,13 @@
     "id": "7120b3ba-6897-5dee-bb4f-d4f649ff110b",
     "appeal": "Foliage",
     "perfume": null,
-    "growth": "Regular",
+    "growth": "regular",
     "widthPotential": {
       "M": 1.22,
       "CM": 122
     },
     "commonNameFr": null,
-    "pruning": "Never",
+    "pruning": "never prune",
     "family": "Araceae",
     "heightPotential": {
       "M": 1.22,
@@ -322,13 +322,13 @@
     "id": "f44400da-9bea-5c7d-bbc1-496704196ad2",
     "appeal": "Color",
     "perfume": null,
-    "growth": "Regular",
+    "growth": "regular",
     "widthPotential": {
       "M": 1.22,
       "CM": 122
     },
     "commonNameFr": "Dracaena lign",
-    "pruning": "If needed",
+    "pruning": "prune if needed",
     "family": "Liliaceae",
     "heightPotential": {
       "M": 3.05,
@@ -340,7 +340,7 @@
       "F": 86,
       "C": 30
     },
-    "bloomingSeason": null,
+    "bloomingSeason": "do not bloom",
     "url": "http://www.tropicopia.com/house-plant/detail.np/detail-128.html",
     "colorOfLeaf": ["Medium green", "White"],
     "watering": "Keep moist between watering & Can dry between watering",
@@ -382,13 +382,13 @@
     "id": "967a5aac-5f28-5253-9dc6-88f68a041d7a",
     "appeal": "Foliage",
     "perfume": null,
-    "growth": "Regular",
+    "growth": "regular",
     "widthPotential": {
       "M": 0.91,
       "CM": 91
     },
     "commonNameFr": "Calatha lign",
-    "pruning": "Never",
+    "pruning": "never prune",
     "family": "Marantaceae",
     "heightPotential": {
       "M": 1.02,
@@ -400,7 +400,7 @@
       "F": 77,
       "C": 25
     },
-    "bloomingSeason": null,
+    "bloomingSeason": "do not bloom",
     "url": "http://www.tropicopia.com/house-plant/detail.np/detail-69.html",
     "colorOfLeaf": ["Dark green", "Cream"],
     "watering": "Keep moist between watering & Water when soil is half dry",
@@ -442,13 +442,13 @@
     "id": "9155bd78-ada8-504c-a8f6-874fb3ea06bc",
     "appeal": "Flower",
     "perfume": null,
-    "growth": "Regular",
+    "growth": "regular",
     "widthPotential": {
       "M": 1.83,
       "CM": 183
     },
     "commonNameFr": null,
-    "pruning": "After blooming",
+    "pruning": "prune after blooming",
     "family": "Melastomataceae",
     "heightPotential": {
       "M": 1.83,
@@ -502,13 +502,13 @@
     "id": "4c805dca-76bb-5390-8558-684866b172b9",
     "appeal": "Robustness",
     "perfume": null,
-    "growth": "Regular",
+    "growth": "regular",
     "widthPotential": {
       "M": 0.91,
       "CM": 91
     },
     "commonNameFr": null,
-    "pruning": "If needed",
+    "pruning": "prune if needed",
     "family": "Araceae",
     "heightPotential": {
       "M": 1.83,
@@ -562,13 +562,13 @@
     "id": "24e20ed2-b669-5044-aa14-3e4c166e3ce7",
     "appeal": "bearing",
     "perfume": null,
-    "growth": "Regular",
+    "growth": "regular",
     "widthPotential": {
       "M": 3.05,
       "CM": 305
     },
     "commonNameFr": "Ficus Saule, Figuier à feuille de sabre",
-    "pruning": "If needed",
+    "pruning": "prune if needed",
     "family": "Moraceae",
     "heightPotential": {
       "M": 6.35,
@@ -580,7 +580,7 @@
       "F": 86,
       "C": 30
     },
-    "bloomingSeason": null,
+    "bloomingSeason": "do not bloom",
     "url": "http://www.tropicopia.com/house-plant/detail.np/detail-188.html",
     "colorOfLeaf": ["Dark green"],
     "watering": "Keep moist between watering & Must not dry between watering",
@@ -622,13 +622,13 @@
     "id": "9836efdb-fdf8-5272-be0c-4fe16b52dc61",
     "appeal": "Robustness",
     "perfume": null,
-    "growth": "Regular",
+    "growth": "regular",
     "widthPotential": {
       "M": 1.22,
       "CM": 122
     },
     "commonNameFr": "Janet Craig",
-    "pruning": "If needed",
+    "pruning": "prune if needed",
     "family": "Liliaceae",
     "heightPotential": {
       "M": 3.66,
@@ -682,19 +682,22 @@
     "id": "f75fa6e6-a759-5e37-b360-6c47619b7ef4",
     "appeal": "Robustness",
     "perfume": null,
-    "growth": "Regular",
+    "growth": "regular",
     "widthPotential": null,
     "commonNameFr": "Phidendron à feuille de cœur, Philodendron cordatum",
-    "pruning": "If needed",
+    "pruning": "prune if needed",
     "family": "Araceae",
-    "heightPotential": null,
+    "heightPotential": { 
+      "M" : "null", 
+      "CM" : "null" 
+    },
     "origin": ["Central America"],
     "description": null,
     "temperatureMax": {
       "F": 82.4,
       "C": 28
     },
-    "bloomingSeason": null,
+    "bloomingSeason": "do not bloom",
     "url": "http://www.tropicopia.com/house-plant/detail.np/detail-256.html",
     "colorOfLeaf": ["Dark green"],
     "watering": "Keep moist between watering & Water when soil is half dry",
@@ -741,13 +744,13 @@
     "id": "6a6faf50-24b4-5aed-b84d-68bcbc07607e",
     "appeal": "Foliage",
     "perfume": null,
-    "growth": "Regular",
+    "growth": "regular",
     "widthPotential": {
       "M": 0.91,
       "CM": 91
     },
     "commonNameFr": "Aglaonema",
-    "pruning": "If needed",
+    "pruning": "prune if needed",
     "family": "Araceae",
     "heightPotential": {
       "M": 0.91,
@@ -801,13 +804,13 @@
     "id": "fa443431-d2c7-55ef-b2c3-37ba204a1a17",
     "appeal": "Foliage",
     "perfume": null,
-    "growth": "Slow",
+    "growth": "slow",
     "widthPotential": {
       "M": 0.51,
       "CM": 51
     },
     "commonNameFr": "Oreille d'lphant",
-    "pruning": "Never",
+    "pruning": "never prune",
     "family": "Araceae",
     "heightPotential": {
       "M": 0.61,
@@ -819,7 +822,7 @@
       "F": 82.4,
       "C": 28
     },
-    "bloomingSeason": null,
+    "bloomingSeason": "do not bloom",
     "url": "http://www.tropicopia.com/house-plant/detail.np/detail-50.html",
     "colorOfLeaf": ["Grey", "Medium green"],
     "watering": "Keep moist between watering & Water when soil is half dry",
@@ -861,13 +864,13 @@
     "id": "5ae9b604-878b-5093-9090-b8f48e69a0b9",
     "appeal": "Foliage",
     "perfume": null,
-    "growth": "Regular",
+    "growth": "regular",
     "widthPotential": {
       "M": 2.44,
       "CM": 244
     },
     "commonNameFr": "Fausse aralia",
-    "pruning": "If needed",
+    "pruning": "prune if needed",
     "family": "Araliaceae",
     "heightPotential": {
       "M": 6.35,
@@ -879,7 +882,7 @@
       "F": 82.4,
       "C": 28
     },
-    "bloomingSeason": null,
+    "bloomingSeason": "do not bloom",
     "url": "http://www.tropicopia.com/house-plant/detail.np/detail-317.html",
     "colorOfLeaf": ["Dark green"],
     "watering": "Keep moist between watering & Can dry between watering",
@@ -921,13 +924,13 @@
     "id": "bd08169e-73b5-58ac-b75d-d9a2870f6960",
     "appeal": "Robustness",
     "perfume": null,
-    "growth": "Slow",
+    "growth": "slow",
     "widthPotential": {
       "M": 1.02,
       "CM": 102
     },
     "commonNameFr": "Palmier nain, Palmier Bella, Palmier Neanthebella",
-    "pruning": "Never",
+    "pruning": "never prune",
     "family": "Arecaceae",
     "heightPotential": {
       "M": 1.02,
@@ -939,7 +942,7 @@
       "F": 82.4,
       "C": 28
     },
-    "bloomingSeason": null,
+    "bloomingSeason": "do not bloom",
     "url": "http://www.tropicopia.com/house-plant/detail.np/detail-84.html",
     "colorOfLeaf": ["Medium green"],
     "watering": "Keep moist between watering & Water when soil is half dry",
@@ -986,13 +989,13 @@
     "id": "2655164e-f2be-5021-bf8a-7aa56a6d290b",
     "appeal": "Foliage",
     "perfume": null,
-    "growth": "Regular",
+    "growth": "regular",
     "widthPotential": {
       "M": 1.83,
       "CM": 183
     },
     "commonNameFr": "Palmier bamboo",
-    "pruning": "Never",
+    "pruning": "never prune",
     "family": "Arecaceae",
     "heightPotential": {
       "M": 3.05,
@@ -1004,7 +1007,7 @@
       "F": 86,
       "C": 30
     },
-    "bloomingSeason": null,
+    "bloomingSeason": "do not bloom",
     "url": "http://www.tropicopia.com/house-plant/detail.np/detail-90.html",
     "colorOfLeaf": ["Medium green"],
     "watering": "Keep moist between watering & Water when soil is half dry",
@@ -1046,13 +1049,13 @@
     "id": "e1a9049e-92f7-5c4e-a39d-7b2edec978d0",
     "appeal": "Color",
     "perfume": null,
-    "growth": "Regular",
+    "growth": "regular",
     "widthPotential": {
       "M": 1.22,
       "CM": 122
     },
     "commonNameFr": null,
-    "pruning": "If needed",
+    "pruning": "prune if needed",
     "family": "Araceae",
     "heightPotential": {
       "M": 1.52,
@@ -1106,10 +1109,10 @@
     "id": "f3e92c9b-88dd-5f5f-b178-e0e5b7836441",
     "appeal": "Flower",
     "perfume": null,
-    "growth": "Fast",
+    "growth": "fast",
     "widthPotential": null,
     "commonNameFr": null,
-    "pruning": "After blooming",
+    "pruning": "prune after blooming",
     "family": "Apocynaceae",
     "heightPotential": {
       "M": 4.57,
@@ -1163,19 +1166,19 @@
     "id": "f9772525-ee89-5c23-b377-589e6ac883bc",
     "appeal": "Color",
     "perfume": null,
-    "growth": "Regular",
+    "growth": "regular",
     "widthPotential": null,
     "commonNameFr": "Patte d'oie",
-    "pruning": "If needed",
+    "pruning": "prune if needed",
     "family": "Araceae",
-    "heightPotential": null,
+    "heightPotential": { "M" : "null", "CM" : "null" },
     "origin": ["Cultivar"],
     "description": null,
     "temperatureMax": {
       "F": 82.4,
       "C": 28
     },
-    "bloomingSeason": null,
+    "bloomingSeason": "do not bloom",
     "url": "http://www.tropicopia.com/house-plant/detail.np/detail-338.html",
     "colorOfLeaf": ["Light green", "White"],
     "watering": "Keep moist between watering & Water when soil is half dry",
@@ -1217,13 +1220,13 @@
     "id": "67de4789-3363-52a9-9d1d-9ecf9f880fae",
     "appeal": "Flower",
     "perfume": null,
-    "growth": "Slow",
+    "growth": "slow",
     "widthPotential": {
       "M": 1.52,
       "CM": 152
     },
     "commonNameFr": "Couronne d'pine",
-    "pruning": "If needed",
+    "pruning": "prune if needed",
     "family": "Euphorbiaceae",
     "heightPotential": {
       "M": 1.52,
@@ -1277,13 +1280,13 @@
     "id": "a0736303-131a-52ce-a742-80f6a44cb744",
     "appeal": "Foliage",
     "perfume": null,
-    "growth": "Regular",
+    "growth": "regular",
     "widthPotential": {
       "M": 0.76,
       "CM": 76
     },
     "commonNameFr": "Aglaonema",
-    "pruning": "If needed",
+    "pruning": "prune if needed",
     "family": "Araceae",
     "heightPotential": {
       "M": 0.76,
@@ -1337,13 +1340,13 @@
     "id": "a5178737-1b07-56b8-8667-0be3477fef48",
     "appeal": "Robustness",
     "perfume": null,
-    "growth": "Regular",
+    "growth": "regular",
     "widthPotential": {
       "M": 1.52,
       "CM": 152
     },
     "commonNameFr": null,
-    "pruning": "If needed",
+    "pruning": "prune if needed",
     "family": "Liliaceae",
     "heightPotential": {
       "M": 3.66,
@@ -1355,7 +1358,7 @@
       "F": 86,
       "C": 30
     },
-    "bloomingSeason": null,
+    "bloomingSeason": "do not bloom",
     "url": "http://www.tropicopia.com/house-plant/detail.np/detail-353.html",
     "colorOfLeaf": ["Medium green"],
     "watering": "Keep moist between watering & Water when soil is half dry",
@@ -1397,12 +1400,12 @@
     "id": "d74f0442-5304-5c01-9a98-e0541d7d5bd8",
     "appeal": "style",
     "perfume": null,
-    "growth": "Slow",
+    "growth": "slow",
     "widthPotential": null,
     "commonNameFr": null,
-    "pruning": "If needed",
+    "pruning": "prune if needed",
     "family": "Euphorbiaceae",
-    "heightPotential": null,
+    "heightPotential": { "M" : "null", "CM" : "null" },
     "origin": ["South Africa"],
     "description": null,
     "temperatureMax": {
@@ -1451,10 +1454,10 @@
     "id": "423e2593-5a1b-52d5-a0d9-b07f5554e507",
     "appeal": "Color",
     "perfume": null,
-    "growth": "Fast",
+    "growth": "fast",
     "widthPotential": null,
     "commonNameFr": "Lierre anglais",
-    "pruning": "If needed",
+    "pruning": "prune if needed",
     "family": "Araliaceae",
     "heightPotential": {
       "M": 0.15,
@@ -1466,7 +1469,7 @@
       "F": 86,
       "C": 30
     },
-    "bloomingSeason": null,
+    "bloomingSeason": "do not bloom",
     "url": "http://www.tropicopia.com/house-plant/detail.np/detail-204.html",
     "colorOfLeaf": ["Cream yellow", "White"],
     "watering": "Keep moist between watering & Water when soil is half dry",
@@ -1508,13 +1511,13 @@
     "id": "616700e9-f14a-57db-9c50-8205d0e4c5c7",
     "appeal": "Foliage",
     "perfume": null,
-    "growth": "Regular",
+    "growth": "regular",
     "widthPotential": {
       "M": 0.76,
       "CM": 76
     },
     "commonNameFr": "Aglaonema",
-    "pruning": "If needed",
+    "pruning": "prune if needed",
     "family": "Araceae",
     "heightPotential": {
       "M": 0.61,
@@ -1568,13 +1571,13 @@
     "id": "c9697ff8-b0c4-5a87-aff1-eb7437dd4ac0",
     "appeal": "bearing",
     "perfume": null,
-    "growth": "Regular",
+    "growth": "regular",
     "widthPotential": {
       "M": 3.66,
       "CM": 366
     },
     "commonNameFr": "Palmier areca, Palmier papillon",
-    "pruning": "If needed",
+    "pruning": "prune if needed",
     "family": "Arecaceae",
     "heightPotential": {
       "M": 6.35,
@@ -1586,7 +1589,7 @@
       "F": 82.4,
       "C": 28
     },
-    "bloomingSeason": null,
+    "bloomingSeason": "do not bloom",
     "url": "http://www.tropicopia.com/house-plant/detail.np/detail-152.html",
     "colorOfLeaf": ["Medium green"],
     "watering": "Keep moist between watering & Must not dry between watering",
@@ -1628,13 +1631,13 @@
     "id": "dfa12209-629d-5044-a07d-36ee25775ceb",
     "appeal": "Flower",
     "perfume": null,
-    "growth": "Fast",
+    "growth": "fast",
     "widthPotential": {
       "M": 1.83,
       "CM": 183
     },
     "commonNameFr": "Hibiscus chinois",
-    "pruning": "After blooming",
+    "pruning": "prune after blooming",
     "family": "Malvaceae",
     "heightPotential": {
       "M": 3.05,
@@ -1688,13 +1691,13 @@
     "id": "ee5c93b5-7e0b-5c17-bb32-cd30d98668a6",
     "appeal": "Foliage",
     "perfume": "Camphror, comes from the Leafs",
-    "growth": "Regular",
+    "growth": "regular",
     "widthPotential": {
       "M": 4.57,
       "CM": 457
     },
     "commonNameFr": "Plante parasol",
-    "pruning": "If needed",
+    "pruning": "prune if needed",
     "family": "Araliaceae",
     "heightPotential": {
       "M": 4.57,
@@ -1748,13 +1751,13 @@
     "id": "c30b3b99-9d23-5067-9bbc-c5ffaa46ae41",
     "appeal": "Foliage",
     "perfume": null,
-    "growth": "Regular",
+    "growth": "regular",
     "widthPotential": {
       "M": 3.05,
       "CM": 305
     },
     "commonNameFr": "Plante caoutchouc",
-    "pruning": "If needed",
+    "pruning": "prune if needed",
     "family": "Moraceae",
     "heightPotential": {
       "M": 6.35,
@@ -1766,7 +1769,7 @@
       "F": 86,
       "C": 30
     },
-    "bloomingSeason": null,
+    "bloomingSeason": "do not bloom",
     "url": "http://www.tropicopia.com/house-plant/detail.np/detail-185.html",
     "colorOfLeaf": ["Light green", "Cream"],
     "watering": "Keep moist between watering & Can dry between watering",
@@ -1808,13 +1811,13 @@
     "id": "b565f2bb-7653-5d56-a869-5239f050208f",
     "appeal": "Flower",
     "perfume": null,
-    "growth": "Slow",
+    "growth": "slow",
     "widthPotential": {
       "M": 0.51,
       "CM": 51
     },
     "commonNameFr": null,
-    "pruning": "Never",
+    "pruning": "never prune",
     "family": "Bromeliaceae",
     "heightPotential": {
       "M": 0.51,
@@ -1868,13 +1871,13 @@
     "id": "f0ff5e57-0a18-570b-8e74-fa38c5508c46",
     "appeal": "Color",
     "perfume": "Camphror, comes from the Leafs",
-    "growth": "Regular",
+    "growth": "regular",
     "widthPotential": {
       "M": 4.57,
       "CM": 457
     },
     "commonNameFr": "Plante parasol",
-    "pruning": "If needed",
+    "pruning": "prune if needed",
     "family": "Araliaceae",
     "heightPotential": {
       "M": 4.57,
@@ -1934,7 +1937,7 @@
       "CM": 91
     },
     "commonNameFr": "Palmier de Madagascar",
-    "pruning": "If needed",
+    "pruning": "prune if needed",
     "family": "Apocynaceae",
     "heightPotential": {
       "M": 4.57,
@@ -1946,7 +1949,7 @@
       "F": 95,
       "C": 35
     },
-    "bloomingSeason": null,
+    "bloomingSeason": "do not bloom",
     "url": "http://www.tropicopia.com/house-plant/detail.np/detail-239.html",
     "colorOfLeaf": ["Dark green"],
     "watering": "Must dry between watering & Water only when dry",
@@ -1988,19 +1991,19 @@
     "id": "2af000f6-8357-5d0c-aae0-6016d308061c",
     "appeal": "Foliage",
     "perfume": null,
-    "growth": "Regular",
+    "growth": "regular",
     "widthPotential": null,
     "commonNameFr": null,
-    "pruning": "If needed",
+    "pruning": "prune if needed",
     "family": "Miliaceae",
-    "heightPotential": null,
+    "heightPotential": { "M" : "null", "CM" : "null" },
     "origin": ["Zimbabwe"],
     "description": null,
     "temperatureMax": {
       "F": 82.4,
       "C": 28
     },
-    "bloomingSeason": null,
+    "bloomingSeason": "do not bloom",
     "url": "http://www.tropicopia.com/house-plant/detail.np/detail-342.html",
     "colorOfLeaf": ["Dark green"],
     "watering": "Keep moist between watering & Must not dry between watering",
@@ -2042,19 +2045,19 @@
     "id": "84d95426-c046-51db-8613-ed3c3d60185c",
     "appeal": "Robustness",
     "perfume": null,
-    "growth": "Regular",
+    "growth": "regular",
     "widthPotential": null,
     "commonNameFr": "Pothos dor",
-    "pruning": "If needed",
+    "pruning": "prune if needed",
     "family": "Araceae",
-    "heightPotential": null,
+    "heightPotential": { "M" : "null", "CM" : "null" },
     "origin": ["South Pacific"],
     "description": null,
     "temperatureMax": {
       "F": 86,
       "C": 30
     },
-    "bloomingSeason": null,
+    "bloomingSeason": "do not bloom",
     "url": "http://www.tropicopia.com/house-plant/detail.np/detail-157.html",
     "colorOfLeaf": ["Medium green", "Yellow"],
     "watering": "Keep moist between watering & Water when soil is half dry",
@@ -2096,13 +2099,13 @@
     "id": "d54fd27c-ea9e-51c7-ba79-1c25b15bb2c5",
     "appeal": "style",
     "perfume": null,
-    "growth": "Slow",
+    "growth": "slow",
     "widthPotential": {
       "M": 1.22,
       "CM": 122
     },
     "commonNameFr": null,
-    "pruning": "Never",
+    "pruning": "never prune",
     "family": "Araceae",
     "heightPotential": {
       "M": 0.76,
@@ -2114,7 +2117,7 @@
       "F": 82.4,
       "C": 28
     },
-    "bloomingSeason": null,
+    "bloomingSeason": "do not bloom",
     "url": "http://www.tropicopia.com/house-plant/detail.np/detail-259.html",
     "colorOfLeaf": ["Dark green"],
     "watering": "Keep moist between watering & Water when soil is half dry",
@@ -2156,13 +2159,13 @@
     "id": "a81fc3d5-80bb-5baa-84b4-b882e1ec9029",
     "appeal": "Foliage",
     "perfume": null,
-    "growth": "Fast",
+    "growth": "fast",
     "widthPotential": {
       "M": 3.05,
       "CM": 305
     },
     "commonNameFr": "Figuier pleureur",
-    "pruning": "If needed",
+    "pruning": "prune if needed",
     "family": "Moraceae",
     "heightPotential": {
       "M": 6.35,
@@ -2174,7 +2177,7 @@
       "F": 86,
       "C": 30
     },
-    "bloomingSeason": null,
+    "bloomingSeason": "do not bloom",
     "url": "http://www.tropicopia.com/house-plant/detail.np/detail-169.html",
     "colorOfLeaf": ["Dark green"],
     "watering": "Keep moist between watering & Must not dry between watering",
@@ -2216,13 +2219,13 @@
     "id": "12a40368-0868-530c-9132-27dccf4ec918",
     "appeal": "bearing",
     "perfume": null,
-    "growth": "Regular",
+    "growth": "regular",
     "widthPotential": {
       "M": 1.52,
       "CM": 152
     },
     "commonNameFr": null,
-    "pruning": "Never",
+    "pruning": "never prune",
     "family": "Araceae",
     "heightPotential": {
       "M": 1.22,
@@ -2276,13 +2279,13 @@
     "id": "21cee3a1-582f-568f-b3d7-a2eeaa66ff73",
     "appeal": "style",
     "perfume": null,
-    "growth": "Regular",
+    "growth": "regular",
     "widthPotential": {
       "M": 1.22,
       "CM": 122
     },
     "commonNameFr": "Dragonier",
-    "pruning": "If needed",
+    "pruning": "prune if needed",
     "family": "Liliaceae",
     "heightPotential": {
       "M": 3.05,
@@ -2294,7 +2297,7 @@
       "F": 86,
       "C": 30
     },
-    "bloomingSeason": null,
+    "bloomingSeason": "do not bloom",
     "url": "http://www.tropicopia.com/house-plant/detail.np/detail-138.html",
     "colorOfLeaf": ["Medium green", "Red"],
     "watering": "Keep moist between watering & Can dry between watering",
@@ -2336,10 +2339,10 @@
     "id": "6f981194-b4fd-5df5-bea3-2cf2dff76e2d",
     "appeal": "Robustness",
     "perfume": null,
-    "growth": "Fast",
+    "growth": "fast",
     "widthPotential": null,
     "commonNameFr": "Lierre Montgomery, Lierre des canaries",
-    "pruning": "If needed",
+    "pruning": "prune if needed",
     "family": "Araliaceae",
     "heightPotential": {
       "M": 0.25,
@@ -2351,7 +2354,7 @@
       "F": 86,
       "C": 30
     },
-    "bloomingSeason": null,
+    "bloomingSeason": "do not bloom",
     "url": "http://www.tropicopia.com/house-plant/detail.np/detail-199.html",
     "colorOfLeaf": ["Dark green", "Medium green"],
     "watering": "Keep moist between watering & Water when soil is half dry",
@@ -2393,13 +2396,13 @@
     "id": "32281568-0eb7-5aa4-94f9-15a43447c12f",
     "appeal": "Foliage",
     "perfume": null,
-    "growth": "Regular",
+    "growth": "regular",
     "widthPotential": {
       "M": 0.76,
       "CM": 76
     },
     "commonNameFr": "Aglaonema",
-    "pruning": "If needed",
+    "pruning": "prune if needed",
     "family": "Araceae",
     "heightPotential": {
       "M": 0.76,
@@ -2453,13 +2456,13 @@
     "id": "02b1c9a0-8bc0-5104-93fd-20c38bf4174e",
     "appeal": "Robustness",
     "perfume": "Camphror, comes from the Leafs",
-    "growth": "Regular",
+    "growth": "regular",
     "widthPotential": {
       "M": 2.44,
       "CM": 244
     },
     "commonNameFr": "Plante parapluie",
-    "pruning": "If needed",
+    "pruning": "prune if needed",
     "family": "Araliaceae",
     "heightPotential": {
       "M": 5.08,
@@ -2471,7 +2474,7 @@
       "F": 82.4,
       "C": 28
     },
-    "bloomingSeason": null,
+    "bloomingSeason": "do not bloom",
     "url": "http://www.tropicopia.com/house-plant/detail.np/detail-306.html",
     "colorOfLeaf": ["Medium green"],
     "watering": "Keep moist between watering & Water when soil is half dry",
@@ -2513,13 +2516,13 @@
     "id": "1066840a-0631-512c-a39d-8cd97b272fd6",
     "appeal": "bearing",
     "perfume": null,
-    "growth": "Regular",
+    "growth": "regular",
     "widthPotential": {
       "M": 3.05,
       "CM": 305
     },
     "commonNameFr": "Dracaena de Malaisie",
-    "pruning": "If needed",
+    "pruning": "prune if needed",
     "family": "Liliaceae",
     "heightPotential": {
       "M": 6.1,
@@ -2573,13 +2576,13 @@
     "id": "dd248d1b-b098-517f-b872-d7d4e7b30e68",
     "appeal": "style",
     "perfume": null,
-    "growth": "Regular",
+    "growth": "regular",
     "widthPotential": {
       "M": 1.22,
       "CM": 122
     },
     "commonNameFr": "Dragonier",
-    "pruning": "If needed",
+    "pruning": "prune if needed",
     "family": "Liliaceae",
     "heightPotential": {
       "M": 3.05,
@@ -2591,7 +2594,7 @@
       "F": 86,
       "C": 30
     },
-    "bloomingSeason": null,
+    "bloomingSeason": "do not bloom",
     "url": "http://www.tropicopia.com/house-plant/detail.np/detail-140.html",
     "colorOfLeaf": ["Medium green", "Red"],
     "watering": "Keep moist between watering & Can dry between watering",
@@ -2633,13 +2636,13 @@
     "id": "d0a2bc95-13fb-5c38-b058-342bd98bb04d",
     "appeal": "Foliage",
     "perfume": null,
-    "growth": "Regular",
+    "growth": "regular",
     "widthPotential": {
       "M": 1.22,
       "CM": 122
     },
     "commonNameFr": "Aglaonema",
-    "pruning": "If needed",
+    "pruning": "prune if needed",
     "family": "Araceae",
     "heightPotential": {
       "M": 1.22,
@@ -2693,13 +2696,13 @@
     "id": "399cd296-db26-5dc1-ab3b-82f2e8410528",
     "appeal": "style",
     "perfume": "Camphror, comes from the Flowers",
-    "growth": "Slow",
+    "growth": "slow",
     "widthPotential": {
       "M": 1.52,
       "CM": 152
     },
     "commonNameFr": "Philodendron fougère",
-    "pruning": "Never",
+    "pruning": "never prune",
     "family": "Araceae",
     "heightPotential": {
       "M": 1.52,
@@ -2753,13 +2756,13 @@
     "id": "ae3b2aa3-32f4-5baa-8ccf-6299bbcbdadc",
     "appeal": "Flower",
     "perfume": null,
-    "growth": "Regular",
+    "growth": "regular",
     "widthPotential": {
       "M": 0.61,
       "CM": 61
     },
     "commonNameFr": "Flamant rose, Langue de feu",
-    "pruning": "Never",
+    "pruning": "never prune",
     "family": "Araceae",
     "heightPotential": {
       "M": 0.61,
@@ -2813,13 +2816,13 @@
     "id": "eff363a6-e4f6-535d-a12d-866125558cd2",
     "appeal": "style",
     "perfume": null,
-    "growth": "Slow",
+    "growth": "slow",
     "widthPotential": {
       "M": 0.91,
       "CM": 91
     },
     "commonNameFr": null,
-    "pruning": "Never",
+    "pruning": "never prune",
     "family": "Araceae",
     "heightPotential": {
       "M": 1.22,
@@ -2831,7 +2834,7 @@
       "F": 86,
       "C": 30
     },
-    "bloomingSeason": null,
+    "bloomingSeason": "do not bloom",
     "url": "http://www.tropicopia.com/house-plant/detail.np/detail-354.html",
     "colorOfLeaf": ["Dark green"],
     "watering": "Keep moist between watering & Water when soil is half dry",
@@ -2873,13 +2876,13 @@
     "id": "91540470-f29d-51b6-ace4-509ebc2a4d00",
     "appeal": "style",
     "perfume": null,
-    "growth": "Regular",
+    "growth": "regular",
     "widthPotential": {
       "M": 1.83,
       "CM": 183
     },
     "commonNameFr": "Aralia de Balfour panach, Aralia Balfouriana",
-    "pruning": "If needed",
+    "pruning": "prune if needed",
     "family": "Araliaceae",
     "heightPotential": {
       "M": 3.66,
@@ -2933,13 +2936,13 @@
     "id": "b2356990-0e4a-5467-b93a-36830e56da68",
     "appeal": "Foliage",
     "perfume": null,
-    "growth": "Regular",
+    "growth": "regular",
     "widthPotential": {
       "M": 0.76,
       "CM": 76
     },
     "commonNameFr": "Aglaonema",
-    "pruning": "If needed",
+    "pruning": "prune if needed",
     "family": "Araceae",
     "heightPotential": {
       "M": 0.76,
@@ -2993,13 +2996,13 @@
     "id": "6fcfb288-5a1f-53aa-ba7d-fcad91b11aab",
     "appeal": "Foliage",
     "perfume": null,
-    "growth": "Regular",
+    "growth": "regular",
     "widthPotential": {
       "M": 0.91,
       "CM": 91
     },
     "commonNameFr": "Capilaire",
-    "pruning": "Never",
+    "pruning": "never prune",
     "family": "Polypodiaceae",
     "heightPotential": {
       "M": 0.61,
@@ -3011,7 +3014,7 @@
       "F": 86,
       "C": 30
     },
-    "bloomingSeason": null,
+    "bloomingSeason": "do not bloom",
     "url": "http://www.tropicopia.com/house-plant/detail.np/detail-02.html",
     "colorOfLeaf": ["Medium green", "Light green"],
     "watering": "Keep moist between watering & Must not dry between watering",
@@ -3053,13 +3056,13 @@
     "id": "44529836-2afe-5a8b-b152-ca1c7a0112f3",
     "appeal": "Color",
     "perfume": "Camphror, comes from the Leafs",
-    "growth": "Regular",
+    "growth": "regular",
     "widthPotential": {
       "M": 4.57,
       "CM": 457
     },
     "commonNameFr": "Plante parasol",
-    "pruning": "If needed",
+    "pruning": "prune if needed",
     "family": "Araliaceae",
     "heightPotential": {
       "M": 4.57,
@@ -3113,13 +3116,13 @@
     "id": "88724c5f-bfce-57f9-a226-c3bda0cbeb82",
     "appeal": "style",
     "perfume": null,
-    "growth": "Regular",
+    "growth": "regular",
     "widthPotential": {
       "M": 1.22,
       "CM": 122
     },
     "commonNameFr": "Dragonier",
-    "pruning": "If needed",
+    "pruning": "prune if needed",
     "family": "Liliaceae",
     "heightPotential": {
       "M": 3.05,
@@ -3131,7 +3134,7 @@
       "F": 86,
       "C": 30
     },
-    "bloomingSeason": null,
+    "bloomingSeason": "do not bloom",
     "url": "http://www.tropicopia.com/house-plant/detail.np/detail-141.html",
     "colorOfLeaf": ["Medium green", "Red"],
     "watering": "Keep moist between watering & Can dry between watering",
@@ -3173,10 +3176,10 @@
     "id": "05c88eae-9e1f-57dc-b5d0-b3e248411a24",
     "appeal": "Robustness",
     "perfume": null,
-    "growth": "Regular",
+    "growth": "regular",
     "widthPotential": null,
     "commonNameFr": "Bb caoutchouc",
-    "pruning": "If needed",
+    "pruning": "prune if needed",
     "family": "Piperaceae",
     "heightPotential": {
       "M": 0.41,
@@ -3188,7 +3191,7 @@
       "F": 89.6,
       "C": 32
     },
-    "bloomingSeason": null,
+    "bloomingSeason": "do not bloom",
     "url": "http://www.tropicopia.com/house-plant/detail.np/detail-244.html",
     "colorOfLeaf": ["Dark green"],
     "watering": "Keep moist between watering & Water when soil is half dry",
@@ -3230,13 +3233,13 @@
     "id": "537f9c6b-9a10-5cf4-b319-9dfca5c52fbf",
     "appeal": "Color",
     "perfume": null,
-    "growth": "Regular",
+    "growth": "regular",
     "widthPotential": {
       "M": 1.22,
       "CM": 122
     },
     "commonNameFr": "Plante maïs",
-    "pruning": "If needed",
+    "pruning": "prune if needed",
     "family": "Liliaceae",
     "heightPotential": {
       "M": 3.05,
@@ -3290,13 +3293,13 @@
     "id": "464c0f5e-73a8-5e6b-a083-ea2aba5904be",
     "appeal": "bearing",
     "perfume": null,
-    "growth": "Regular",
+    "growth": "regular",
     "widthPotential": {
       "M": 9.14,
       "CM": 914
     },
     "commonNameFr": "Oiseaux du paradis",
-    "pruning": "If needed",
+    "pruning": "prune if needed",
     "family": "Strelitziaceae",
     "heightPotential": {
       "M": 12.19,
@@ -3350,19 +3353,19 @@
     "id": "05824fb3-8e00-594f-abce-c82580960cd9",
     "appeal": "Color",
     "perfume": null,
-    "growth": "Slow",
+    "growth": "slow",
     "widthPotential": null,
     "commonNameFr": "Queue d'âne",
-    "pruning": "If needed",
+    "pruning": "prune if needed",
     "family": "Crasssulaceae",
-    "heightPotential": null,
+    "heightPotential": { "M" : "null", "CM" : "null" },
     "origin": ["Mexico"],
     "description": null,
     "temperatureMax": {
       "F": 95,
       "C": 35
     },
-    "bloomingSeason": null,
+    "bloomingSeason": "do not bloom",
     "url": "http://www.tropicopia.com/house-plant/detail.np/detail-321.html",
     "colorOfLeaf": ["Light green"],
     "watering": "Must dry between watering & Water only when dry",
@@ -3404,13 +3407,13 @@
     "id": "e96713c2-a990-51c8-ac9a-5b3f80206be0",
     "appeal": "Foliage",
     "perfume": null,
-    "growth": "Regular",
+    "growth": "regular",
     "widthPotential": {
       "M": 0.91,
       "CM": 91
     },
     "commonNameFr": "Aglaonema",
-    "pruning": "If needed",
+    "pruning": "prune if needed",
     "family": "Araceae",
     "heightPotential": {
       "M": 0.91,
@@ -3464,13 +3467,13 @@
     "id": "bbfe9be0-fa7a-55c7-af26-6dbf772077b3",
     "appeal": "Foliage",
     "perfume": null,
-    "growth": "Regular",
+    "growth": "regular",
     "widthPotential": {
       "M": 1.22,
       "CM": 122
     },
     "commonNameFr": "Aglaonema",
-    "pruning": "If needed",
+    "pruning": "prune if needed",
     "family": "Araceae",
     "heightPotential": {
       "M": 1.22,
@@ -3524,13 +3527,13 @@
     "id": "d05849c1-eb89-59c1-8b3a-ebe8b69815b4",
     "appeal": "Foliage",
     "perfume": null,
-    "growth": "Regular",
+    "growth": "regular",
     "widthPotential": {
       "M": 0.91,
       "CM": 91
     },
     "commonNameFr": "Aglaonema",
-    "pruning": "If needed",
+    "pruning": "prune if needed",
     "family": "Araceae",
     "heightPotential": {
       "M": 0.91,
@@ -3584,13 +3587,13 @@
     "id": "61a18703-167a-553a-b01b-7a7e64e8ec77",
     "appeal": "Color",
     "perfume": null,
-    "growth": "Regular",
+    "growth": "regular",
     "widthPotential": {
       "M": 1.22,
       "CM": 122
     },
     "commonNameFr": "Plante maïs",
-    "pruning": "If needed",
+    "pruning": "prune if needed",
     "family": "Liliaceae",
     "heightPotential": {
       "M": 3.05,
@@ -3644,13 +3647,13 @@
     "id": "059b0bb3-2504-5a8b-9545-aafecfa9deb2",
     "appeal": "style",
     "perfume": null,
-    "growth": "Slow",
+    "growth": "slow",
     "widthPotential": {
       "M": 1.52,
       "CM": 152
     },
     "commonNameFr": "Aralia crisp",
-    "pruning": "If needed",
+    "pruning": "prune if needed",
     "family": "Araliaceae",
     "heightPotential": {
       "M": 3.05,
@@ -3704,13 +3707,13 @@
     "id": "f49f166a-07c0-5742-8ae5-843a345600f7",
     "appeal": "bearing",
     "perfume": null,
-    "growth": "Regular",
+    "growth": "regular",
     "widthPotential": {
       "M": 9.14,
       "CM": 914
     },
     "commonNameFr": "Oiseaux du paradis",
-    "pruning": "If needed",
+    "pruning": "prune if needed",
     "family": "Strelitziaceae",
     "heightPotential": {
       "M": 12.19,
@@ -3764,13 +3767,13 @@
     "id": "4da8029b-8d61-5170-9a76-4e783b300ab6",
     "appeal": "Flower",
     "perfume": null,
-    "growth": "Slow",
+    "growth": "slow",
     "widthPotential": {
       "M": 0.51,
       "CM": 51
     },
     "commonNameFr": null,
-    "pruning": "Never",
+    "pruning": "never prune",
     "family": "Bromeliaceae",
     "heightPotential": {
       "M": 0.51,
@@ -3824,13 +3827,13 @@
     "id": "843545b3-1e43-5afc-bd5a-9ad3b3b3a8d6",
     "appeal": "style",
     "perfume": null,
-    "growth": "Regular",
+    "growth": "regular",
     "widthPotential": {
       "M": 1.83,
       "CM": 183
     },
     "commonNameFr": "Aralia de Balfour panach, Aralia Balfouriana",
-    "pruning": "If needed",
+    "pruning": "prune if needed",
     "family": "Araliaceae",
     "heightPotential": {
       "M": 3.05,
@@ -3884,13 +3887,13 @@
     "id": "70161282-9ec1-5a7d-ad7d-e2607b16ed46",
     "appeal": "Color",
     "perfume": null,
-    "growth": "Regular",
+    "growth": "regular",
     "widthPotential": {
       "M": 0.91,
       "CM": 91
     },
     "commonNameFr": null,
-    "pruning": "If needed",
+    "pruning": "prune if needed",
     "family": "Araceae",
     "heightPotential": {
       "M": 0.91,
@@ -3944,13 +3947,13 @@
     "id": "5caa1476-154b-5a6c-9c3f-cc0933c9e1fe",
     "appeal": "Foliage",
     "perfume": null,
-    "growth": "Regular",
+    "growth": "regular",
     "widthPotential": {
       "M": 0.61,
       "CM": 61
     },
     "commonNameFr": "Caltha argent",
-    "pruning": "Never",
+    "pruning": "never prune",
     "family": "Marantaceae",
     "heightPotential": {
       "M": 0.61,
@@ -4010,7 +4013,7 @@
       "CM": 51
     },
     "commonNameFr": "Barbe d'ours",
-    "pruning": "Never",
+    "pruning": "never prune",
     "family": "Liliaceae",
     "heightPotential": {
       "M": 0.38,
@@ -4064,19 +4067,19 @@
     "id": "698cf416-7013-5ce7-995b-607282ec5b2f",
     "appeal": "Color",
     "perfume": null,
-    "growth": "Slow",
+    "growth": "slow",
     "widthPotential": null,
     "commonNameFr": "Queue d'âne",
-    "pruning": "If needed",
+    "pruning": "prune if needed",
     "family": "Crasssulaceae",
-    "heightPotential": null,
+    "heightPotential": { "M" : "null", "CM" : "null" },
     "origin": ["Mexico"],
     "description": null,
     "temperatureMax": {
       "F": 95,
       "C": 35
     },
-    "bloomingSeason": null,
+    "bloomingSeason": "do not bloom",
     "url": "http://www.tropicopia.com/house-plant/detail.np/detail-322.html",
     "colorOfLeaf": ["Light green"],
     "watering": "Must dry between watering & Water only when dry",
@@ -4118,13 +4121,13 @@
     "id": "8aea8e17-dc7e-5349-a8e4-0460d68cbc97",
     "appeal": "bearing",
     "perfume": null,
-    "growth": "Regular",
+    "growth": "regular",
     "widthPotential": {
       "M": 3.05,
       "CM": 305
     },
     "commonNameFr": "Philodendron arborescent",
-    "pruning": "If needed",
+    "pruning": "prune if needed",
     "family": "Araceae",
     "heightPotential": {
       "M": 3.66,
@@ -4178,10 +4181,10 @@
     "id": "18ee7db1-4caf-5354-9da8-cb2c50c902fe",
     "appeal": "Color",
     "perfume": null,
-    "growth": "Fast",
+    "growth": "fast",
     "widthPotential": null,
     "commonNameFr": "Lierre anglais, Lierre anglais panach",
-    "pruning": "If needed",
+    "pruning": "prune if needed",
     "family": "Araliaceae",
     "heightPotential": {
       "M": 0.15,
@@ -4193,7 +4196,7 @@
       "F": 86,
       "C": 30
     },
-    "bloomingSeason": null,
+    "bloomingSeason": "do not bloom",
     "url": "http://www.tropicopia.com/house-plant/detail.np/detail-206.html",
     "colorOfLeaf": ["Light green", "White"],
     "watering": "Keep moist between watering & Water when soil is half dry",
@@ -4235,13 +4238,13 @@
     "id": "ab11fed6-3b65-52f0-b478-b30c6fe5cb97",
     "appeal": "Trunc",
     "perfume": null,
-    "growth": "Slow",
+    "growth": "slow",
     "widthPotential": {
       "M": 3.66,
       "CM": 366
     },
     "commonNameFr": "Pied d'lphant",
-    "pruning": "If needed",
+    "pruning": "prune if needed",
     "family": "Agavaceae",
     "heightPotential": {
       "M": 4.57,
@@ -4295,12 +4298,12 @@
     "id": "2f414d67-5aeb-5d77-acf2-4a0948a0daab",
     "appeal": "Flower",
     "perfume": null,
-    "growth": "Slow",
+    "growth": "slow",
     "widthPotential": null,
     "commonNameFr": "Guzmania",
-    "pruning": "Never",
+    "pruning": "never prune",
     "family": "Bromeliaceae",
-    "heightPotential": null,
+    "heightPotential": { "M" : "null", "CM" : "null" },
     "origin": ["Cultivar"],
     "description": null,
     "temperatureMax": {
@@ -4349,13 +4352,13 @@
     "id": "200d6e4f-a42f-5c26-9b00-dfc774af68c3",
     "appeal": "style",
     "perfume": null,
-    "growth": "Slow",
+    "growth": "slow",
     "widthPotential": {
       "M": 6.1,
       "CM": 610
     },
     "commonNameFr": "Palmier Kentia, Palmier du paradis",
-    "pruning": "Never",
+    "pruning": "never prune",
     "family": "Arecaceae",
     "heightPotential": {
       "M": 6.1,
@@ -4367,7 +4370,7 @@
       "F": 82.4,
       "C": 28
     },
-    "bloomingSeason": null,
+    "bloomingSeason": "do not bloom",
     "url": "http://www.tropicopia.com/house-plant/detail.np/detail-215.html",
     "colorOfLeaf": ["Dark green"],
     "watering": "Keep moist between watering & Must not dry between watering",
@@ -4409,13 +4412,13 @@
     "id": "b4012c93-402f-5fe1-9eeb-bc542276bbbc",
     "appeal": "Foliage",
     "perfume": null,
-    "growth": "Slow",
+    "growth": "slow",
     "widthPotential": {
       "M": 0.91,
       "CM": 91
     },
     "commonNameFr": "Plante d'acier",
-    "pruning": "Never",
+    "pruning": "never prune",
     "family": "Liliaceae",
     "heightPotential": {
       "M": 1.07,
@@ -4427,7 +4430,7 @@
       "F": 82.4,
       "C": 28
     },
-    "bloomingSeason": null,
+    "bloomingSeason": "do not bloom",
     "url": "http://www.tropicopia.com/house-plant/detail.np/detail-61.html",
     "colorOfLeaf": ["Dark green"],
     "watering": "Water when soil is half dry & Can dry between watering",
