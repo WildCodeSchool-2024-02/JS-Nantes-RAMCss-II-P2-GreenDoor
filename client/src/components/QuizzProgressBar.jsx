@@ -4,10 +4,10 @@ import tick from "../assets/icons/WhiteTickbox.png";
 
 function QuizzProgressBar({ quizz, questionIndex }) {
   function extractTopics(quizzObject) {
-    const topics = [];
-    quizzObject.forEach((question) => topics.push(question.topic));
-    return topics;
+    return quizzObject.map((question) => question.topic);
   }
+
+  // fix :  quizzObject.forEach((question) => topics.push(question.topic));
 
   return (
     <ul className="progress-bar">
