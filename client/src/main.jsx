@@ -3,6 +3,7 @@ import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./pages/Home";
 import App from "./App";
+import Quizz from "./pages/Quizz";
 
 const router = createBrowserRouter([
   {
@@ -15,7 +16,7 @@ const router = createBrowserRouter([
       },
       {
         path: "quizz",
-        element: <h2>Quizz</h2>,
+        element: <Quizz />,
       },
       {
         path: "myplants",
