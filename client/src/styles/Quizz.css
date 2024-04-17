@@ -21,7 +21,8 @@
   background-color: var(--background-color);
 }
 
-.questions-container > h2 {
+.questions-container > h2,
+.questions-container > h1 {
   width: 75%;
   text-align: center;
   color: var(--grey);
@@ -30,7 +31,21 @@
   font-size: 48px;
 }
 
-.questions-container > ul > li > button {
+.questions-container > h3 {
+  font-family: var(--font-family-body);
+  font-weight: bold;
+  font-size: var(--font-size-text);
+  text-align: center;
+  padding: 0px 32px;
+  color: var(--secondary-font-color);
+}
+
+.questions-container h1 > strong {
+  color: var(--accent-color);
+}
+
+.questions-container > ul > li > button,
+button {
   font-family: var(--font-family-body);
   font-weight: bold;
   font-size: var(--font-size-text);
@@ -42,8 +57,20 @@
   padding: 0px 16px;
 }
 
-.questions-container > ul > li > button:hover,
-.questions-container > ul > li > button:focus {
+.questions-container button {
+  font-family: var(--font-family-body);
+  font-weight: bold;
+  font-size: var(--font-size-text);
+  width: 75%;
+  height: 75%;
+  border: 0;
+  border-radius: 30px;
+  background-color: var(--fore-ground-color);
+  padding: 0px 16px;
+}
+
+.questions-container button:hover,
+.questions-container button:focus {
   background-color: var(--accent-color);
   color: white;
   border: 0;
