@@ -4,7 +4,7 @@ import tick from "../assets/icons/WhiteTickbox.png";
 
 function QuizzProgressBar({ quizz, questionIndex }) {
   function extractTopics(quizzObject) {
-    return quizzObject.map((question) => question.topic);
+    return quizz ? quizzObject.map((question) => question.topic) : [];
   }
 
   // fix :  quizzObject.forEach((question) => topics.push(question.topic));
