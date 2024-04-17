@@ -1,0 +1,21 @@
+footer {
+  background-color: var(--background-color);
+  height: 152px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.credit {
+  margin-top: 6.5vh;
+  font-family: var(--font-family-body);
+}
+.credit > p > a {
+  text-decoration: none;
+  color: var(--accent-color);
+}
+.credit > p > a:hover {
+  color: var(--accent-hover-color);
+}
+p {
+  font-size: 16px;
+}
