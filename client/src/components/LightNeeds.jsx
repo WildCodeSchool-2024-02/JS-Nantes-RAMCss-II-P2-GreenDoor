@@ -22,24 +22,26 @@ function LightNeeds({ lightIdeal, lightTolered, iconActive, iconInactive }) {
   }
 
   return (
-    <ul className="sunIcons">
-      {[0, 1, 2].map((index) => (
-        <li key={index}>
-          <img
-            src={
-              lightIcons(lightIdeal, lightTolered) >= index
-                ? iconActive
-                : iconInactive
-            }
-            alt={lightIdeal}
-          />
-        </li>
-      ))}
-      <p>
+    <div>
+      <ul className="sunIcons">
+        {[0, 1, 2].map((index) => (
+          <li key={index}>
+            <img
+              src={
+                lightIcons(lightIdeal, lightTolered) >= index
+                  ? iconActive
+                  : iconInactive
+              }
+              alt={lightIdeal}
+            />
+          </li>
+        ))}
+      </ul>
+      <p className="sunInstruction">
         {lightIdeal}
         {lightTolered}
       </p>
-    </ul>
+    </div>
   );
 }
 

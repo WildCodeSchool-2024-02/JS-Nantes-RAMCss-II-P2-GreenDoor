@@ -30,30 +30,32 @@ function PlantCard({
             <h2>{commonName}</h2>
             <h3>{latinName}</h3>
           </hgroup>
-<section className = "needsIcons">
-          <WaterNeeds
-            watering={watering}
-            iconActive={waterIconActive}
-            iconInactive={waterIconInactive}
-          />
+          <section className="needsIcons">
+            <WaterNeeds
+              watering={watering}
+              iconActive={waterIconActive}
+              iconInactive={waterIconInactive}
+            />
 
-
-          <LightNeeds
-            lightIdeal={lightIdeal}
-            lightTolered={lightTolered}
-            iconActive={lightIconActive}
-            iconInactive={lightIconInactive}
-          />
-</section>
-          <h4>Entretien :</h4>
-          <p>
-            Plants with {growth} growth, can reach an average size of{" "}
-            {heightPotential} cm, {pruning}, keep between {temperatureMin} °C
-            and {temperatureMax} °C
-          </p>
-          <p>Main diseases : {disease}</p>
-          <p>Main pest : {insects}</p>
-          {/* ne pas afficher les message si contenu = N/A */}
+            <LightNeeds
+              lightIdeal={lightIdeal}
+              lightTolered={lightTolered}
+              iconActive={lightIconActive}
+              iconInactive={lightIconInactive}
+            />
+          </section>
+          <div>
+            <h3>Entretien :</h3>
+            <p>
+              Plants with {growth} growth, can reach an average size of{" "}
+              {heightPotential} cm, {pruning}, keep between {temperatureMin} °C
+              and {temperatureMax} °C
+            </p>
+            <p>
+              Main diseases : {disease} - Main pest : {insects}
+            </p>
+            {/* ne pas afficher les message si contenu = N/A */}
+          </div>
         </figcaption>
       </figure>
     </article>

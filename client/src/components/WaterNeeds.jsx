@@ -12,17 +12,19 @@ function WaterNeeds({ watering, iconActive, iconInactive }) {
   }
 
   return (
-    <ul className="waterIcons">
-      {[0, 1, 2].map((index) => (
-        <li key={index}>
-          <img
-            src={waterIcons(watering) >= index ? iconActive : iconInactive}
-            alt={watering}
-          />
-        </li>
-      ))}
-      <li>{watering}</li>
-    </ul>
+    <div>
+      <ul className="waterIcons">
+        {[0, 1, 2].map((index) => (
+          <li key={index}>
+            <img
+              src={waterIcons(watering) >= index ? iconActive : iconInactive}
+              alt={watering}
+            />
+          </li>
+        ))}
+      </ul>
+      <p className="waterInstruction" >{watering}</p>
+    </div>
   );
 }
 
