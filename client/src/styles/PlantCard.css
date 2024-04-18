@@ -35,10 +35,12 @@ figcaption {
 figcaption > hgroup {
   height: 25vh;
   width: 100%;
-  overflow: hidden;
 }
 
 figcaption > hgroup > h2 {
+  height: 50%;
+  width: 100%;
+  overflow: hidden;
   font-weight: bold;
   font-size: 48px;
 }
@@ -47,21 +49,16 @@ figcaption > hgroup > h3 {
   font-size: var(--font-size-h3);
   font-style: italic;
   color: var(--secondary-font-color);
-}
-
-figcaption > div > h3 {
-  font-size: var(--font-size-h3);
-}
-
-figcaption > div > p {
-  font-size: var(--font-size-text);
+  height: 50%;
+  width: 100%;
+  overflow: hidden;
 }
 
 .needsIcons {
   display: grid;
   grid-template: 1fr/ 1fr 1fr; /* 1 ligne, 2 colonnes (1 pour .watericons et 1 pour .sunIcons)*/
-  height: 20vh;
-  padding-top: 20px;
+  height: 28vh;
+  padding-top: 10px;
 }
 
 .needsIcons > div > ul {
@@ -85,6 +82,7 @@ figcaption > div > p {
 
 .waterInstruction {
   font-size: var(--font-size-text);
+  overflow: hidden;
 }
 .waterIcons > li > img {
   width: 30px;
@@ -99,8 +97,21 @@ figcaption > div > p {
 
 .sunInstruction {
   font-size: var(--font-size-text);
+  overflow: hidden;
 }
 .sunIcons > li > img {
   width: 60px;
   height: auto;
+}
+
+figcaption > div {
+  height: 30vh;
+}
+
+figcaption > div > h3 {
+  font-size: var(--font-size-h3);
+}
+
+figcaption > div > p {
+  font-size: var(--font-size-text);
 }
