@@ -43,6 +43,7 @@
   overflow: hidden;
   font-weight: bold;
   font-size: 48px;
+  margin: 0;
 }
 
 .plant-card figcaption > hgroup > h3 {
@@ -52,6 +53,7 @@
   height: 50%;
   width: 100%;
   overflow: hidden;
+  margin: 0;
 }
 
 .plant-card .needsIcons {
@@ -112,6 +114,12 @@
   font-size: var(--font-size-h3);
 }
 
-.plant-card figcaption > div > p {
+.plant-card figcaption div p {
   font-size: var(--font-size-text);
+  font-family: var(--font-family-body);
+  color: var(--secondary-font-color);
+}
+
+.waterInstruction {
+  padding-right: 24px;
 }

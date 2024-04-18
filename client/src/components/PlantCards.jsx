@@ -47,7 +47,7 @@ function PlantCard({
           <div>
             <h3>Entretien :</h3>
             <p>
-              Plants with {growth} growth, can reach an average size of{" "}
+              Plant with {growth} growth, can reach an average size of{" "}
               {heightPotential} cm, {pruning}, keep between {temperatureMin} °C
               and {temperatureMax} °C
             </p>
