@@ -1,0 +1,9 @@
+#sticky-filter ul {
+  border: 1px solid black;
+  background-color: var(--dark-color);
+  display: flex;
+  border-radius: 100px;
+  position: sticky;
+  bottom: 0;
+  right: 0;
+}

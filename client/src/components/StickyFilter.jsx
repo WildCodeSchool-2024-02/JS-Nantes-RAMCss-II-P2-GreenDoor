@@ -1,4 +1,5 @@
 import PropTypes from "prop-types";
+import "../styles/StickyFilter.css";
 
 function StickyFilter({
   filtersDescriptions,
@@ -8,7 +9,7 @@ function StickyFilter({
   setFilter,
 }) {
   return (
-    <div>
+    <div id="sticky-filter">
       <ul>
         {[0, 1, 2].map((index) => (
           <li key={index}>
