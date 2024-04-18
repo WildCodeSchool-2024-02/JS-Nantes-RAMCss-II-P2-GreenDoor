@@ -6,7 +6,8 @@ import Footer from "../components/Footer";
 import plants from "../plants.json";
 import waterIconInactive from "../assets/icons/WaterGrey.png";
 import waterIconActive from "../assets/icons/WaterBlue.png";
-
+import lightIconInactive from "../assets/icons/SunGrey.png";
+import lightIconActive from "../assets/icons/SunYellow.png";
 
 function Home() {
   return (
@@ -27,8 +28,10 @@ function Home() {
           temperatureMin={el.temperatureMin.C}
           disease={el.disease}
           insects={el.insects}
-          iconActive={waterIconActive}
-          iconInactive={waterIconInactive}
+          waterIconActive={waterIconActive}
+          waterIconInactive={waterIconInactive}
+          lightIconActive={lightIconActive}
+          lightIconInactive={lightIconInactive}
           lightIdeal={el.lightIdeal}
           lightTolered={el.lightTolered}
         />
