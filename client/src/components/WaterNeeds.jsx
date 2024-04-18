@@ -23,7 +23,7 @@ function WaterNeeds({ watering, iconActive, iconInactive }) {
           </li>
         ))}
       </ul>
-      <p className="waterInstruction" >{watering}</p>
+      <p className="waterInstruction">{watering}</p>
     </div>
   );
 }

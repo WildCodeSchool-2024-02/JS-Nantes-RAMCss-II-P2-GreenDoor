@@ -1,10 +1,6 @@
 import PropTypes from "prop-types";
 import WaterNeeds from "./WaterNeeds";
 import LightNeeds from "./LightNeeds";
-import waterIconInactive from "../assets/icons/WaterGrey.png";
-import waterIconActive from "../assets/icons/WaterBlue.png";
-import lightIconInactive from "../assets/icons/SunGrey.png";
-import lightIconActive from "../assets/icons/SunYellow.png";
 
 function PlantCard({
   img,
@@ -20,9 +16,13 @@ function PlantCard({
   disease,
   lightIdeal,
   lightTolered,
+  waterIconActive,
+  waterIconInactive,
+  lightIconActive,
+  lightIconInactive,
 }) {
   return (
-    <article>
+    <article className="plant-card">
       <figure>
         <img src={img} alt={commonName} />
         <figcaption>
@@ -76,6 +76,10 @@ PlantCard.propTypes = {
   disease: PropTypes.string.isRequired,
   lightIdeal: PropTypes.string.isRequired,
   lightTolered: PropTypes.string.isRequired,
+  waterIconActive: PropTypes.string.isRequired,
+  waterIconInactive: PropTypes.string.isRequired,
+  lightIconActive: PropTypes.string.isRequired,
+  lightIconInactive: PropTypes.string.isRequired,
 };
 
 export default PlantCard;

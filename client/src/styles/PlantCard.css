@@ -1,4 +1,4 @@
-article {
+.plant-card {
   background-color: var(--background-color);
   color: black;
   display: flex;
@@ -6,7 +6,7 @@ article {
   padding: 40px;
 }
 
-figure {
+.plant-card figure {
   font-family: "Champagne-Limousines";
   background-color: var(--fore-ground-color);
   border-radius: 20px;
@@ -16,7 +16,7 @@ figure {
   grid-template: 1fr / 2fr 3fr;
 }
 
-figure > img {
+.plant-card figure > img {
   border-radius: 40px;
   padding: 20px;
   width: 100%;
@@ -24,7 +24,7 @@ figure > img {
   overflow: hidden;
 }
 
-figcaption {
+.plant-card figcaption {
   grid-template: 1fr 1fr 3fr/ 1fr;
   width: 100%;
   height: inherit;
@@ -32,12 +32,12 @@ figcaption {
   display: grid;
 }
 
-figcaption > hgroup {
+.plant-card figcaption > hgroup {
   height: 25vh;
   width: 100%;
 }
 
-figcaption > hgroup > h2 {
+.plant-card figcaption > hgroup > h2 {
   height: 50%;
   width: 100%;
   overflow: hidden;
@@ -45,7 +45,7 @@ figcaption > hgroup > h2 {
   font-size: 48px;
 }
 
-figcaption > hgroup > h3 {
+.plant-card figcaption > hgroup > h3 {
   font-size: var(--font-size-h3);
   font-style: italic;
   color: var(--secondary-font-color);
@@ -54,14 +54,14 @@ figcaption > hgroup > h3 {
   overflow: hidden;
 }
 
-.needsIcons {
+.plant-card .needsIcons {
   display: grid;
   grid-template: 1fr/ 1fr 1fr; /* 1 ligne, 2 colonnes (1 pour .watericons et 1 pour .sunIcons)*/
   height: 28vh;
   padding-top: 10px;
 }
 
-.needsIcons > div > ul {
+.plant-card .needsIcons > div > ul {
   width: 100%;
   display: flex;
   align-content: space-evenly;
@@ -73,45 +73,45 @@ figcaption > hgroup > h3 {
   height: 10vh;
 }
 
-.waterIcons {
+.plant-card .waterIcons {
   display: grid;
   grid-template: 1fr 1fr / 1fr; /* 2 lignes (1 pour .watericons>img et 1 pour .waterIcons>, 1 colonnes */
   gap: 10px;
   list-style: none;
 }
 
-.waterInstruction {
+.plant-card .waterInstruction {
   font-size: var(--font-size-text);
   overflow: hidden;
 }
-.waterIcons > li > img {
+.plant-card .waterIcons > li > img {
   width: 30px;
   height: auto;
 }
 
-.sunIcons {
+.plant-card .sunIcons {
   display: flex;
   gap: 10px;
   list-style: none;
 }
 
-.sunInstruction {
+.plant-card .sunInstruction {
   font-size: var(--font-size-text);
   overflow: hidden;
 }
-.sunIcons > li > img {
+.plant-card .sunIcons > li > img {
   width: 60px;
   height: auto;
 }
 
-figcaption > div {
+.plant-card figcaption > div {
   height: 30vh;
 }
 
-figcaption > div > h3 {
+.plant-card figcaption > div > h3 {
   font-size: var(--font-size-h3);
 }
 
-figcaption > div > p {
+.plant-card figcaption > div > p {
   font-size: var(--font-size-text);
 }

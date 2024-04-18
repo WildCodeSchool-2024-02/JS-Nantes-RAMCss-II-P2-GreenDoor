@@ -1,4 +1,5 @@
 import { useParams } from "react-router-dom";
+// import plants from "../plants.json";
 
 function Results() {
   const { answers } = useParams();

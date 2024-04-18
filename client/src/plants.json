@@ -687,9 +687,9 @@
     "commonNameFr": "Phidendron à feuille de cœur, Philodendron cordatum",
     "pruning": "prune if needed",
     "family": "Araceae",
-    "heightPotential": { 
-      "M" : "null", 
-      "CM" : "null" 
+    "heightPotential": {
+      "M": "null",
+      "CM": "null"
     },
     "origin": ["Central America"],
     "description": null,
@@ -1171,7 +1171,7 @@
     "commonNameFr": "Patte d'oie",
     "pruning": "prune if needed",
     "family": "Araceae",
-    "heightPotential": { "M" : "null", "CM" : "null" },
+    "heightPotential": { "M": "null", "CM": "null" },
     "origin": ["Cultivar"],
     "description": null,
     "temperatureMax": {
@@ -1405,7 +1405,7 @@
     "commonNameFr": null,
     "pruning": "prune if needed",
     "family": "Euphorbiaceae",
-    "heightPotential": { "M" : "null", "CM" : "null" },
+    "heightPotential": { "M": "null", "CM": "null" },
     "origin": ["South Africa"],
     "description": null,
     "temperatureMax": {
@@ -1996,7 +1996,7 @@
     "commonNameFr": null,
     "pruning": "prune if needed",
     "family": "Miliaceae",
-    "heightPotential": { "M" : "null", "CM" : "null" },
+    "heightPotential": { "M": "null", "CM": "null" },
     "origin": ["Zimbabwe"],
     "description": null,
     "temperatureMax": {
@@ -2050,7 +2050,7 @@
     "commonNameFr": "Pothos dor",
     "pruning": "prune if needed",
     "family": "Araceae",
-    "heightPotential": { "M" : "null", "CM" : "null" },
+    "heightPotential": { "M": "null", "CM": "null" },
     "origin": ["South Pacific"],
     "description": null,
     "temperatureMax": {
@@ -3358,7 +3358,7 @@
     "commonNameFr": "Queue d'âne",
     "pruning": "prune if needed",
     "family": "Crasssulaceae",
-    "heightPotential": { "M" : "null", "CM" : "null" },
+    "heightPotential": { "M": "null", "CM": "null" },
     "origin": ["Mexico"],
     "description": null,
     "temperatureMax": {
@@ -4072,7 +4072,7 @@
     "commonNameFr": "Queue d'âne",
     "pruning": "prune if needed",
     "family": "Crasssulaceae",
-    "heightPotential": { "M" : "null", "CM" : "null" },
+    "heightPotential": { "M": "null", "CM": "null" },
     "origin": ["Mexico"],
     "description": null,
     "temperatureMax": {
@@ -4303,7 +4303,7 @@
     "commonNameFr": "Guzmania",
     "pruning": "never prune",
     "family": "Bromeliaceae",
-    "heightPotential": { "M" : "null", "CM" : "null" },
+    "heightPotential": { "M": "null", "CM": "null" },
     "origin": ["Cultivar"],
     "description": null,
     "temperatureMax": {
