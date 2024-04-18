@@ -60,7 +60,7 @@
   background-color: transparent;
   border: none;
   transition-duration: 0.2s;
-  transition-property: transform;
+  transition-property: transform; /*Pas sur que la ligne soit utile */
 }
 
 .filters-tutorial button:hover {

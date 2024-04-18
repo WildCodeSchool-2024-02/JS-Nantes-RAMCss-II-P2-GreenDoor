@@ -1,0 +1,117 @@
+article {
+  background-color: var(--background-color);
+  color: black;
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+}
+
+figure {
+  font-family: "Champagne-Limousines";
+  background-color: var(--fore-ground-color);
+  border-radius: 20px;
+  width: 100%;
+  height: 90vh;
+  display: grid;
+  grid-template: 1fr / 2fr 3fr;
+}
+
+figure > img {
+  border-radius: 40px;
+  padding: 20px;
+  width: 100%;
+  height: inherit;
+  overflow: hidden;
+}
+
+figcaption {
+  grid-template: 1fr 1fr 3fr/ 1fr;
+  width: 100%;
+  height: inherit;
+  padding: 20px 40px;
+  display: grid;
+}
+
+figcaption > hgroup {
+  height: 25vh;
+  width: 100%;
+}
+
+figcaption > hgroup > h2 {
+  height: 50%;
+  width: 100%;
+  overflow: hidden;
+  font-weight: bold;
+  font-size: 48px;
+}
+
+figcaption > hgroup > h3 {
+  font-size: var(--font-size-h3);
+  font-style: italic;
+  color: var(--secondary-font-color);
+  height: 50%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.needsIcons {
+  display: grid;
+  grid-template: 1fr/ 1fr 1fr; /* 1 ligne, 2 colonnes (1 pour .watericons et 1 pour .sunIcons)*/
+  height: 28vh;
+  padding-top: 10px;
+}
+
+.needsIcons > div > ul {
+  width: 100%;
+  display: flex;
+  align-content: space-evenly;
+  align-items: center;
+  list-style: none;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  height: 10vh;
+}
+
+.waterIcons {
+  display: grid;
+  grid-template: 1fr 1fr / 1fr; /* 2 lignes (1 pour .watericons>img et 1 pour .waterIcons>, 1 colonnes */
+  gap: 10px;
+  list-style: none;
+}
+
+.waterInstruction {
+  font-size: var(--font-size-text);
+  overflow: hidden;
+}
+.waterIcons > li > img {
+  width: 30px;
+  height: auto;
+}
+
+.sunIcons {
+  display: flex;
+  gap: 10px;
+  list-style: none;
+}
+
+.sunInstruction {
+  font-size: var(--font-size-text);
+  overflow: hidden;
+}
+.sunIcons > li > img {
+  width: 60px;
+  height: auto;
+}
+
+figcaption > div {
+  height: 30vh;
+}
+
+figcaption > div > h3 {
+  font-size: var(--font-size-h3);
+}
+
+figcaption > div > p {
+  font-size: var(--font-size-text);
+}
