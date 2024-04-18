@@ -49,7 +49,11 @@ function Results() {
         // const sunlightCriteria = answers[4];
 
         // For north or east-oriented rooms, whatever the light they get
-        if (roomOrientationCriteria === 0 || roomOrientationCriteria === 0) {
+        if (
+          (roomOrientationCriteria === "0" ||
+            roomOrientationCriteria === "2") &&
+          plant.lightIdeal.includes("Full sun")
+        ) {
           plantFitsCriteria = false;
         }
 
