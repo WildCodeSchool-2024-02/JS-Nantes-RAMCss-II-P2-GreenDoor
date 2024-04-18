@@ -1,9 +1,12 @@
 import Header from "../components/Header";
 import FiltersTutorial from "../components/FiltersTutorial";
 import PlantCards from "../components/PlantCards";
+import Footer from "../components/Footer";
+
+import plants from "../plants.json";
 import waterIconInactive from "../assets/icons/WaterGrey.png";
 import waterIconActive from "../assets/icons/WaterBlue.png";
-import plants from "../plants.json";
+
 
 function Home() {
   return (
@@ -30,6 +33,7 @@ function Home() {
           lightTolered={el.lightTolered}
         />
       ))}
+      <Footer />
     </main>
   );
 }
