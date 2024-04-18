@@ -55,6 +55,12 @@ function Results() {
           plant.lightIdeal.includes("Full sun")
         ) {
           plantFitsCriteria = false;
+          // for south oriented plants, and those that tolerate only "strong" light conditions
+        } else if (
+          roomOrientationCriteria === "1" &&
+          (plant.lightTolered ? plant.lightTolered.includes("Diffuse") : true)
+        ) {
+          plantFitsCriteria = false;
         }
 
         return plantFitsCriteria;
