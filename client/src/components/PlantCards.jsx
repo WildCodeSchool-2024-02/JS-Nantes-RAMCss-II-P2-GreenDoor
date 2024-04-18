@@ -52,7 +52,11 @@ function PlantCard({
               and {temperatureMax} °C
             </p>
             <p>
-              Main diseases : {disease} - Main pest : {insects}
+              Main diseases :{" "}
+              {disease === "N/A" ? "No known diseases" : disease} - Main pest :{" "}
+              {insects.join("") === "N/A"
+                ? "No known vulnerability"
+                : insects.join(", ")}
             </p>
             {/* ne pas afficher les message si contenu = N/A */}
           </div>
