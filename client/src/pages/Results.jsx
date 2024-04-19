@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import PlantCards from "../components/PlantCards";
+import Footer from "../components/Footer";
 import plants from "../plants.json";
 import waterIconInactive from "../assets/icons/WaterGrey.png";
 import waterIconActive from "../assets/icons/WaterBlue.png";
@@ -98,6 +99,7 @@ function Results() {
           />
         ))}
       </section>
+      <Footer />
     </>
   );
 }
