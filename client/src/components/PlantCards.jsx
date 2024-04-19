@@ -23,11 +23,7 @@ function PlantCard({
   compactDisplay,
 }) {
   return (
-    <article
-      className={
-        compactDisplay ? "plant-card compact-plant-card" : "plant-card"
-      }
-    >
+    <article className={compactDisplay ? "compact-plant-card" : "plant-card"}>
       <figure>
         <section className="img-section">
           <img src={img} alt={commonName} />
