@@ -40,9 +40,9 @@ function scrollFunction() {
     document.body.scrollTop > 800 ||
     document.documentElement.scrollTop > 800
   ) {
-    stickyFilter.style.display = "block"; // Afficher l'élément lorsque le défilement dépasse 1600 pixels
+    stickyFilter.style.display = "block"; // Afficher l'élément lorsque le défilement dépasse 800 pixels
   } else {
-    stickyFilter.style.display = "none"; // Masquer l'élément lorsque le défilement est inférieur à 1600 pixels
+    stickyFilter.style.display = "none"; // Masquer l'élément lorsque le défilement est inférieur à 800 pixels
   }
 }
 
