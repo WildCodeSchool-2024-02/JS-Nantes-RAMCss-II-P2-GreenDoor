@@ -56,14 +56,14 @@
   margin: 0;
 }
 
-.plant-card .needsIcons {
+.plant-card .needs-icons {
   display: grid;
   grid-template: 1fr/ 1fr 1fr; /* 1 ligne, 2 colonnes (1 pour .watericons et 1 pour .sunIcons)*/
   height: 28vh;
   padding-top: 10px;
 }
 
-.plant-card .needsIcons > div > ul {
+.plant-card .needs-icons > div > ul {
   width: 100%;
   display: flex;
   align-content: space-evenly;
@@ -122,4 +122,10 @@
 
 .waterInstruction {
   padding-right: 24px;
+}
+
+/* COMPACTED VIEW */
+.compact-plant-card > figure > figcaption > div,
+.needs-icons > div > p {
+  display: none;
 }

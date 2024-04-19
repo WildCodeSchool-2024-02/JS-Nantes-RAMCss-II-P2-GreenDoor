@@ -20,9 +20,14 @@ function PlantCard({
   waterIconInactive,
   lightIconActive,
   lightIconInactive,
+  compactDisplay,
 }) {
   return (
-    <article className="plant-card">
+    <article
+      className={
+        compactDisplay ? "plant-card compact-plant-card" : "plant-card"
+      }
+    >
       <figure>
         <img src={img} alt={commonName} />
         <figcaption>
@@ -30,7 +35,7 @@ function PlantCard({
             <h2>{commonName}</h2>
             <h3>{latinName}</h3>
           </hgroup>
-          <section className="needsIcons">
+          <section className="needs-icons">
             <WaterNeeds
               watering={watering}
               iconActive={waterIconActive}
@@ -66,6 +71,10 @@ function PlantCard({
   );
 }
 
+PlantCard.defaultProps = {
+  compactDisplay: false,
+};
+
 PlantCard.propTypes = {
   img: PropTypes.string.isRequired,
   commonName: PropTypes.string.isRequired,
@@ -84,6 +93,7 @@ PlantCard.propTypes = {
   waterIconInactive: PropTypes.string.isRequired,
   lightIconActive: PropTypes.string.isRequired,
   lightIconInactive: PropTypes.string.isRequired,
+  compactDisplay: PropTypes.bool,
 };
 
 export default PlantCard;

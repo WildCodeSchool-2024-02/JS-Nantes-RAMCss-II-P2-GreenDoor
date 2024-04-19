@@ -93,6 +93,7 @@ function Results() {
           lightIconInactive={lightIconInactive}
           lightIdeal={el.lightIdeal}
           lightTolered={el.lightTolered}
+          compactDisplay
         />
       ))}
     </>
