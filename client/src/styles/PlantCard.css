@@ -136,6 +136,11 @@
 
 /* COMPACTED VIEW */
 .compact-plant-card > figure > figcaption > div,
-.needs-icons > div > p {
+.compact-plant-card > figure .needs-icons > div > p,
+.compact-plant-card h3 {
   display: none;
+}
+
+.compact-plant-card figure .img-section {
+  aspect-ratio: 1;
 }

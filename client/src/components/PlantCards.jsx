@@ -1,7 +1,6 @@
 import PropTypes from "prop-types";
 import WaterNeeds from "./WaterNeeds";
 import LightNeeds from "./LightNeeds";
-import LikeIcon from "./LikeIcon";
 
 function PlantCard({
   img,
@@ -67,7 +66,6 @@ function PlantCard({
                 ? "No known vulnerability"
                 : insects.join(", ")}
             </p>
-            <LikeIcon />
           </div>
         </figcaption>
       </figure>
