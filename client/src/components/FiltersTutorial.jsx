@@ -4,7 +4,7 @@ import waterIconInactive from "../assets/icons/WaterGrey.png";
 import waterIconActive from "../assets/icons/WaterBlue.png";
 import lightIconInactive from "../assets/icons/SunGrey.png";
 import lightIconActive from "../assets/icons/SunYellow.png";
-import "../styles/FiltersTutorial.css";
+// import "../styles/FiltersTutorial.css"; => déjà appelé dans Import.css
 
 function FiltersTutorial() {
   // these filters can have three values : 0,1 and 2.
