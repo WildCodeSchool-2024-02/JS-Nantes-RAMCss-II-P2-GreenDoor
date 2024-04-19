@@ -1,0 +1,125 @@
+.plant-card {
+  background-color: var(--background-color);
+  color: black;
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+}
+
+.plant-card figure {
+  font-family: "Champagne-Limousines";
+  background-color: var(--fore-ground-color);
+  border-radius: 20px;
+  width: 100%;
+  height: 90vh;
+  display: grid;
+  grid-template: 1fr / 2fr 3fr;
+}
+
+.plant-card figure > img {
+  border-radius: 40px;
+  padding: 20px;
+  width: 100%;
+  height: inherit;
+  overflow: hidden;
+}
+
+.plant-card figcaption {
+  grid-template: 1fr 1fr 3fr/ 1fr;
+  width: 100%;
+  height: inherit;
+  padding: 20px 40px;
+  display: grid;
+}
+
+.plant-card figcaption > hgroup {
+  height: 25vh;
+  width: 100%;
+}
+
+.plant-card figcaption > hgroup > h2 {
+  height: 50%;
+  width: 100%;
+  overflow: hidden;
+  font-weight: bold;
+  font-size: 48px;
+  margin: 0;
+}
+
+.plant-card figcaption > hgroup > h3 {
+  font-size: var(--font-size-h3);
+  font-style: italic;
+  color: var(--secondary-font-color);
+  height: 50%;
+  width: 100%;
+  overflow: hidden;
+  margin: 0;
+}
+
+.plant-card .needsIcons {
+  display: grid;
+  grid-template: 1fr/ 1fr 1fr; /* 1 ligne, 2 colonnes (1 pour .watericons et 1 pour .sunIcons)*/
+  height: 28vh;
+  padding-top: 10px;
+}
+
+.plant-card .needsIcons > div > ul {
+  width: 100%;
+  display: flex;
+  align-content: space-evenly;
+  align-items: center;
+  list-style: none;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  height: 10vh;
+}
+
+.plant-card .waterIcons {
+  display: grid;
+  grid-template: 1fr 1fr / 1fr; /* 2 lignes (1 pour .watericons>img et 1 pour .waterIcons>, 1 colonnes */
+  gap: 10px;
+  list-style: none;
+}
+
+.plant-card .waterInstruction {
+  font-size: var(--font-size-text);
+  overflow: hidden;
+}
+.plant-card .waterIcons > li > img {
+  width: 30px;
+  height: auto;
+}
+
+.plant-card .sunIcons {
+  display: flex;
+  gap: 10px;
+  list-style: none;
+}
+
+.plant-card .sunInstruction {
+  font-size: var(--font-size-text);
+  overflow: hidden;
+}
+.plant-card .sunIcons > li > img {
+  width: 60px;
+  height: auto;
+}
+
+.plant-card figcaption > div {
+  height: 30vh;
+}
+
+.plant-card figcaption > div > h3 {
+  font-size: var(--font-size-h3);
+}
+
+.plant-card figcaption div p {
+  font-size: var(--font-size-text);
+  font-family: var(--font-family-body);
+  color: var(--secondary-font-color);
+}
+
+.waterInstruction {
+  padding-right: 24px;
+}
