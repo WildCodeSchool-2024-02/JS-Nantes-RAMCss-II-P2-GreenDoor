@@ -21,13 +21,11 @@
 }
 
 .plant-card figure .img-section {
-  border: solid black 1px;
   border-radius: 20px;
   margin: 40px 35px;
   overflow: hidden;
 }
 .plant-card figure .img-section > img {
-  border: solid black 1px;
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -135,6 +133,7 @@
 }
 
 /* COMPACTED VIEW */
+
 .compact-plant-card > figure > figcaption > div,
 .compact-plant-card > figure .needs-icons > div > p,
 .compact-plant-card h3 {
@@ -142,5 +141,41 @@
 }
 
 .compact-plant-card figure .img-section {
+  --diameter: 256px;
+  width: var(--diameter);
+  border-radius: calc(var(--diameter) / 2);
   aspect-ratio: 1;
+}
+
+.compact-plant-card {
+  width: 100%;
+  padding: 0px;
+}
+
+.compact-cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  background-color: var(--background-color);
+  --gap: 32px;
+  gap: var(--gap);
+  padding: 0 var(--gap) var(--gap) var(--gap);
+}
+
+.compact-plant-card figure {
+  height: 320px;
+}
+
+.compact-plant-card > figure > figcaption {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.compact-plant-card > figure > figcaption > hgroup {
+  height: auto;
+}
+
+.compact-plant-card > figure > figcaption > .needs-icons {
+  grid-template: 1fr 1fr / 1fr;
+  height: auto;
 }

@@ -73,29 +73,31 @@ function Results() {
       <hgroup className="results-header">
         <h1>Here are the plants that match your criteria</h1>
       </hgroup>
-      {suitablePlants.map((el) => (
-        <PlantCards
-          key={el.id}
-          img={el.img}
-          commonName={el.commonName}
-          latinName={el.latinName}
-          watering={el.watering}
-          growth={el.growth}
-          heightPotential={el.heightPotential.CM}
-          pruning={el.pruning}
-          temperatureMax={el.temperatureMax.C}
-          temperatureMin={el.temperatureMin.C}
-          disease={el.disease}
-          insects={el.insects}
-          waterIconActive={waterIconActive}
-          waterIconInactive={waterIconInactive}
-          lightIconActive={lightIconActive}
-          lightIconInactive={lightIconInactive}
-          lightIdeal={el.lightIdeal}
-          lightTolered={el.lightTolered}
-          compactDisplay
-        />
-      ))}
+      <section className="compact-cards-container">
+        {suitablePlants.map((el) => (
+          <PlantCards
+            key={el.id}
+            img={el.img}
+            commonName={el.commonName}
+            latinName={el.latinName}
+            watering={el.watering}
+            growth={el.growth}
+            heightPotential={el.heightPotential.CM}
+            pruning={el.pruning}
+            temperatureMax={el.temperatureMax.C}
+            temperatureMin={el.temperatureMin.C}
+            disease={el.disease}
+            insects={el.insects}
+            waterIconActive={waterIconActive}
+            waterIconInactive={waterIconInactive}
+            lightIconActive={lightIconActive}
+            lightIconInactive={lightIconInactive}
+            lightIdeal={el.lightIdeal}
+            lightTolered={el.lightTolered}
+            compactDisplay
+          />
+        ))}
+      </section>
     </>
   );
 }
