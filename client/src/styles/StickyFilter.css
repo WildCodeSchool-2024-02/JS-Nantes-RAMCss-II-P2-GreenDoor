@@ -21,9 +21,3 @@
   width: 36px;
   height: 52px;
 }
-
-@media (min-height: 1600px) {
-  #sticky-filter {
-    display: block;
-  }
-}
