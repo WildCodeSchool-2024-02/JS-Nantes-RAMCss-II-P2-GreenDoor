@@ -1,3 +1,4 @@
+import { useState } from "react";
 import PropTypes from "prop-types";
 import WaterNeeds from "./WaterNeeds";
 import LightNeeds from "./LightNeeds";
@@ -22,6 +23,8 @@ function PlantCard({
   lightIconActive,
   lightIconInactive,
 }) {
+  const [like, setlike] = useState(false);
+
   return (
     <article className="plant-card">
       <figure>
@@ -56,9 +59,13 @@ function PlantCard({
               and {temperatureMax} °C
             </p>
             <p>
-              Main diseases : {disease} - Main pest : {insects}
+              Main diseases :{" "}
+              {disease === "N/A" ? "No known diseases" : disease} - Main pest :{" "}
+              {insects.join("") === "N/A"
+                ? "No known vulnerability"
+                : insects.join(", ")}
             </p>
-            <LikeIcon />
+            <LikeIcon setlike={setlike} like={like} />
           </div>
         </figcaption>
       </figure>

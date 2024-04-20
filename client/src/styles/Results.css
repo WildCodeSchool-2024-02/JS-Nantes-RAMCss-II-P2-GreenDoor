@@ -1,0 +1,15 @@
+.results-header > h1 {
+  color: black;
+  font-family: var(--font-family-title);
+  font-weight: bold;
+  font-size: 64px;
+  text-align: center;
+}
+
+.results-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 20vh;
+  background-color: var(--background-color);
+}

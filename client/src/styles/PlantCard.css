@@ -7,7 +7,7 @@
   color: black;
   display: flex;
   justify-content: center;
-  padding: 40px;
+  padding: 20px 20px;
 }
 
 .plant-card figure {
@@ -25,7 +25,9 @@
   border-radius: 20px;
   margin: 40px 35px;
   overflow: hidden;
+  aspect-ratio: 1;
 }
+
 .plant-card figure .img-section > img {
   border: solid black 1px;
   width: 100%;

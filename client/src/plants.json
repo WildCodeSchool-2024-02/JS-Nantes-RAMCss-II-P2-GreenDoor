@@ -3331,60 +3331,6 @@
     "climat": "Subtropical"
   },
   {
-    "categories": "Hanging",
-    "disease": "N/A",
-    "img": "http://www.tropicopia.com/house-plant/thumbnails/5756.jpg",
-    "use": ["Hanging", "Tertiary"],
-    "latinName": "Sedum morganianum",
-    "insects": ["Mealy bug"],
-    "avaibility": "Regular",
-    "style": null,
-    "bearing": "Creeping",
-    "lightTolered": "Strong light ( 21,500 to 3,200 lux/2000 to 300 fc)",
-    "heightAtPurchase": {
-      "M": 0.25,
-      "CM": 25
-    },
-    "lightIdeal": "Full sun (+21,500 lux /+2000 fc )",
-    "widthAtPurchase": {
-      "M": 0.15,
-      "CM": 15
-    },
-    "id": "05824fb3-8e00-594f-abce-c82580960cd9",
-    "appeal": "Color",
-    "perfume": null,
-    "growth": "slow",
-    "widthPotential": null,
-    "commonNameFr": "Queue d'âne",
-    "pruning": "prune if needed",
-    "family": "Crasssulaceae",
-    "heightPotential": { "M": "null", "CM": "null" },
-    "origin": ["Mexico"],
-    "description": null,
-    "temperatureMax": {
-      "F": 95,
-      "C": 35
-    },
-    "bloomingSeason": "do not bloom",
-    "url": "http://www.tropicopia.com/house-plant/detail.np/detail-321.html",
-    "colorOfLeaf": ["Light green"],
-    "watering": "Must dry between watering & Water only when dry",
-    "colorOfBlooms": null,
-    "zone": ["11", "9"],
-    "commonName": ["Burro-tail"],
-    "availableSizesPot": "4in to 8in / 10cm to 20cm",
-    "otherNames": null,
-    "temperatureMin": {
-      "F": 46.4,
-      "C": 8
-    },
-    "potDiameterCm": {
-      "M": 0.15,
-      "CM": 15
-    },
-    "climat": "Arid Tropical"
-  },
-  {
     "categories": "Aglaonema",
     "disease": "Phytophtora , Crown rot",
     "img": "http://www.tropicopia.com/house-plant/thumbnails/5450.jpg",
