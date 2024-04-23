@@ -22,56 +22,65 @@ function PlantCard({
   waterIconInactive,
   lightIconActive,
   lightIconInactive,
+  compactDisplay,
 }) {
   const [likeIcon, setLikeIcon] = useState(false);
 
-  return (
-    <article className="plant-card">
-      <figure>
-        <section className="img-section">
-          <img src={img} alt={commonName} />
-        </section>
-
-        <figcaption>
-          <hgroup>
-            <h2>{commonName}</h2>
-            <h3>{latinName}</h3>
-          </hgroup>
-          <section className="needsIcons">
-            <WaterNeeds
-              watering={watering}
-              iconActive={waterIconActive}
-              iconInactive={waterIconInactive}
-            />
-
-            <LightNeeds
-              lightIdeal={lightIdeal}
-              lightTolered={lightTolered}
-              iconActive={lightIconActive}
-              iconInactive={lightIconInactive}
-            />
+  if (commonName)
+    return (
+      <article className={compactDisplay ? "compact-plant-card" : "plant-card"}>
+        <figure>
+          <section className="img-section">
+            <img src={img} alt={commonName} />
           </section>
-          <div>
-            <h3>Entretien :</h3>
-            <p>
-              Plant with {growth} growth, can reach an average size of{" "}
-              {heightPotential} cm, {pruning}, keep between {temperatureMin} °C
-              and {temperatureMax} °C
-            </p>
-            <p>
-              Main diseases :{" "}
-              {disease === "N/A" ? "No known diseases" : disease} - Main pest :{" "}
-              {insects.join("") === "N/A"
-                ? "No known vulnerability"
-                : insects.join(", ")}
-            </p>
-            <LikeIcon setLikeIcon={setLikeIcon} likeIcon={likeIcon} />
-          </div>
-        </figcaption>
-      </figure>
-    </article>
-  );
+
+          <figcaption>
+            <hgroup>
+              <h2>
+                {typeof commonName === "string" ? commonName : commonName[0]}
+              </h2>
+              <h3>{latinName}</h3>
+            </hgroup>
+            <section className="needs-icons">
+              <WaterNeeds
+                watering={watering}
+                iconActive={waterIconActive}
+                iconInactive={waterIconInactive}
+              />
+
+              <LightNeeds
+                lightIdeal={lightIdeal}
+                lightTolered={lightTolered}
+                iconActive={lightIconActive}
+                iconInactive={lightIconInactive}
+              />
+            </section>
+            <div>
+              <h3>Entretien :</h3>
+              <p>
+                Plant with {growth} growth, can reach an average size of{" "}
+                {heightPotential} cm, {pruning}, keep between {temperatureMin}{" "}
+                °C and {temperatureMax} °C
+              </p>
+              <p>
+                Main diseases :{" "}
+                {disease === "N/A" ? "No known diseases" : disease} - Main pest
+                :{" "}
+                {insects.join("") === "N/A"
+                  ? "No known vulnerability"
+                  : insects.join(", ")}
+              </p>
+              <LikeIcon setLikeIcon={setLikeIcon} likeIcon={likeIcon} />
+            </div>
+          </figcaption>
+        </figure>
+      </article>
+    );
 }
+
+PlantCard.defaultProps = {
+  compactDisplay: false,
+};
 
 PlantCard.propTypes = {
   img: PropTypes.string.isRequired,
@@ -91,6 +100,7 @@ PlantCard.propTypes = {
   waterIconInactive: PropTypes.string.isRequired,
   lightIconActive: PropTypes.string.isRequired,
   lightIconInactive: PropTypes.string.isRequired,
+  compactDisplay: PropTypes.bool,
 };
 
 export default PlantCard;
