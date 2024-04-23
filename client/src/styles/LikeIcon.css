@@ -1,0 +1,11 @@
+.click-like-icon {
+  transform: translate(-170px, -20px);
+  background: none;
+  width: inherit;
+}
+
+#like-empty,
+#like-red {
+  width: 70px;
+  height: auto;
+}

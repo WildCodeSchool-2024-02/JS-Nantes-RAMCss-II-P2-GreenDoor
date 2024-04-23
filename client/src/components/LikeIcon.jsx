@@ -1,15 +1,34 @@
-// import "../styles/LikeIcon.css";
-// import { useState } from "react";
+import PropTypes from "prop-types";
 
-// function LikeIcon() {
-//   const [like, setlike] = useState(false);
+function LikeIcon({ likeIcon, setLikeIcon }) {
+  return (
+    <div>
+      <button
+        className="click-like-icon"
+        type="button"
+        onClick={() => setLikeIcon(() => !likeIcon)}
+      >
+        {likeIcon ? (
+          <img
+            id="like-red"
+            src="./src/assets/icons/HeartRed.png"
+            alt={likeIcon}
+          />
+        ) : (
+          <img
+            id="like-empty"
+            src="./src/assets/icons/HeartEmptyGray.png"
+            alt={likeIcon}
+          />
+        )}
+      </button>
+    </div>
+  );
+}
 
-//   return (
-//     <div>
-//       <button className = "click-like-icon" type="button" onClick ={() => setlike((like) => true)}>Like</button>
-//       <p className="truc">❣️</p>
-//     </div>
-//   );
-// }
+LikeIcon.propTypes = {
+  likeIcon: PropTypes.bool.isRequired,
+  setLikeIcon: PropTypes.bool.isRequired,
+};
 
-// export default LikeIcon;
+export default LikeIcon;

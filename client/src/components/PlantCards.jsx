@@ -1,6 +1,8 @@
+import { useState } from "react";
 import PropTypes from "prop-types";
 import WaterNeeds from "./WaterNeeds";
 import LightNeeds from "./LightNeeds";
+import LikeIcon from "./LikeIcon";
 
 function PlantCard({
   img,
@@ -22,6 +24,8 @@ function PlantCard({
   lightIconInactive,
   compactDisplay,
 }) {
+  const [likeIcon, setLikeIcon] = useState(false);
+
   if (commonName)
     return (
       <article className={compactDisplay ? "compact-plant-card" : "plant-card"}>
@@ -66,6 +70,7 @@ function PlantCard({
                   ? "No known vulnerability"
                   : insects.join(", ")}
               </p>
+              <LikeIcon setLikeIcon={setLikeIcon} likeIcon={likeIcon} />
             </div>
           </figcaption>
         </figure>
