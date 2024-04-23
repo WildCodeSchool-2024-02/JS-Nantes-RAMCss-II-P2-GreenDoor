@@ -2,10 +2,6 @@ import { NavLink } from "react-router-dom";
 import "../styles/Footer.css";
 
 function Footer() {
-  const handleClick = () => {
-    alert("Vous allez être redirigé sur la police Champagne&Limousines");
-  };
-
   const linkedinProfiles = [
     {
       name: "Alexis Guillon",
@@ -49,7 +45,6 @@ function Footer() {
             to="https://www.dafont.com/fr/champagne-limousines.font?text=greenDOOR&psize=l&back=theme"
             target="_blank"
             rel="noreferrer"
-            onClick={handleClick}
           >
             Champagne&Limousines
           </NavLink>
