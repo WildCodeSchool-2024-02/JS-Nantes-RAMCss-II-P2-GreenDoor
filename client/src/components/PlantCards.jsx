@@ -23,7 +23,7 @@ function PlantCard({
   lightIconActive,
   lightIconInactive,
 }) {
-  const [like, setlike] = useState(false);
+  const [likeIcon, setLikeIcon] = useState(false);
 
   return (
     <article className="plant-card">
@@ -65,7 +65,7 @@ function PlantCard({
                 ? "No known vulnerability"
                 : insects.join(", ")}
             </p>
-            <LikeIcon setlike={setlike} like={like} />
+            <LikeIcon setLikeIcon={setLikeIcon} likeIcon={likeIcon} />
           </div>
         </figcaption>
       </figure>

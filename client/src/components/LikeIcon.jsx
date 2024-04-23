@@ -17,7 +17,7 @@ function LikeIcon({ likeIcon, setLikeIcon }) {
         ) : (
           <img
             id="like-empty"
-            src="./src/assets/icons/HeartEmpty.png"
+            src="./src/assets/icons/HeartEmptyGray.png"
             alt={likeIcon}
           />
         )}
