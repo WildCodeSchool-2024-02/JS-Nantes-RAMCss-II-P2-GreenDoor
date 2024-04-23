@@ -1,9 +1,13 @@
+/* * {
+  border : solid black 2px;
+} */
+
 .plant-card {
   background-color: var(--background-color);
   color: black;
   display: flex;
   justify-content: center;
-  padding: 40px;
+  padding: 20px 20px;
 }
 
 .plant-card figure {
@@ -16,12 +20,19 @@
   grid-template: 1fr / 2fr 3fr;
 }
 
-.plant-card figure > img {
-  border-radius: 40px;
-  padding: 20px;
-  width: 100%;
-  height: inherit;
+.plant-card figure .img-section {
+  border: solid black 1px;
+  border-radius: 20px;
+  margin: 40px 35px;
   overflow: hidden;
+  aspect-ratio: 1;
+}
+
+.plant-card figure .img-section > img {
+  border: solid black 1px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .plant-card figcaption {
@@ -86,6 +97,7 @@
   font-size: var(--font-size-text);
   overflow: hidden;
 }
+
 .plant-card .waterIcons > li > img {
   width: 30px;
   height: auto;
@@ -120,6 +132,6 @@
   color: var(--secondary-font-color);
 }
 
-.waterInstruction {
-  padding-right: 24px;
+.like-Icon {
+  transform: translate(-150px, 0px);
 }

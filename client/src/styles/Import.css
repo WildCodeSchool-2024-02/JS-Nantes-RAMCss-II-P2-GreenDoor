@@ -1,5 +1,12 @@
 @import "NavBar.css";
 @import "PlantCard.css";
+@import "Footer.css";
+@import "Header.css";
+@import "Quizz.css";
+@import "FiltersTutorial.css";
+@import "QuizzProgressBar";
+@import "LikeIcon.css";
+
 @import "Results.css";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 

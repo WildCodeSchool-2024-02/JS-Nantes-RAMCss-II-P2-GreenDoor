@@ -1,6 +1,8 @@
+import { useState } from "react";
 import PropTypes from "prop-types";
 import WaterNeeds from "./WaterNeeds";
 import LightNeeds from "./LightNeeds";
+import LikeIcon from "./LikeIcon";
 
 function PlantCard({
   img,
@@ -21,10 +23,15 @@ function PlantCard({
   lightIconActive,
   lightIconInactive,
 }) {
+  const [likeIcon, setLikeIcon] = useState(false);
+
   return (
     <article className="plant-card">
       <figure>
-        <img src={img} alt={commonName} />
+        <section className="img-section">
+          <img src={img} alt={commonName} />
+        </section>
+
         <figcaption>
           <hgroup>
             <h2>{commonName}</h2>
@@ -58,7 +65,7 @@ function PlantCard({
                 ? "No known vulnerability"
                 : insects.join(", ")}
             </p>
-            {/* ne pas afficher les message si contenu = N/A */}
+            <LikeIcon setLikeIcon={setLikeIcon} likeIcon={likeIcon} />
           </div>
         </figcaption>
       </figure>
