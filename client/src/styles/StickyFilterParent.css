@@ -1,52 +1,41 @@
-.sticky-filters-parent ul {
-  /* list-style-type: none;
-  background-color: var(--dark-color);
-  display: flex;
-  border-radius: 100px; */
-  width: 75%;
-  display: flex;
-  align-content: space-evenly;
-  align-items: center;
-  list-style: none;
-  border: 0;
-  margin: 0;
-  padding: 0;
-  height: 11vh;
-  margin-left: 1vw;
-}
-
 .sticky-filters-parent {
-  border: 1px solid black;
   background-color: var(--dark-color);
-  display: flex;
-  justify-content: center;
+  height: 64px;
   justify-content: space-between;
   align-items: center;
   border-radius: 100px;
   position: fixed;
-  bottom: 0;
-  right: 0;
-  box-sizing: border-box;
-  width: 35vw;
-  height: 9vh;
+  bottom: 32px;
+  right: 32px;
+  width: 360px;
 }
 
-.sticky-filters-parent ul li button img {
-  /* display: flex;
-  box-sizing: border-box;
-  width: 36px;
-  height: 52px; */
-  /* width: 100%;
-  height: 100%; */
-  /* width: 100%; */
-  /* height: 100%; */
+.sticky-filters-parent div ul {
+  display: flex;
+  list-style: none;
+}
+
+.visible {
+  display: flex;
+}
+
+.hidden {
+  display: none;
+}
+
+.sticky-filters-parent ul li img {
   background-color: var(--dark-color);
-  border: none;
   height: min(5vh, 3vw);
 }
 
 .sticky-filters-parent ul li button {
-  background-color: var(--dark-color);
+  background-color: transparent;
+  cursor: pointer;
+  padding-right: 8px;
+}
+
+.sticky-filters-parent ul li button img {
+  display: flex;
 }
 
 .sticky-filters-parent button:hover {

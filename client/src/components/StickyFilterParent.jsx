@@ -1,3 +1,4 @@
+import { useState, useEffect } from "react";
 import PropTypes from "prop-types";
 import StickyFilter from "./StickyFilter";
 import "../styles/StickyFilterParent.css";
@@ -12,6 +13,25 @@ function StickyFilterParent({
   lightIconActive,
   lightIconInactive,
 }) {
+  const [isVisible, setIsvisible] = useState(false);
+  const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 500 && window.scrollY < maxScroll - 500) {
+        setIsvisible(true);
+      } else {
+        setIsvisible(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [maxScroll]);
+
   const waterFiltersDescriptions = [
     "Little need for water",
     "Average need for water",
@@ -24,7 +44,9 @@ function StickyFilterParent({
   ];
 
   return (
-    <section className="sticky-filters-parent">
+    <section
+      className={`sticky-filters-parent ${isVisible ? "visible" : "hidden"}`}
+    >
       <StickyFilter
         filtersDescriptions={waterFiltersDescriptions}
         iconActive={waterIconActive}
