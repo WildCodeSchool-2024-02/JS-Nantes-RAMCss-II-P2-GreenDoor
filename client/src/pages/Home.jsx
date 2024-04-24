@@ -3,6 +3,7 @@ import Header from "../components/Header";
 import FiltersTutorial from "../components/FiltersTutorial";
 import StickyFilterParent from "../components/StickyFilterParent";
 import PlantCards from "../components/PlantCards";
+import QuizzRedirection from "../components/QuizzRedirection";
 import Footer from "../components/Footer";
 
 import plants from "../plants.json";
@@ -60,6 +61,7 @@ function Home() {
           lightTolered={el.lightTolered}
         />
       ))}
+      <QuizzRedirection />
       <Footer />
     </main>
   );

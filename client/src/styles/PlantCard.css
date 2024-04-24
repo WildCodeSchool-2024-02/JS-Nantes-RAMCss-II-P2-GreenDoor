@@ -1,9 +1,13 @@
+/* * {
+  border : solid black 2px;
+} */
+
 .plant-card {
   background-color: var(--background-color);
   color: black;
   display: flex;
   justify-content: center;
-  padding: 40px;
+  padding: 20px 20px;
 }
 
 .plant-card figure {
@@ -16,12 +20,17 @@
   grid-template: 1fr / 2fr 3fr;
 }
 
-.plant-card figure > img {
-  border-radius: 40px;
-  padding: 20px;
-  width: 100%;
-  height: inherit;
+.plant-card figure .img-section {
+  border-radius: 20px;
+  margin: 40px 35px;
   overflow: hidden;
+  aspect-ratio: 1;
+}
+.plant-card figure .img-section > img,
+.compact-plant-card figure .img-section > img {
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
 }
 
 .plant-card figcaption {
@@ -56,14 +65,15 @@
   margin: 0;
 }
 
-.plant-card .needsIcons {
+.plant-card .needs-icons {
   display: grid;
   grid-template: 1fr/ 1fr 1fr; /* 1 ligne, 2 colonnes (1 pour .watericons et 1 pour .sunIcons)*/
   height: 28vh;
   padding-top: 10px;
 }
 
-.plant-card .needsIcons > div > ul {
+.plant-card .needs-icons > div > ul,
+.compact-plant-card .needs-icons > div > ul {
   width: 100%;
   display: flex;
   align-content: space-evenly;
@@ -75,7 +85,8 @@
   height: 10vh;
 }
 
-.plant-card .waterIcons {
+.plant-card .waterIcons,
+.compact-plant-card .waterIcons {
   display: grid;
   grid-template: 1fr 1fr / 1fr; /* 2 lignes (1 pour .watericons>img et 1 pour .waterIcons>, 1 colonnes */
   gap: 10px;
@@ -86,6 +97,7 @@
   font-size: var(--font-size-text);
   overflow: hidden;
 }
+
 .plant-card .waterIcons > li > img {
   width: 30px;
   height: auto;
@@ -120,6 +132,75 @@
   color: var(--secondary-font-color);
 }
 
-.waterInstruction {
-  padding-right: 24px;
+.like-Icon {
+  transform: translate(-150px, 0px);
+}
+
+/* COMPACTED VIEW */
+
+.compact-plant-card > figure > figcaption > div,
+.compact-plant-card > figure .needs-icons > div > p,
+.compact-plant-card h3 {
+  display: none;
+}
+
+.compact-plant-card figure .img-section {
+  --diameter: 256px;
+  width: var(--diameter);
+  border-radius: calc(var(--diameter) / 2);
+  overflow: hidden;
+  aspect-ratio: 1;
+}
+
+.compact-plant-card {
+  width: 100%;
+  padding: 0px;
+  background-color: var(--background-color);
+  color: black;
+  display: flex;
+  justify-content: center;
+}
+
+.compact-cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  background-color: var(--background-color);
+  --gap: 32px;
+  gap: var(--gap);
+  padding: 0 var(--gap) var(--gap) var(--gap);
+}
+
+.compact-plant-card figure {
+  font-family: "Champagne-Limousines";
+  background-color: var(--fore-ground-color);
+  border-radius: 20px;
+  width: 100%;
+  display: flex;
+  gap: 32px;
+  padding: 32px;
+}
+
+.compact-plant-card > figure > figcaption {
+  height: 100%;
+  display: grid;
+  flex-direction: column;
+}
+
+.compact-plant-card > figure > figcaption > hgroup {
+  height: auto;
+}
+
+.compact-plant-card > figure > figcaption > .needs-icons {
+  display: grid;
+  grid-template: 1fr 1fr / 1fr;
+}
+
+.compact-plant-card h2 {
+  height: 100%;
+  color: black;
+}
+
+.compact-plant-card ul > li > img {
+  height: 64px;
+  width: auto;
 }

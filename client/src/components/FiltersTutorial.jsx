@@ -1,7 +1,10 @@
 // import { useState } from "react";
 import PropTypes from "prop-types";
 import ExplicitFilter from "./ExplicitFilter";
-import "../styles/FiltersTutorial.css";
+// import waterIconInactive from "../assets/icons/WaterGrey.png";
+// import waterIconActive from "../assets/icons/WaterBlue.png";
+// import lightIconInactive from "../assets/icons/SunGrey.png";
+// import lightIconActive from "../assets/icons/SunYellow.png";
 
 function FiltersTutorial({
   waterFilter,

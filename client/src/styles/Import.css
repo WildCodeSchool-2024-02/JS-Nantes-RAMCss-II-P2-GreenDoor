@@ -1,6 +1,13 @@
 @import "NavBar.css";
 @import "PlantCard.css";
 @import "Results.css";
+@import "Footer.css";
+@import "Header.css";
+@import "Quizz.css";
+@import "FiltersTutorial.css";
+@import "QuizzProgressBar";
+@import "LikeIcon.css";
+
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
 /* Part about importing fonts : Champagne&Limousines for titles and Monsterra otherwise */

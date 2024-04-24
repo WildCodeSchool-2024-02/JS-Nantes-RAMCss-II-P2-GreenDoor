@@ -12,6 +12,7 @@ nav {
   background-color: #393e41;
   color: white;
   position: sticky;
+  z-index: 2;
   top: 0px;
   padding: 0px 10px;
 }
