@@ -31,7 +31,10 @@ function PlantCard({
       <article className={compactDisplay ? "compact-plant-card" : "plant-card"}>
         <figure>
           <section className="img-section">
-            <img src={img} alt={commonName} />
+            <figure className="img-frame">
+              <img src={img} alt={commonName} />
+            </figure>
+            <LikeIcon setLikeIcon={setLikeIcon} likeIcon={likeIcon} />
           </section>
 
           <figcaption>
@@ -56,7 +59,7 @@ function PlantCard({
               />
             </section>
             <div>
-              <h3>Entretien :</h3>
+              <h3>Care tips :</h3>
               <p>
                 Plant with {growth} growth, can reach an average size of{" "}
                 {heightPotential} cm, {pruning}, keep between {temperatureMin}{" "}
@@ -70,7 +73,6 @@ function PlantCard({
                   ? "No known vulnerability"
                   : insects.join(", ")}
               </p>
-              <LikeIcon setLikeIcon={setLikeIcon} likeIcon={likeIcon} />
             </div>
           </figcaption>
         </figure>
