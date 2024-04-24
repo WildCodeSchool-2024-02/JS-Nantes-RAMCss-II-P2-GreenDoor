@@ -1,4 +1,6 @@
 import PropTypes from "prop-types";
+import heartRed from "../assets/icons/HeartRed.png";
+import heartGrey from "../assets/icons/HeartEmptyGray.png";
 
 function LikeIcon({ likeIcon, setLikeIcon }) {
   return (
@@ -9,17 +11,9 @@ function LikeIcon({ likeIcon, setLikeIcon }) {
         onClick={() => setLikeIcon(() => !likeIcon)}
       >
         {likeIcon ? (
-          <img
-            id="like-red"
-            src="./src/assets/icons/HeartRed.png"
-            alt={likeIcon}
-          />
+          <img id="like-red" src={heartRed} alt={likeIcon} />
         ) : (
-          <img
-            id="like-empty"
-            src="./src/assets/icons/HeartEmptyGray.png"
-            alt={likeIcon}
-          />
+          <img id="like-empty" src={heartGrey} alt={likeIcon} />
         )}
       </button>
     </div>
