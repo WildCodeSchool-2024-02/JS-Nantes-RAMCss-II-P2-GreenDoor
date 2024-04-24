@@ -1,3 +1,4 @@
+// import { useState, useRef, useEffect } from "react";
 import Header from "../components/Header";
 import FiltersTutorial from "../components/FiltersTutorial";
 import PlantCards from "../components/PlantCards";
@@ -10,13 +11,36 @@ import waterIconActive from "../assets/icons/WaterBlue.png";
 import lightIconInactive from "../assets/icons/SunGrey.png";
 import lightIconActive from "../assets/icons/SunYellow.png";
 
+
 function Home() {
+
+  //   const [search, setSearch] = useState("");
+  //   const [plantSearch, setPlantSearch] = useState([])
+
+  //   const inputRef = useRef();
+
+  // function handleChange () {
+  //   setInput(inputRef.current.value)
+  // }
+
+  // useEffect(() => {
+  //   setPlantSearch(
+  //     plants.filter((input) =>
+  //       plants.some((search) => search.commonName === plants.commonName)
+  //     )
+  //   );
+  // }, []);
   return (
     <main>
-      <Header />
+      <Header 
+      // inputRef={inputRef}
+      // setSearch={setSearch} 
+      />
       <FiltersTutorial />
       <section className="cards-container">
-        {plants.map((el) => (
+        {plants
+        // .filter((el) => el.some ({search} === plants.commonName))
+        .map((el) => (
           <PlantCards
             key={el.id}
             img={el.img}
