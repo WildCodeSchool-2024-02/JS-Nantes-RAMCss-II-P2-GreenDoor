@@ -1,9 +1,9 @@
 import { useState } from "react";
 import Header from "../components/Header";
 import FiltersTutorial from "../components/FiltersTutorial";
+import StickyFilterParent from "../components/StickyFilterParent";
 import PlantCards from "../components/PlantCards";
 import Footer from "../components/Footer";
-import StickyFilter from "../components/StickyFilter";
 
 import plants from "../plants.json";
 import waterIconInactive from "../assets/icons/WaterGrey.png";
@@ -28,13 +28,15 @@ function Home() {
         lightIconActive={lightIconActive}
         lightIconInactive={lightIconInactive}
       />
-      <StickyFilter
-        filtersDescriptions={FiltersTutorial}
-        iconActive={waterIconActive}
-        iconInactive={waterIconInactive}
-        filter={waterFilter}
+      <StickyFilterParent
+        waterFilter={waterFilter}
+        setWaterFilter={setWaterFilter}
+        waterIconActive={waterIconActive}
+        waterIconInactive={waterIconInactive}
         lightFilter={lightFilter}
-        setFilter={setWaterFilter}
+        setLightFilter={setLightFilter}
+        lightIconActive={lightIconActive}
+        lightIconInactive={lightIconInactive}
       />
       {plants.map((el) => (
         <PlantCards

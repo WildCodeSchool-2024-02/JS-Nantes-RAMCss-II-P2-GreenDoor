@@ -1,5 +1,4 @@
 import PropTypes from "prop-types";
-import "../styles/StickyFilter.css";
 
 function StickyFilter({
   filtersDescriptions,
@@ -34,20 +33,20 @@ StickyFilter.propTypes = {
   setFilter: PropTypes.func.isRequired,
 };
 
-function scrollFunction() {
-  const stickyFilter = document.getElementById("sticky-filter");
-  if (
-    document.body.scrollTop > 800 ||
-    document.documentElement.scrollTop > 800
-  ) {
-    stickyFilter.style.display = "block"; // Afficher l'élément lorsque le défilement dépasse 800 pixels
-  } else {
-    stickyFilter.style.display = "none"; // Masquer l'élément lorsque le défilement est inférieur à 800 pixels
-  }
-}
+// function scrollFunction() {
+//   const stickyFilter = document.getElementById("sticky-filter");
+//   if (
+//     document.body.scrollTop > 800 ||
+//     document.documentElement.scrollTop > 800
+//   ) {
+//     stickyFilter.style.display = "block"; // Afficher l'élément lorsque le défilement dépasse 800 pixels
+//   } else {
+//     stickyFilter.style.display = "none"; // Masquer l'élément lorsque le défilement est inférieur à 800 pixels
+//   }
+// }
 
-window.onscroll = function () {
-  scrollFunction();
-};
+// window.onscroll = function () {
+//   scrollFunction();
+// };
 
 export default StickyFilter;
