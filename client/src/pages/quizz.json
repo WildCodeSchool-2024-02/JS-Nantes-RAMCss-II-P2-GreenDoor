@@ -4,16 +4,10 @@
     "question": "How often can you take care of your plants ?",
     "answers": ["Once a day", "Once a week", "Once a month", "Once a year"]
   },
-
   {
-    "topic": "Sunlight",
-    "question": "How much sunlight do you get in that room ?",
-    "answers": [
-      "I'm drowning in sunlight",
-      "A little bit of light",
-      "I'm a vampire",
-      "Skip question"
-    ]
+    "topic": "Toxicity",
+    "question": "Do you have children or pets that could chew on you plants ?",
+    "answers": ["Yes, they love to munch", "No plant eaters"]
   },
   {
     "topic": "Growth",
