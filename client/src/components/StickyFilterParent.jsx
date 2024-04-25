@@ -1,8 +1,9 @@
-// import { useState } from "react";
+import { useState, useEffect } from "react";
 import PropTypes from "prop-types";
-import ExplicitFilter from "./ExplicitFilter";
+import StickyFilter from "./StickyFilter";
+import "../styles/StickyFilterParent.css";
 
-function FiltersTutorial({
+function StickyFilterParent({
   waterFilter,
   setWaterFilter,
   waterIconActive,
@@ -12,9 +13,25 @@ function FiltersTutorial({
   lightIconActive,
   lightIconInactive,
 }) {
-  // these filters can have three values : 0,1 and 2.
+  const [isVisible, setIsvisible] = useState(true);
+  const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
 
-  // TODO : Ask Theo if he's okay to change the desciptions with "water me every now and then", "i need to be watered regularly","i need to be watered every couple of days" or smth
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 500 && window.scrollY < maxScroll - 500) {
+        setIsvisible(true);
+      } else {
+        setIsvisible(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [maxScroll]);
+
   const waterFiltersDescriptions = [
     "Little need for water",
     "Average need for water",
@@ -27,18 +44,17 @@ function FiltersTutorial({
   ];
 
   return (
-    <section className="filters-tutorial">
-      <h2>Filter by what the plant needs</h2>
-      <ExplicitFilter
-        title="Watering"
+    <section
+      className={`sticky-filters-parent ${isVisible ? "visible" : "hidden"}`}
+    >
+      <StickyFilter
         filtersDescriptions={waterFiltersDescriptions}
         iconActive={waterIconActive}
         iconInactive={waterIconInactive}
         filter={waterFilter}
         setFilter={setWaterFilter}
       />
-      <ExplicitFilter
-        title="Sunlight"
+      <StickyFilter
         filtersDescriptions={lightFiltersDescriptions}
         iconActive={lightIconActive}
         iconInactive={lightIconInactive}
@@ -49,7 +65,7 @@ function FiltersTutorial({
   );
 }
 
-FiltersTutorial.propTypes = {
+StickyFilterParent.propTypes = {
   waterFilter: PropTypes.number.isRequired,
   setWaterFilter: PropTypes.func.isRequired,
   waterIconActive: PropTypes.string.isRequired,
@@ -60,4 +76,4 @@ FiltersTutorial.propTypes = {
   lightIconInactive: PropTypes.string.isRequired,
 };
 
-export default FiltersTutorial;
+export default StickyFilterParent;
