@@ -2,6 +2,7 @@ import { useState } from "react";
 import Header from "../components/Header";
 import FiltersTutorial from "../components/FiltersTutorial";
 import StickyFilterParent from "../components/StickyFilterParent";
+import FilterApply from "../components/FilterApply";
 import PlantCards from "../components/PlantCards";
 import QuizzRedirection from "../components/QuizzRedirection";
 import Footer from "../components/Footer";
@@ -63,6 +64,7 @@ function Home() {
           />
         ))}
       </section>
+      <FilterApply />
       <QuizzRedirection />
       <Footer />
     </main>
