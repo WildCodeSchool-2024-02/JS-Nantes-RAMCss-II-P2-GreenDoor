@@ -5,10 +5,14 @@ import heartGrey from "../assets/icons/HeartEmptyGray.png";
 import { useLikedPlants } from "../contexts/LikedPlantsProvider";
 
 function LikeIcon({ plantId }) {
-  const { addToLikedPlants, isLiked } = useLikedPlants();
+  const { addToLikedPlants, removeFromLikedPlants, isLiked } = useLikedPlants();
 
   function handleClick() {
-    addToLikedPlants(plantId);
+    if (isLiked(plantId)) {
+      removeFromLikedPlants(plantId);
+    } else {
+      addToLikedPlants(plantId);
+    }
   }
 
   return (

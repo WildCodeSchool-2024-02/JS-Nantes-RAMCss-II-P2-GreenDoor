@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useLikedPlants } from "../contexts/LikedPlantsProvider";
 import PlantCards from "../components/PlantCards";
+import Footer from "../components/Footer";
 import plants from "../plants.json";
 import waterIconInactive from "../assets/icons/WaterGrey.png";
 import waterIconActive from "../assets/icons/WaterBlue.png";
@@ -26,7 +27,7 @@ function MyPlants() {
       <hgroup className="results-header">
         <h1>
           {likedPlants.length === 0
-            ? "Like any plant on other page to see them appear here"
+            ? "Like any plant to see it appear here"
             : "Here are your favorite plants"}
         </h1>
       </hgroup>
@@ -56,6 +57,7 @@ function MyPlants() {
           />
         ))}
       </section>
+      <Footer />
     </>
   );
 }
