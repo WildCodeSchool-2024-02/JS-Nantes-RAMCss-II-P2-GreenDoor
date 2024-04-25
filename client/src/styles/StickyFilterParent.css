@@ -1,0 +1,43 @@
+.sticky-filters-parent {
+  background-color: var(--dark-color);
+  height: 64px;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 100px;
+  position: fixed;
+  bottom: 32px;
+  right: 32px;
+  width: 360px;
+}
+
+.sticky-filters-parent div ul {
+  display: flex;
+  list-style: none;
+}
+
+.visible {
+  display: flex;
+}
+
+.hidden {
+  display: none;
+}
+
+.sticky-filters-parent ul li img {
+  background-color: var(--dark-color);
+  height: min(5vh, 3vw);
+}
+
+.sticky-filters-parent ul li button {
+  background-color: transparent;
+  cursor: pointer;
+  padding-right: 8px;
+}
+
+.sticky-filters-parent ul li button img {
+  display: flex;
+}
+
+.sticky-filters-parent button:hover {
+  transform: scale(1.1);
+}

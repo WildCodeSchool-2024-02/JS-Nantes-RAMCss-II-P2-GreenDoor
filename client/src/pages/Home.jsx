@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import Header from "../components/Header";
 import FiltersTutorial from "../components/FiltersTutorial";
+import StickyFilterParent from "../components/StickyFilterParent";
 import PlantCards from "../components/PlantCards";
 import QuizzRedirection from "../components/QuizzRedirection";
 import Footer from "../components/Footer";
@@ -12,6 +13,9 @@ import lightIconInactive from "../assets/icons/SunGrey.png";
 import lightIconActive from "../assets/icons/SunYellow.png";
 
 function Home() {
+  const [waterFilter, setWaterFilter] = useState(1);
+  const [lightFilter, setLightFilter] = useState(1);
+  
   const [search, setSearch] = useState("");
   const [filteredPlant, setFilteredPlant] = useState([]);
 
@@ -53,11 +57,33 @@ function Home() {
         setSearch={setSearch}
         search={search}
       />
-      <FiltersTutorial />
+
+      <FiltersTutorial
+        waterFilter={waterFilter}
+        setWaterFilter={setWaterFilter}
+        waterIconActive={waterIconActive}
+        waterIconInactive={waterIconInactive}
+        lightFilter={lightFilter}
+        setLightFilter={setLightFilter}
+        lightIconActive={lightIconActive}
+        lightIconInactive={lightIconInactive}
+      />
+      <StickyFilterParent
+        waterFilter={waterFilter}
+        setWaterFilter={setWaterFilter}
+        waterIconActive={waterIconActive}
+        waterIconInactive={waterIconInactive}
+        lightFilter={lightFilter}
+        setLightFilter={setLightFilter}
+        lightIconActive={lightIconActive}
+        lightIconInactive={lightIconInactive}
+      />
+
       <section className="cards-container">
         {filteredPlant.map((el) => (
           <PlantCards
             key={el.id}
+            plantId={el.id}
             img={el.img}
             commonName={el.commonName}
             latinName={el.latinName}
