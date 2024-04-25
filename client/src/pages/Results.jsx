@@ -78,6 +78,7 @@ function Results() {
         {suitablePlants.map((el) => (
           <PlantCards
             key={el.id}
+            plantId={el.id}
             img={el.img}
             commonName={el.commonName}
             latinName={el.latinName}

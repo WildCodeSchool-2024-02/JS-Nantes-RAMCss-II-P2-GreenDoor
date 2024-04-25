@@ -2,18 +2,22 @@ import PropTypes from "prop-types";
 import heartRed from "../assets/icons/HeartRed.png";
 import heartGrey from "../assets/icons/HeartEmptyGray.png";
 
-function LikeIcon({ likeIcon, setLikeIcon }) {
+import { useLikedPlants } from "../contexts/LikedPlantsProvider";
+
+function LikeIcon({ plantId }) {
+  const { addToLikedPlants, isLiked } = useLikedPlants();
+
+  function handleClick() {
+    addToLikedPlants(plantId);
+  }
+
   return (
     <div>
-      <button
-        className="click-like-icon"
-        type="button"
-        onClick={() => setLikeIcon(() => !likeIcon)}
-      >
-        {likeIcon ? (
-          <img id="like-red" src={heartRed} alt={likeIcon} />
+      <button className="click-like-icon" type="button" onClick={handleClick}>
+        {isLiked(plantId) ? (
+          <img id="like-red" src={heartRed} alt="favourite plant" />
         ) : (
-          <img id="like-empty" src={heartGrey} alt={likeIcon} />
+          <img id="like-empty" src={heartGrey} alt="non-favourite plant" />
         )}
       </button>
     </div>
@@ -21,8 +25,7 @@ function LikeIcon({ likeIcon, setLikeIcon }) {
 }
 
 LikeIcon.propTypes = {
-  likeIcon: PropTypes.bool.isRequired,
-  setLikeIcon: PropTypes.bool.isRequired,
+  plantId: PropTypes.string.isRequired,
 };
 
 export default LikeIcon;

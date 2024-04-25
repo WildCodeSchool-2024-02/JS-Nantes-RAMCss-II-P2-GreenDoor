@@ -1,10 +1,10 @@
-import { useState } from "react";
 import PropTypes from "prop-types";
 import WaterNeeds from "./WaterNeeds";
 import LightNeeds from "./LightNeeds";
 import LikeIcon from "./LikeIcon";
 
 function PlantCard({
+  plantId,
   img,
   commonName,
   latinName,
@@ -24,8 +24,6 @@ function PlantCard({
   lightIconInactive,
   compactDisplay,
 }) {
-  const [likeIcon, setLikeIcon] = useState(false);
-
   if (commonName)
     return (
       <article className={compactDisplay ? "compact-plant-card" : "plant-card"}>
@@ -34,7 +32,8 @@ function PlantCard({
             <figure className="img-frame">
               <img src={img} alt={commonName} />
             </figure>
-            <LikeIcon setLikeIcon={setLikeIcon} likeIcon={likeIcon} />
+
+            <LikeIcon plantId={plantId} />
           </section>
 
           <figcaption>
@@ -82,6 +81,7 @@ function PlantCard({
 
 PlantCard.defaultProps = {
   compactDisplay: false,
+  plantId: "id not provided",
 };
 
 PlantCard.propTypes = {
@@ -103,6 +103,7 @@ PlantCard.propTypes = {
   lightIconActive: PropTypes.string.isRequired,
   lightIconInactive: PropTypes.string.isRequired,
   compactDisplay: PropTypes.bool,
+  plantId: PropTypes.string,
 };
 
 export default PlantCard;

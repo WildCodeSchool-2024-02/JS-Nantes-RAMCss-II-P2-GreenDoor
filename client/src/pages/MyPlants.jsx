@@ -1,22 +1,37 @@
-import Header from "../components/Header";
-import FiltersTutorial from "../components/FiltersTutorial";
+import { useEffect, useState } from "react";
+import { useLikedPlants } from "../contexts/LikedPlantsProvider";
 import PlantCards from "../components/PlantCards";
-import QuizzRedirection from "../components/QuizzRedirection";
-import Footer from "../components/Footer";
-
 import plants from "../plants.json";
 import waterIconInactive from "../assets/icons/WaterGrey.png";
 import waterIconActive from "../assets/icons/WaterBlue.png";
 import lightIconInactive from "../assets/icons/SunGrey.png";
 import lightIconActive from "../assets/icons/SunYellow.png";
 
-function Home() {
+// IMPORTANT : a lot of the CSS for this page is contained in Results.css
+
+function MyPlants() {
+  const { likedPlants } = useLikedPlants();
+  const [displayedPlants, setDisplayedPlants] = useState([]);
+
+  useEffect(() => {
+    setDisplayedPlants(() =>
+      plants.filter((plant) =>
+        likedPlants.some((plantId) => plantId === plant.id)
+      )
+    );
+  }, [likedPlants]);
+
   return (
-    <main>
-      <Header />
-      <FiltersTutorial />
-      <section className="cards-container">
-        {plants.map((el) => (
+    <>
+      <hgroup className="results-header">
+        <h1>
+          {likedPlants.length === 0
+            ? "Like any plant on other page to see them appear here"
+            : "Here are your favorite plants"}
+        </h1>
+      </hgroup>
+      <section className="compact-cards-container">
+        {displayedPlants.map((el) => (
           <PlantCards
             key={el.id}
             plantId={el.id}
@@ -37,13 +52,12 @@ function Home() {
             lightIconInactive={lightIconInactive}
             lightIdeal={el.lightIdeal}
             lightTolered={el.lightTolered}
+            compactDisplay
           />
         ))}
       </section>
-      <QuizzRedirection />
-      <Footer />
-    </main>
+    </>
   );
 }
 
-export default Home;
+export default MyPlants;
