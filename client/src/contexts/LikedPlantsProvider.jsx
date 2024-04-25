@@ -15,7 +15,6 @@ function LikedPlantsProvider({ children }) {
     return likedPlants.some((likedPlantId) => likedPlantId === id);
   }
 
-  // introduced because of an ESLint error that i didn't understand completely
   const contextValue = useMemo(
     () => ({
       likedPlants,
