@@ -1,4 +1,4 @@
-// import { useState, useRef, useEffect } from "react";
+import { useState, useEffect } from "react";
 import Header from "../components/Header";
 import FiltersTutorial from "../components/FiltersTutorial";
 import PlantCards from "../components/PlantCards";
@@ -11,36 +11,51 @@ import waterIconActive from "../assets/icons/WaterBlue.png";
 import lightIconInactive from "../assets/icons/SunGrey.png";
 import lightIconActive from "../assets/icons/SunYellow.png";
 
-
 function Home() {
+  const [search, setSearch] = useState("");
+  const [filteredPlant, setFilteredPlant] = useState([]);
 
-  //   const [search, setSearch] = useState("");
-  //   const [plantSearch, setPlantSearch] = useState([])
+  useEffect(() => {
+    const filteredData = plants.filter((el) => {
+      if (search === "") {
+        return true;
+      }
+      if (
+        el.commonName !== null &&
+        el.commonName.join("").toLowerCase().includes(search)
+      ) {
+        return true;
+      }
+      return false;
+    });
+    setFilteredPlant(filteredData);
+  }, [search]);
 
-  //   const inputRef = useRef();
+  const inputHandler = (e) => {
+    const lowerCase = e.target.value.toLowerCase();
+    setSearch(lowerCase);
+  };
 
-  // function handleChange () {
-  //   setInput(inputRef.current.value)
-  // }
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    e.scrollIntoView({ bahavior: "smooth" });
+    const targetSection = document.getElementById("target-section"); // Remplacez 'target-section' par l'ID de la section vers laquelle vous voulez faire défiler
+    if (targetSection) {
+      targetSection.scrollIntoView({ behavior: "smooth" }); // Faites défiler en douceur (smooth)
+    }
+  };
 
-  // useEffect(() => {
-  //   setPlantSearch(
-  //     plants.filter((input) =>
-  //       plants.some((search) => search.commonName === plants.commonName)
-  //     )
-  //   );
-  // }, []);
   return (
     <main>
-      <Header 
-      // inputRef={inputRef}
-      // setSearch={setSearch} 
+      <Header
+        inputHandler={inputHandler}
+        handleSubmit={handleSubmit}
+        setSearch={setSearch}
+        search={search}
       />
       <FiltersTutorial />
       <section className="cards-container">
-        {plants
-        // .filter((el) => el.some ({search} === plants.commonName))
-        .map((el) => (
+        {filteredPlant.map((el) => (
           <PlantCards
             key={el.id}
             img={el.img}
