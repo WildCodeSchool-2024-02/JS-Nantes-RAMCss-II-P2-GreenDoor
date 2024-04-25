@@ -57,3 +57,17 @@ nav > h2 {
 nav > h2 > strong {
   color: var(--accent-color);
 }
+
+@media screen and (max-width: 800px) {
+  nav > ul {
+    display: none;
+  }
+
+  nav > h2 {
+    font-size: var(--font-size-h1-mobile);
+  }
+
+  .buttonLogo {
+    height: calc(2 * var(--font-size-h1-mobile));
+  }
+}

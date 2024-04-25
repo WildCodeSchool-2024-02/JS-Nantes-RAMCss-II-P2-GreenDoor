@@ -41,6 +41,11 @@
   --font-size-h3: 32px;
   --font-size-text: 24px;
 
+  --font-size-h1-mobile: 24px;
+  --font-size-h2-mobile: 16px;
+  --font-size-h3-mobile: 16px;
+  --font-size-text-mobile: 16px;
+
   --font-family-title: "Champagne-Limousines";
   --font-family-body: Montserrat;
 
