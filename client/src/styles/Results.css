@@ -2,7 +2,7 @@
   color: black;
   font-family: var(--font-family-title);
   font-weight: bold;
-  font-size: 64px;
+  font-size: var(--font-size-h1);
   text-align: center;
 }
 
