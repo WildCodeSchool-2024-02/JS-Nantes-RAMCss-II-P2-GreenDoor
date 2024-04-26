@@ -30,20 +30,13 @@ function PlantCard({
   function scrollToCard(e) {
     e.target.scrollIntoView({
       behavior: "smooth",
-      block: "center",
+      block: "start",
       inline: "nearest",
     });
   }
 
   function toggleDisplayMode() {
     if (compactDisplay) setDisplayMode(() => !displayMode);
-  }
-
-  function handleKeyPress(e) {
-    if (e.keyCode === 13) {
-      toggleDisplayMode();
-      scrollToCard(e);
-    }
   }
 
   if (commonName)
@@ -54,7 +47,6 @@ function PlantCard({
             <figure className="img-frame">
               <img src={img} alt={commonName} />
             </figure>
-
             <LikeIcon plantId={plantId} />
           </section>
 
@@ -62,9 +54,10 @@ function PlantCard({
             <hgroup>
               <button
                 type="button"
-                onClick={toggleDisplayMode}
-                onKeyDown={(event) => handleKeyPress(event)}
-                onFocus={(event) => scrollToCard(event)}
+                onClick={(event) => {
+                  toggleDisplayMode();
+                  scrollToCard(event);
+                }}
               >
                 <h2>
                   {typeof commonName === "string" ? commonName : commonName[0]}
