@@ -41,14 +41,37 @@
   --font-size-h3: 32px;
   --font-size-text: 24px;
 
-  --font-size-h1-mobile: 24px;
-  --font-size-h2-mobile: 16px;
-  --font-size-h3-mobile: 16px;
-  --font-size-text-mobile: 16px;
-
   --font-family-title: "Champagne-Limousines";
   --font-family-body: Montserrat;
 
   --primary-font-color: black;
   --secondary-font-color: #726e6e;
+}
+
+/* small laptop */
+@media screen and (max-width: 1450px) {
+  :root {
+    --font-size-h1: 56px;
+    --font-size-h2: 40px;
+    --font-size-h3: 32px;
+    --font-size-text: 16px;
+  }
+}
+/* tablets */
+@media screen and (max-width: 1200px) {
+  :root {
+    --font-size-h1: 48px;
+    --font-size-h2: 28px;
+    --font-size-h3: 20px;
+    --font-size-text: 14px;
+  }
+}
+/* mobile */
+@media screen and (max-width: 800px) {
+  :root {
+    --font-size-h1: 40px;
+    --font-size-h2: 24px;
+    --font-size-h3: 16px;
+    --font-size-text: 12px;
+  }
 }

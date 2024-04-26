@@ -38,9 +38,9 @@ function Quizz() {
         {questionIndex === null || questionIndex >= quizz.length ? (
           // This is the intro of the quizz
           <>
-            <h1>
+            <h2>
               Find your <strong>dream plant</strong> !
-            </h1>
+            </h2>
             <h3>
               Take a 1-minute assessment to tell us about yourself and enable us
               to identify the ideal house plant that matches your preferences

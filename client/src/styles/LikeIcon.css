@@ -18,3 +18,32 @@
   cursor: pointer;
   transform: scale(1.2);
 }
+
+/* small laptop */
+@media screen and (max-width: 1450px) {
+  #like-empty,
+  #like-red {
+    width: 64px;
+  }
+}
+/* tablets */
+@media screen and (max-width: 1200px) {
+  #like-empty,
+  #like-red {
+    width: 40px;
+  }
+}
+.plant-card figure .img-section div {
+  padding: 12px;
+}
+/* mobile */
+@media screen and (max-width: 800px) {
+  #like-empty,
+  #like-red {
+    width: 32px;
+  }
+
+  .plant-card figure .img-section div {
+    padding: 8px;
+  }
+}
