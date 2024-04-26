@@ -63,7 +63,8 @@
   transition-property: transform; /*Pas sur que la ligne soit utile */
 }
 
-.filters-tutorial button:hover {
+.filters-tutorial button:hover,
+.filters-tutorial button:focus {
   transform: scale(1.2);
   cursor: pointer;
 }

@@ -21,7 +21,7 @@
   height: min(90vh, 40vw);
 }
 
-.plant-card:nth-child(even) figure {
+.cards-container > .plant-card:nth-child(even) figure {
   flex-direction: row-reverse;
   justify-content: space-between;
 }
@@ -98,12 +98,21 @@
   width: 100%;
 }
 
-.plant-card figcaption > hgroup > h2 {
+.plant-card figcaption > hgroup > button > h2,
+.compact-plant-card figcaption > hgroup > button > h2 {
+  font-family: var(--font-family-title);
   width: 100%;
   overflow: hidden;
   font-weight: bold;
   font-size: var(--font-size-h2);
   margin: 0;
+}
+
+.plant-card figcaption > hgroup > button,
+.compact-plant-card figcaption > hgroup > button {
+  padding: 0;
+  width: auto;
+  height: auto;
 }
 
 .plant-card figcaption > hgroup > h3 {
@@ -246,6 +255,12 @@
 .compact-plant-card ul > li > img {
   height: 64px;
   width: auto;
+}
+
+/* Part about making the cards clickable */
+.compact-cards-container > .plant-card {
+  grid-column-start: 1;
+  grid-column-end: 4;
 }
 
 @media screen and (max-width: 1200px) {

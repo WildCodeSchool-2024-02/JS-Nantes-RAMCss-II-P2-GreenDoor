@@ -1,3 +1,4 @@
+import { useState } from "react";
 import PropTypes from "prop-types";
 import WaterNeeds from "./WaterNeeds";
 import LightNeeds from "./LightNeeds";
@@ -24,9 +25,30 @@ function PlantCard({
   lightIconInactive,
   compactDisplay,
 }) {
+  const [displayMode, setDisplayMode] = useState(compactDisplay);
+
+  function scrollToCard(e) {
+    e.target.scrollIntoView({
+      behavior: "smooth",
+      block: "center",
+      inline: "nearest",
+    });
+  }
+
+  function toggleDisplayMode() {
+    if (compactDisplay) setDisplayMode(() => !displayMode);
+  }
+
+  function handleKeyPress(e) {
+    if (e.keyCode === 13) {
+      toggleDisplayMode();
+      scrollToCard(e);
+    }
+  }
+
   if (commonName)
     return (
-      <article className={compactDisplay ? "compact-plant-card" : "plant-card"}>
+      <article className={displayMode ? "compact-plant-card" : "plant-card"}>
         <figure>
           <section className="img-section">
             <figure className="img-frame">
@@ -38,9 +60,16 @@ function PlantCard({
 
           <figcaption>
             <hgroup>
-              <h2>
-                {typeof commonName === "string" ? commonName : commonName[0]}
-              </h2>
+              <button
+                type="button"
+                onClick={toggleDisplayMode}
+                onKeyDown={(event) => handleKeyPress(event)}
+                onFocus={(event) => scrollToCard(event)}
+              >
+                <h2>
+                  {typeof commonName === "string" ? commonName : commonName[0]}
+                </h2>
+              </button>
               <h3>{latinName}</h3>
             </hgroup>
             <section className="needs-icons">
