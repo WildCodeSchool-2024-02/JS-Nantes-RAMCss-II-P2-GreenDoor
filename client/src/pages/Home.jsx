@@ -15,7 +15,7 @@ import lightIconActive from "../assets/icons/SunYellow.png";
 function Home() {
   const [waterFilter, setWaterFilter] = useState(1);
   const [lightFilter, setLightFilter] = useState(1);
-  
+
   const [search, setSearch] = useState("");
   const [filteredPlant, setFilteredPlant] = useState([]);
 
