@@ -41,11 +41,10 @@ function Home() {
   };
 
   const handleSubmit = (e) => {
-    e.preventDefault();
-    e.scrollIntoView({ bahavior: "smooth" });
-    const targetSection = document.getElementById("target-section"); // Remplacez 'target-section' par l'ID de la section vers laquelle vous voulez faire défiler
+    const targetSection = document.getElementsByClassName("cards-container")[0];
     if (targetSection) {
-      targetSection.scrollIntoView({ behavior: "smooth" }); // Faites défiler en douceur (smooth)
+      e.preventDefault();
+      targetSection.scrollIntoView({ behavior: "smooth" });
     }
   };
 
@@ -56,6 +55,8 @@ function Home() {
         handleSubmit={handleSubmit}
         setSearch={setSearch}
         search={search}
+        filteredPlant={filteredPlant}
+        setFilteredPlant={setFilteredPlant}
       />
 
       <FiltersTutorial
@@ -68,6 +69,7 @@ function Home() {
         lightIconActive={lightIconActive}
         lightIconInactive={lightIconInactive}
       />
+
       <StickyFilterParent
         waterFilter={waterFilter}
         setWaterFilter={setWaterFilter}

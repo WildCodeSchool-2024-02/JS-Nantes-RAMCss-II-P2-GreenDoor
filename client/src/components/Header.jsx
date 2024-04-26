@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 import "../styles/Header.css";
 import searchIcon from "../assets/icons/SearchIcon.png";
 
-function Header({ search, inputHandler, handleSubmit }) {
+function Header({ filteredPlant, search, inputHandler, handleSubmit }) {
   return (
     <header>
       <h1>Find the perfect plants for your interior</h1>
@@ -20,9 +20,31 @@ function Header({ search, inputHandler, handleSubmit }) {
           className="search-input"
           placeholder="Search for a plant"
           onChange={inputHandler}
+          autoComplete="off"
+          list="browsers"
         />
+        <datalist id="browsers" className="search-option">
+          {search === ""
+            ? ""
+            : filteredPlant.map((plant) => (
+                <option
+                  className="search-option"
+                  key={plant.id}
+                  value={plant.commonName !== null && plant.commonName[0]}
+                  alt="input"
+                />
+              ))}
+        </datalist>
       </form>
-      {search === "" ? "" : <h3> We found {} plants, see it below</h3>}
+
+      {search === "" ? (
+        ""
+      ) : (
+        <h3>
+          {" "}
+          We found <strong>{filteredPlant.length} plants</strong>, see it below
+        </h3>
+      )}
     </header>
   );
 }
@@ -31,5 +53,6 @@ Header.propTypes = {
   search: PropTypes.string.isRequired,
   inputHandler: PropTypes.string.isRequired,
   handleSubmit: PropTypes.element.isRequired,
+  filteredPlant: PropTypes.element.isRequired,
 };
 export default Header;
