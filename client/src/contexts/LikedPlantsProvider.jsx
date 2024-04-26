@@ -4,15 +4,15 @@ import PropTypes from "prop-types";
 const LikedPlantsContext = createContext();
 
 function LikedPlantsProvider({ children }) {
-  // retrieve last session data if it exists
+  // retrieve last session data if it exists, and make sure it isn't null
+  const localData = JSON.parse(localStorage.getItem("GreenDoor_likedPlants"));
+
   const [likedPlants, setLikedPlants] = useState(
-    JSON.parse(localStorage.getItem("GreenDoor_likedPlants"))
+    localData === null ? [] : localData
   );
 
   function isLiked(id) {
-    return likedPlants !== null
-      ? likedPlants.some((likedPlantId) => likedPlantId === id)
-      : false;
+    return likedPlants.some((likedPlantId) => likedPlantId === id);
   }
 
   function addToLikedPlants(id) {
