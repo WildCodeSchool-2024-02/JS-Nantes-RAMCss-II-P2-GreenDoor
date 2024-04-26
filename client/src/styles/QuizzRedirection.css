@@ -9,7 +9,8 @@
   justify-content: center; /* Pour centrer horizontalement */
   align-items: center; /* Pour centrer verticalement */
 }
-.quizz-redirection > div > .redirect {
+.quizz-redirection > div > .redirect,
+.my-plants-redirect > .redirect {
   display: flex;
   height: 200px;
   width: 404px;
@@ -24,7 +25,8 @@
   font-size: 3vh;
 }
 
-.quizz-redirection > div > .redirect:hover {
+.quizz-redirection > div > .redirect:hover,
+.my-plants-redirect > .redirect:hover {
   background-color: var(--accent-hover-color);
 }
 

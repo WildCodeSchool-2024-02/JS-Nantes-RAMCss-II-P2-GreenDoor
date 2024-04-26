@@ -1,5 +1,4 @@
 import { NavLink } from "react-router-dom";
-import "../styles/QuizzRedirection.css";
 
 function QuizzRedirection() {
   return (
@@ -9,7 +8,7 @@ function QuizzRedirection() {
       </div>
       <div>
         <NavLink className="redirect" to="quizz">
-          TAKE YOUR QUIZZ
+          TAKE OUR QUIZZ
         </NavLink>
       </div>
     </section>

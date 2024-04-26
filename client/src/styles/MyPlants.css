@@ -1,0 +1,17 @@
+.my-plants-redirect {
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.my-plants-redirect > h2 {
+  font-family: var(--font-family-body);
+  font-weight: bold;
+  font-size: var(--font-size-text);
+  text-align: center;
+  padding: 0px 32px;
+  color: var(--secondary-font-color);
+  margin: 24px;
+}

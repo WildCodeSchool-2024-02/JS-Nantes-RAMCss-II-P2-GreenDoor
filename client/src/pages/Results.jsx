@@ -20,13 +20,28 @@ function Results() {
     const filteredPlants = plants.filter((plant) => {
       let plantFitsCriteria = true;
 
+      const toxicityCriteria = answers[1];
+      if (toxicityCriteria === "0" && plant.toxic === true)
+        plantFitsCriteria = false;
+
+      // Growth `["Yes, i want to see it grow", "No, i prefer that it stays the same", "Skip question"]`
+      const growthCriteria = answers[2];
+      if (growthCriteria === "0" && plant.growth === "slow") {
+        plantFitsCriteria = false;
+      } else if (growthCriteria === "1" && plant.growth !== "slow") {
+        plantFitsCriteria = false;
+      }
+
+      // treat care levels `["Once a day", "Once a week", "Once a month", "Once a year"]`
       const careCriteria = answers[0];
+      // if you want to water yout plants less often than once a month, exclude those that cannot dry
       if (
         careCriteria >= 2 &&
         (plant.watering.includes("Water when soil is half dry") ||
           plant.watering.includes("Must not dry between watering"))
       ) {
         plantFitsCriteria = false;
+        // if you want to water yout plants once a week at max, exclude those that cannot dry
       } else if (
         careCriteria >= 1 &&
         plant.watering.includes("Must not dry between watering")
@@ -73,6 +88,7 @@ function Results() {
           {suitablePlants.map((el) => (
             <PlantCards
               key={el.id}
+              plantId={el.id}
               img={el.img}
               commonName={el.commonName}
               latinName={el.latinName}

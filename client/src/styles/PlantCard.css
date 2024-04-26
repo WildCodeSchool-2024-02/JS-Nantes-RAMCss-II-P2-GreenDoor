@@ -2,56 +2,108 @@
   border : solid black 2px;
 } */
 
-.plant-card {
+.cards-container {
+  display: grid;
+  grid-template-columns: 1fr;
   background-color: var(--background-color);
+  --gap: 64px;
+  gap: var(--gap);
+  padding: var(--gap);
+}
+
+.plant-card {
+  background-color: var(--fore-ground-color);
+  border-radius: var(--gap);
   color: black;
   display: flex;
   justify-content: center;
-  padding: 20px 20px;
+  padding: var(--gap);
+  height: min(90vh, 40vw);
+}
+
+.plant-card:nth-child(even) figure {
+  flex-direction: row-reverse;
+  justify-content: space-between;
 }
 
 .plant-card figure {
   font-family: "Champagne-Limousines";
   background-color: var(--fore-ground-color);
-  border-radius: 20px;
   width: 100%;
-  height: 90vh;
-  display: grid;
-  grid-template: 1fr / 2fr 3fr;
+
+  display: flex;
+  flex-direction: row;
+  gap: var(--gap);
 }
 
-.plant-card figure .img-section {
-  border-radius: 20px;
-  margin: 40px 35px;
+/* PART ABOUT THE IMAGE IN THE CARDS */
+
+.plant-card figure .img-section,
+.compact-plant-card .img-section {
+  height: 100%;
+  aspect-ratio: 1;
+  display: grid;
+  grid-template: 1fr/1fr;
+}
+
+.compact-plant-card figure .img-frame,
+.plant-card figure .img-frame {
+  grid-area: 1 / 1 / 2 / 2;
   overflow: hidden;
+}
+
+.plant-card figure .img-frame {
+  height: 100%;
+  width: 100%;
+  border-radius: 24px;
+}
+
+.compact-plant-card figure .img-frame {
+  --diameter: 256px;
+  width: var(--diameter);
+  border-radius: calc(var(--diameter) / 2);
   aspect-ratio: 1;
 }
-.plant-card figure .img-section > img,
-.compact-plant-card figure .img-section > img {
+
+.plant-card figure .img-section div,
+.compact-plant-card .img-section div {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: end;
+  grid-area: 1 / 1 / 2 / 2;
+}
+
+.plant-card figure .img-section div {
+  padding: 16px;
+}
+
+.plant-card figure .img-frame > img,
+.compact-plant-card figure .img-frame > img {
   min-width: 100%;
   min-height: 100%;
   object-fit: cover;
 }
 
 .plant-card figcaption {
-  grid-template: 1fr 1fr 3fr/ 1fr;
-  width: 100%;
-  height: inherit;
-  padding: 20px 40px;
   display: grid;
+  grid-template: 1fr 2fr 2fr/ 1fr;
+
+  max-width: 70%;
 }
 
 .plant-card figcaption > hgroup {
-  height: 25vh;
   width: 100%;
 }
 
 .plant-card figcaption > hgroup > h2 {
-  height: 50%;
   width: 100%;
   overflow: hidden;
   font-weight: bold;
-  font-size: 48px;
+  /* font-size: 48px; */
+  font-size: 4rem;
   margin: 0;
 }
 
@@ -59,7 +111,6 @@
   font-size: var(--font-size-h3);
   font-style: italic;
   color: var(--secondary-font-color);
-  height: 50%;
   width: 100%;
   overflow: hidden;
   margin: 0;
@@ -68,8 +119,8 @@
 .plant-card .needs-icons {
   display: grid;
   grid-template: 1fr/ 1fr 1fr; /* 1 ligne, 2 colonnes (1 pour .watericons et 1 pour .sunIcons)*/
-  height: 28vh;
-  padding-top: 10px;
+  gap: var(--gap);
+  height: 100%;
 }
 
 .plant-card .needs-icons > div > ul,
@@ -118,12 +169,14 @@
   height: auto;
 }
 
-.plant-card figcaption > div {
-  height: 30vh;
-}
-
 .plant-card figcaption > div > h3 {
   font-size: var(--font-size-h3);
+}
+
+.plant-card figcaption > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
 .plant-card figcaption div p {
@@ -132,34 +185,7 @@
   color: var(--secondary-font-color);
 }
 
-.like-Icon {
-  transform: translate(-150px, 0px);
-}
-
 /* COMPACTED VIEW */
-
-.compact-plant-card > figure > figcaption > div,
-.compact-plant-card > figure .needs-icons > div > p,
-.compact-plant-card h3 {
-  display: none;
-}
-
-.compact-plant-card figure .img-section {
-  --diameter: 256px;
-  width: var(--diameter);
-  border-radius: calc(var(--diameter) / 2);
-  overflow: hidden;
-  aspect-ratio: 1;
-}
-
-.compact-plant-card {
-  width: 100%;
-  padding: 0px;
-  background-color: var(--background-color);
-  color: black;
-  display: flex;
-  justify-content: center;
-}
 
 .compact-cards-container {
   display: grid;
@@ -170,14 +196,29 @@
   padding: 0 var(--gap) var(--gap) var(--gap);
 }
 
+.compact-plant-card > figure > figcaption > div,
+.compact-plant-card > figure .needs-icons > div > p,
+.compact-plant-card h3 {
+  display: none;
+}
+
+.compact-plant-card {
+  width: 100%;
+  padding: 0px;
+  background-color: var(--fore-ground-color);
+  border-radius: 24px;
+  color: black;
+  display: flex;
+  justify-content: center;
+  padding: 32px;
+}
+
 .compact-plant-card figure {
   font-family: "Champagne-Limousines";
-  background-color: var(--fore-ground-color);
-  border-radius: 20px;
+
   width: 100%;
   display: flex;
   gap: 32px;
-  padding: 32px;
 }
 
 .compact-plant-card > figure > figcaption {

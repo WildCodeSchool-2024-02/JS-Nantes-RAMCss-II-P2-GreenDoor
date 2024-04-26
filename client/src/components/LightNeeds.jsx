@@ -38,8 +38,9 @@ function LightNeeds({ lightIdeal, lightTolered, iconActive, iconInactive }) {
         ))}
       </ul>
       <p className="sunInstruction">
-        {lightIdeal}
-        {lightTolered}
+        Can tolerate{" "}
+        {lightTolered ? lightTolered.replace(/\((.*?)\)/g, "") : "missing info"}{" "}
+        to {lightIdeal.replace(/\((.*?)\)/g, "")}
       </p>
     </div>
   );
