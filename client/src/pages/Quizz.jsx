@@ -25,7 +25,7 @@ function Quizz() {
     if (answers.length >= quizz.length) {
       const condensedAnswers = answers.join("");
       // this is used to navigate to the results page
-      setTimeout(() => navigate(`/results/${condensedAnswers}`), 800);
+      navigate(`/results/${condensedAnswers}`);
     }
   }, [answers]);
 
