@@ -75,11 +75,14 @@ function Results() {
   return (
     <>
       <hgroup className="results-header">
-        <h1>
-          {loading
-            ? "We are actively searching the best of the best plants for you"
-            : "Here are the plants that match your criteria"}
-        </h1>
+        {loading ? (
+          <h1>
+            We are actively searching <strong>the best</strong> of the best
+            plants for you
+          </h1>
+        ) : (
+          <h1>Here are the plants that match your criteria</h1>
+        )}
       </hgroup>
       {loading ? (
         <Spinner />

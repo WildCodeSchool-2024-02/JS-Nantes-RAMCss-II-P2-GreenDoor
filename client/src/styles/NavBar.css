@@ -40,7 +40,8 @@ nav > ul > li > a {
   font-size: var(--font-size-h3);
 }
 
-nav > ul > li > a:hover {
+nav > ul > li > a:hover,
+nav > ul > li > a:focus {
   color: var(--accent-hover-color);
 }
 

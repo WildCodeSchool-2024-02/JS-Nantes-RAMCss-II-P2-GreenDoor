@@ -52,17 +52,26 @@ function PlantCard({
 
           <figcaption>
             <hgroup>
-              <button
-                type="button"
-                onClick={(event) => {
-                  toggleDisplayMode();
-                  scrollToCard(event);
-                }}
-              >
+              {" "}
+              {compactDisplay ? (
+                <button
+                  type="button"
+                  onClick={(event) => {
+                    toggleDisplayMode();
+                    scrollToCard(event);
+                  }}
+                >
+                  <h2>
+                    {typeof commonName === "string"
+                      ? commonName
+                      : commonName[0]}
+                  </h2>
+                </button>
+              ) : (
                 <h2>
                   {typeof commonName === "string" ? commonName : commonName[0]}
                 </h2>
-              </button>
+              )}
               <h3>{latinName}</h3>
             </hgroup>
             <section className="needs-icons">
