@@ -10,7 +10,9 @@ function LikedPlantsProvider({ children }) {
   );
 
   function isLiked(id) {
-    return likedPlants.some((likedPlantId) => likedPlantId === id);
+    return likedPlants !== null
+      ? likedPlants.some((likedPlantId) => likedPlantId === id)
+      : false;
   }
 
   function addToLikedPlants(id) {
