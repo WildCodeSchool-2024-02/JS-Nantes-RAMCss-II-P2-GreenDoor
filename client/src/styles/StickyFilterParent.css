@@ -1,13 +1,13 @@
 .sticky-filters-parent {
   background-color: var(--dark-color);
-  height: 64px;
+  height: 8vh;
   justify-content: space-between;
   align-items: center;
   border-radius: 100px;
   position: fixed;
-  bottom: 32px;
-  right: 32px;
-  width: 360px;
+  bottom: 2vh;
+  right: 2vw;
+  width: 22vw;
 }
 
 .sticky-filters-parent div ul {
@@ -24,14 +24,14 @@
 }
 
 .sticky-filters-parent ul li img {
-  background-color: var(--dark-color);
+  background-color: transparent;
   height: min(5vh, 3vw);
 }
 
 .sticky-filters-parent ul li button {
   background-color: transparent;
   cursor: pointer;
-  padding-right: 8px;
+  padding-right: 0vh;
 }
 
 .sticky-filters-parent ul li button img {

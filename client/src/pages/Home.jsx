@@ -2,7 +2,6 @@ import { useState } from "react";
 import Header from "../components/Header";
 import FiltersTutorial from "../components/FiltersTutorial";
 import StickyFilterParent from "../components/StickyFilterParent";
-import FilterApply from "../components/FilterApply";
 import PlantCards from "../components/PlantCards";
 import QuizzRedirection from "../components/QuizzRedirection";
 import Footer from "../components/Footer";
@@ -17,6 +16,7 @@ function Home() {
   // these filters can have three values : 0,1 and 2.
   const [waterFilter, setWaterFilter] = useState(1);
   const [lightFilter, setLightFilter] = useState(1);
+
   return (
     <main>
       <Header />
@@ -64,7 +64,6 @@ function Home() {
           />
         ))}
       </section>
-      <FilterApply />
       <QuizzRedirection />
       <Footer />
     </main>
