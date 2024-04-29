@@ -13,7 +13,7 @@ function StickyFilterParent({
   lightIconActive,
   lightIconInactive,
 }) {
-  const [isVisible, setIsvisible] = useState(true);
+  const [isVisible, setIsvisible] = useState(false);
   const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
 
   useEffect(() => {
