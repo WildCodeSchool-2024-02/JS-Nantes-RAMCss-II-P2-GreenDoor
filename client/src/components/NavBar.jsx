@@ -2,9 +2,12 @@ import { NavLink, useNavigate } from "react-router-dom";
 import { useState } from "react";
 import burger from "../assets/icons/burgerMenu_white.svg";
 import cross from "../assets/icons/cross_green.svg";
+import whiteLogo from "../assets/images/greenDoorPot.svg";
+import greenLogo from "../assets/images/greenDoorPot_Green.svg";
 
 function NavBar() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [logoIsHovered, setLogoIsHovered] = useState(false);
 
   function menuClick() {
     setMenuOpen(!menuOpen);
@@ -18,9 +21,16 @@ function NavBar() {
 
   return (
     <nav>
-      <button onClick={() => navigate(`/`)} className="button-logo">
-        <div className="greendoor-pot" />
-        <div className="greendoor-pot-green" />
+      <button
+        onClick={() => navigate(`/`)}
+        className="button-logo"
+        onMouseEnter={() => setLogoIsHovered(true)}
+        onMouseLeave={() => setLogoIsHovered(false)}
+      >
+        <img
+          src={logoIsHovered ? greenLogo : whiteLogo}
+          alt="greenDoor logo, a minimalist pot"
+        />
       </button>
       <h2>
         <strong>green</strong>Door
@@ -28,7 +38,7 @@ function NavBar() {
       <button
         className="burger-button"
         type="button"
-        alt="menu déroulant"
+        alt={menuOpen ? "close dropdown menu" : "open dropdown menu"}
         onClick={menuClick}
       >
         <img
