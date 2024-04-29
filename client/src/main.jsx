@@ -5,6 +5,7 @@ import Home from "./pages/Home";
 import App from "./App";
 import Quizz from "./pages/Quizz";
 import Results from "./pages/Results";
+import MyPlants from "./pages/MyPlants";
 
 const router = createBrowserRouter([
   {
@@ -21,7 +22,7 @@ const router = createBrowserRouter([
       },
       {
         path: "myplants",
-        element: <h2>My Plants</h2>,
+        element: <MyPlants />,
       },
       {
         path: "results/:answers",

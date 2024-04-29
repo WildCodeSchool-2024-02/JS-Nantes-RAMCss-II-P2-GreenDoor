@@ -21,7 +21,7 @@
   height: min(90vh, 40vw);
 }
 
-.plant-card:nth-child(even) figure {
+.cards-container > .plant-card:nth-child(even) figure {
   flex-direction: row-reverse;
   justify-content: space-between;
 }
@@ -98,13 +98,47 @@
   width: 100%;
 }
 
-.plant-card figcaption > hgroup > h2 {
+.plant-card figcaption > hgroup > h2,
+.plant-card figcaption > hgroup > button > h2,
+.compact-plant-card figcaption > hgroup > button > h2,
+.compact-plant-card figcaption > hgroup > h2 {
+  font-family: var(--font-family-title);
+  font-weight: bold;
+  font-size: var(--font-size-h2);
   width: 100%;
   overflow: hidden;
-  font-weight: bold;
-  /* font-size: 48px; */
-  font-size: 4rem;
   margin: 0;
+  text-align: start;
+}
+.compact-plant-card figcaption > hgroup > button > h2,
+.compact-plant-card figcaption > hgroup > h2 {
+  font-size: var(--font-size-h3);
+}
+
+.plant-card figcaption > hgroup > button,
+.compact-plant-card figcaption > hgroup > button {
+  padding: 0;
+  width: auto;
+  height: auto;
+  transition-property: scale;
+  transition: 0.2s;
+}
+
+.plant-card figcaption > hgroup > button:hover,
+:focus,
+.compact-plant-card figcaption > hgroup > button:hover,
+:focus,
+.compact-plant-card figcaption > hgroup > button:hover > h2,
+.compact-plant-card figcaption > hgroup > button:focus > h2 {
+  color: var(--accent-hover-color);
+  cursor: pointer;
+}
+
+.plant-card figcaption > hgroup > button:hover,
+:focus,
+.compact-plant-card figcaption > hgroup > button:hover,
+:focus {
+  transform: scale(1.1);
 }
 
 .plant-card figcaption > hgroup > h3 {
@@ -132,8 +166,7 @@
   list-style: none;
   border: 0;
   margin: 0;
-  padding: 0;
-  height: 10vh;
+  padding: 16px 0;
 }
 
 .plant-card .waterIcons,
@@ -151,7 +184,6 @@
 
 .plant-card .waterIcons > li > img {
   width: 30px;
-  height: auto;
 }
 
 .plant-card .sunIcons {
@@ -166,7 +198,6 @@
 }
 .plant-card .sunIcons > li > img {
   width: 60px;
-  height: auto;
 }
 
 .plant-card figcaption > div > h3 {
@@ -194,6 +225,11 @@
   --gap: 32px;
   gap: var(--gap);
   padding: 0 var(--gap) var(--gap) var(--gap);
+  min-height: 60vh;
+}
+
+.compact-cards-container:empty {
+  display: none;
 }
 
 .compact-plant-card > figure > figcaption > div,
@@ -211,6 +247,7 @@
   display: flex;
   justify-content: center;
   padding: 32px;
+  max-height: 320px;
 }
 
 .compact-plant-card figure {
@@ -244,4 +281,85 @@
 .compact-plant-card ul > li > img {
   height: 64px;
   width: auto;
+}
+
+/* Part about making the cards clickable */
+.compact-cards-container > .plant-card {
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+
+@media screen and (max-width: 1628px) {
+  .compact-cards-container > .plant-card {
+    grid-column-end: 3;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .cards-container {
+    --gap: 24px;
+  }
+  .plant-card {
+    grid-column-end: 1;
+  }
+
+  .plant-card .waterIcons > li > img {
+    width: 15px;
+  }
+  .plant-card .sunIcons > li > img {
+    width: 30px;
+  }
+
+  .compact-cards-container {
+    grid-template-columns: 1fr 1fr;
+    --gap: 16px;
+  }
+
+  .compact-plant-card figure {
+    gap: 10px;
+  }
+
+  .compact-plant-card {
+    padding: 24px;
+    max-height: 228px;
+  }
+
+  .compact-plant-card figure .img-frame {
+    --diameter: 180px;
+  }
+
+  .compact-plant-card ul > li > img {
+    height: 44px;
+  }
+  .compact-plant-card .needs-icons > div > ul {
+    padding: 8px 0;
+  }
+}
+/* mobile */
+@media screen and (max-width: 800px) {
+  .compact-plant-card ul > li > img {
+    height: 32px;
+  }
+  .compact-plant-card .needs-icons > div > ul {
+    padding: 8px 0;
+  }
+  .compact-plant-card > figure > figcaption > .needs-icons {
+    display: grid;
+    grid-template: 1fr/1fr 1fr;
+  }
+
+  .compact-plant-card {
+    padding: 16px;
+    max-height: 122px;
+    max-width: 92vw;
+  }
+
+  .compact-plant-card figure .img-frame {
+    --diameter: 90px;
+  }
+
+  .compact-cards-container {
+    grid-template-columns: 1fr;
+    --gap: 16px;
+  }
 }

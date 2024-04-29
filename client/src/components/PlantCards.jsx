@@ -5,6 +5,7 @@ import LightNeeds from "./LightNeeds";
 import LikeIcon from "./LikeIcon";
 
 function PlantCard({
+  plantId,
   img,
   commonName,
   latinName,
@@ -24,24 +25,59 @@ function PlantCard({
   lightIconInactive,
   compactDisplay,
 }) {
-  const [likeIcon, setLikeIcon] = useState(false);
+  const [displayMode, setDisplayMode] = useState(compactDisplay);
+
+  function scrollToCard() {
+    setTimeout(() => {
+      const targetCard = document.getElementById(plantId);
+      targetCard.scrollIntoView({
+        behavior: "smooth",
+        block: "center",
+        inline: "nearest",
+      });
+    }, 200);
+  }
+
+  function toggleDisplayMode() {
+    if (compactDisplay) setDisplayMode(() => !displayMode);
+  }
 
   if (commonName)
     return (
-      <article className={compactDisplay ? "compact-plant-card" : "plant-card"}>
+      <article
+        id={plantId}
+        className={displayMode ? "compact-plant-card" : "plant-card"}
+      >
         <figure>
           <section className="img-section">
             <figure className="img-frame">
               <img src={img} alt={commonName} />
             </figure>
-            <LikeIcon setLikeIcon={setLikeIcon} likeIcon={likeIcon} />
+            <LikeIcon plantId={plantId} />
           </section>
 
           <figcaption>
             <hgroup>
-              <h2>
-                {typeof commonName === "string" ? commonName : commonName[0]}
-              </h2>
+              {" "}
+              {compactDisplay ? (
+                <button
+                  type="button"
+                  onClick={() => {
+                    toggleDisplayMode();
+                    scrollToCard();
+                  }}
+                >
+                  <h2>
+                    {typeof commonName === "string"
+                      ? commonName
+                      : commonName[0]}
+                  </h2>
+                </button>
+              ) : (
+                <h2>
+                  {typeof commonName === "string" ? commonName : commonName[0]}
+                </h2>
+              )}
               <h3>{latinName}</h3>
             </hgroup>
             <section className="needs-icons">
@@ -82,6 +118,7 @@ function PlantCard({
 
 PlantCard.defaultProps = {
   compactDisplay: false,
+  plantId: "id not provided",
 };
 
 PlantCard.propTypes = {
@@ -103,6 +140,7 @@ PlantCard.propTypes = {
   lightIconActive: PropTypes.string.isRequired,
   lightIconInactive: PropTypes.string.isRequired,
   compactDisplay: PropTypes.bool,
+  plantId: PropTypes.string,
 };
 
 export default PlantCard;

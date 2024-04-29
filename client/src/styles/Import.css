@@ -7,6 +7,8 @@
 @import "FiltersTutorial.css";
 @import "QuizzProgressBar";
 @import "LikeIcon.css";
+@import "QuizzRedirection.css";
+@import "MyPlants.css";
 
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
@@ -44,4 +46,32 @@
 
   --primary-font-color: black;
   --secondary-font-color: #726e6e;
+}
+
+/* small laptop */
+@media screen and (max-width: 1450px) {
+  :root {
+    --font-size-h1: 56px;
+    --font-size-h2: 40px;
+    --font-size-h3: 32px;
+    --font-size-text: 16px;
+  }
+}
+/* tablets */
+@media screen and (max-width: 1200px) {
+  :root {
+    --font-size-h1: 48px;
+    --font-size-h2: 28px;
+    --font-size-h3: 20px;
+    --font-size-text: 14px;
+  }
+}
+/* mobile */
+@media screen and (max-width: 800px) {
+  :root {
+    --font-size-h1: 40px;
+    --font-size-h2: 24px;
+    --font-size-h3: 16px;
+    --font-size-text: 12px;
+  }
 }

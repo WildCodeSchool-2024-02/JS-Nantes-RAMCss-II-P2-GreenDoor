@@ -1,12 +1,12 @@
 footer {
   background-color: var(--background-color);
-  height: 152px;
+  height: 10vh;
   display: flex;
   justify-content: center;
+  align-items: center;
   text-align: center;
 }
 .credit {
-  margin-top: 6.5vh;
   font-family: var(--font-family-body);
 }
 .credit > p > a {
@@ -17,5 +17,5 @@ footer {
   color: var(--accent-hover-color);
 }
 p {
-  font-size: 16px;
+  font-size: var(--font-size-text);
 }
