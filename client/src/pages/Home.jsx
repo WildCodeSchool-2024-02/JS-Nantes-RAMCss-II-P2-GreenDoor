@@ -6,6 +6,11 @@ import PlantCards from "../components/PlantCards";
 import QuizzRedirection from "../components/QuizzRedirection";
 import Footer from "../components/Footer";
 
+import {
+  assignLightFilterValue,
+  assignWaterFilterValue,
+} from "../components/assignFilterValue";
+
 import plants from "../plants.json";
 import waterIconInactive from "../assets/icons/WaterGrey.png";
 import waterIconActive from "../assets/icons/WaterBlue.png";
@@ -16,6 +21,19 @@ function Home() {
   // these filters can have three values : 0,1 and 2.
   const [waterFilter, setWaterFilter] = useState(1);
   const [lightFilter, setLightFilter] = useState(1);
+
+  const filteredPlants = plants.filter((plant) => {
+    // si water filter est supérieur et pareil pour sun filter
+    if (
+      waterFilter >= assignWaterFilterValue(plant.watering) &&
+      lightFilter >=
+        assignLightFilterValue(plant.lightIdeal, plant.lightTolered)
+    ) {
+      return true;
+    }
+    return false;
+  });
+
   return (
     <main>
       <Header />
@@ -40,7 +58,7 @@ function Home() {
         lightIconInactive={lightIconInactive}
       />
       <section className="cards-container">
-        {plants.map((el) => (
+        {filteredPlants.map((el) => (
           <PlantCards
             key={el.id}
             plantId={el.id}
