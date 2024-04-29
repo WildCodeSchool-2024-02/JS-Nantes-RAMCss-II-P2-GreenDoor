@@ -54,6 +54,41 @@ nav > h2 {
   font-size: var(--font-size-h2);
 }
 
+.buttonLogo {
+  position: relative;
+  width: 64px;
+  height: 64px;
+}
+
+.greenDoorPot,
+.greenDoorPotGreen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: 64px;
+  background-repeat: no-repeat;
+  transition: opacity 0.3s ease;
+}
+
+.greenDoorPot {
+  background-image: url("../assets/images/greenDoorPot.svg");
+}
+
+.greenDoorPotGreen {
+  background-image: url("../assets/images/greenDoorPot_Green.svg");
+  opacity: 0;
+}
+
+.buttonLogo:hover .greenDoorPot {
+  opacity: 0;
+}
+
+.buttonLogo:hover .greenDoorPotGreen {
+  opacity: 1;
+}
+
 nav > h2 > strong {
   color: var(--accent-color);
 }

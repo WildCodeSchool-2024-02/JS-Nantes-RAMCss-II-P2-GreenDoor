@@ -1,11 +1,13 @@
 import { NavLink } from "react-router-dom";
-import greenDoorPot from "../assets/images/greenDoorPot.svg";
 import "../styles/NavBar.css";
 
 function NavBar() {
   return (
     <nav>
-      <img className="buttonLogo" src={greenDoorPot} alt="Logo greendoor" />
+      <div className="buttonLogo">
+        <div className="greenDoorPot" />
+        <div className="greenDoorPotGreen" />
+      </div>
       <h2>
         <strong>green</strong>Door
       </h2>
