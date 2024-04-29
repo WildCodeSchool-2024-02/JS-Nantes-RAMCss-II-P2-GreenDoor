@@ -46,16 +46,14 @@
 
 @media screen and (max-width: 800px) {
   .sticky-filters-parent {
-    height: 7vh;
-    bottom: 1vh;
-    right: 1vw;
+    height: 10vh;
+
     position: sticky;
     bottom: 0;
-    left: 0;
-    width: 40%;
-    display: flex;
-    justify-content: center;
-    margin-left: 15%;
+
+    border-radius: 0;
+    background-color: var(--fore-ground-color);
+    gap: 10vw;
   }
 
   .sticky-filters-parent div ul {
@@ -63,6 +61,6 @@
     margin-left: 1vw;
   }
   .sticky-filters-parent div ul li button img {
-    height: 2.5vh;
+    height: 4vh;
   }
 }
