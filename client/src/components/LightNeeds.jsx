@@ -17,7 +17,7 @@ function LightNeeds({ lightIdeal, lightTolered, iconActive, iconInactive }) {
     } else if (lightIdeal.includes("Full sun")) {
       valueIdeal = 2;
     }
-    valueTolered = 0;
+    // valueTolered = 0;
     return valueIdeal === 2 ? 2 : Math.min(valueTolered, valueIdeal);
   }
 
