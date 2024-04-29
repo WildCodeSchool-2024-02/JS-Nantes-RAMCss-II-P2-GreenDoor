@@ -1,18 +1,21 @@
 .sticky-filters-parent {
   background-color: var(--dark-color);
-  height: 8vh;
+  height: 9vh;
   justify-content: space-between;
   align-items: center;
   border-radius: 100px;
   position: fixed;
   bottom: 2vh;
   right: 2vw;
-  width: 22vw;
+  z-index: 2;
+  /* width: 22vw; */
 }
 
 .sticky-filters-parent div ul {
   display: flex;
   list-style: none;
+  margin-right: 1vw;
+  margin-left: 1vw;
 }
 
 .visible {
@@ -25,7 +28,7 @@
 
 .sticky-filters-parent ul li img {
   background-color: transparent;
-  height: min(5vh, 3vw);
+  height: calc(2 / 3 * min(10vh, 5vw));
 }
 
 .sticky-filters-parent ul li button {
