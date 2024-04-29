@@ -1,7 +1,3 @@
-/* * {
-  border : solid black 2px;
-} */
-
 .cards-container {
   display: grid;
   grid-template-columns: 1fr;
@@ -361,5 +357,51 @@
   .compact-cards-container {
     grid-template-columns: 1fr;
     --gap: 16px;
+  }
+
+  /* CARROUSEL  */
+
+  .plant-card {
+    padding: 0;
+    overflow: hidden;
+    height: 80vh;
+    max-width: 100%;
+    grid-column-end: auto;
+    --gap: 16px;
+  }
+
+  .plant-card figure {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .cards-container > .plant-card:nth-child(even) figure {
+    flex-direction: column;
+  }
+
+  .compact-cards-container > .plant-card {
+    grid-column-end: auto;
+  }
+
+  .plant-card figcaption {
+    max-width: 100%;
+    padding: var(--gap);
+  }
+
+  .plant-card > figure > .img-section {
+    max-height: 40vh;
+  }
+  .plant-card > figure > figcaption {
+    height: 40vh;
+  }
+
+  .plant-card figure .img-frame {
+    border-radius: 0px;
+    aspect-ratio: 1;
+  }
+
+  .plant-card .needs-icons > div > ul {
+    padding: 8px 0;
   }
 }

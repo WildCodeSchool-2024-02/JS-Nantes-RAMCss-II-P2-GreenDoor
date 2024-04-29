@@ -21,7 +21,6 @@ function Home() {
   const [waterFilter, setWaterFilter] = useState(1);
   const [lightFilter, setLightFilter] = useState(1);
 
-
   const [search, setSearch] = useState("");
   const [foundPlants, setFoundPlants] = useState([]);
 

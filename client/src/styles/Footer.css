@@ -17,5 +17,5 @@ footer {
   color: var(--accent-hover-color);
 }
 p {
-  font-size: var(--font-size-text);
+  font-size: calc(var(--font-size-text) * 2 / 3);
 }
