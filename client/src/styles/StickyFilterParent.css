@@ -8,7 +8,6 @@
   bottom: 2vh;
   right: 2vw;
   z-index: 2;
-  /* width: 22vw; */
 }
 
 .sticky-filters-parent div ul {
@@ -43,4 +42,25 @@
 
 .sticky-filters-parent button:hover {
   transform: scale(1.1);
+}
+
+@media screen and (max-width: 800px) {
+  .sticky-filters-parent {
+    height: 10vh;
+
+    position: sticky;
+    bottom: 0;
+
+    border-radius: 0;
+    background-color: var(--fore-ground-color);
+    gap: 10vw;
+  }
+
+  .sticky-filters-parent div ul {
+    margin-right: 5vw;
+    margin-left: 1vw;
+  }
+  .sticky-filters-parent div ul li button img {
+    height: 4vh;
+  }
 }

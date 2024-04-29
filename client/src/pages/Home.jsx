@@ -93,17 +93,6 @@ function Home() {
         lightIconInactive={lightIconInactive}
       />
 
-      <StickyFilterParent
-        waterFilter={waterFilter}
-        setWaterFilter={setWaterFilter}
-        waterIconActive={waterIconActive}
-        waterIconInactive={waterIconInactive}
-        lightFilter={lightFilter}
-        setLightFilter={setLightFilter}
-        lightIconActive={lightIconActive}
-        lightIconInactive={lightIconInactive}
-      />
-
       <section className="cards-container">
         {(search === "" ? filteredPlants : foundPlants).map((el) => (
           <PlantCards
@@ -131,6 +120,16 @@ function Home() {
       </section>
       <QuizzRedirection />
       <Footer />
+      <StickyFilterParent
+        waterFilter={waterFilter}
+        setWaterFilter={setWaterFilter}
+        waterIconActive={waterIconActive}
+        waterIconInactive={waterIconInactive}
+        lightFilter={lightFilter}
+        setLightFilter={setLightFilter}
+        lightIconActive={lightIconActive}
+        lightIconInactive={lightIconInactive}
+      />
     </main>
   );
 }
