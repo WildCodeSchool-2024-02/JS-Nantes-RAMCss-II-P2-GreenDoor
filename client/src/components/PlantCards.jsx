@@ -27,12 +27,15 @@ function PlantCard({
 }) {
   const [displayMode, setDisplayMode] = useState(compactDisplay);
 
-  function scrollToCard(e) {
-    e.target.scrollIntoView({
-      behavior: "smooth",
-      block: "start",
-      inline: "nearest",
-    });
+  function scrollToCard() {
+    setTimeout(() => {
+      const targetCard = document.getElementById(plantId);
+      targetCard.scrollIntoView({
+        behavior: "smooth",
+        block: "center",
+        inline: "nearest",
+      });
+    }, 200);
   }
 
   function toggleDisplayMode() {
@@ -41,7 +44,10 @@ function PlantCard({
 
   if (commonName)
     return (
-      <article className={displayMode ? "compact-plant-card" : "plant-card"}>
+      <article
+        id={plantId}
+        className={displayMode ? "compact-plant-card" : "plant-card"}
+      >
         <figure>
           <section className="img-section">
             <figure className="img-frame">
@@ -56,9 +62,9 @@ function PlantCard({
               {compactDisplay ? (
                 <button
                   type="button"
-                  onClick={(event) => {
+                  onClick={() => {
                     toggleDisplayMode();
-                    scrollToCard(event);
+                    scrollToCard();
                   }}
                 >
                   <h2>
