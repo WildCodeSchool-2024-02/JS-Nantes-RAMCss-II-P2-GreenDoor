@@ -367,6 +367,7 @@
     height: 80vh;
     max-width: 100%;
     grid-column-end: auto;
+    --gap: 16px;
   }
 
   .plant-card figure {
@@ -379,12 +380,28 @@
     flex-direction: column;
   }
 
+  .compact-cards-container > .plant-card {
+    grid-column-end: auto;
+  }
+
   .plant-card figcaption {
     max-width: 100%;
     padding: var(--gap);
   }
 
+  .plant-card > figure > .img-section {
+    max-height: 40vh;
+  }
+  .plant-card > figure > figcaption {
+    height: 40vh;
+  }
+
   .plant-card figure .img-frame {
     border-radius: 0px;
+    aspect-ratio: 1;
+  }
+
+  .plant-card .needs-icons > div > ul {
+    padding: 8px 0;
   }
 }

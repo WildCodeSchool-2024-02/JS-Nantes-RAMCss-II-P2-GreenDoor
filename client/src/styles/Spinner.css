@@ -30,3 +30,9 @@
     transform: rotate(2turn);
   }
 }
+
+@media screen and (max-width: 800px) {
+  .spinner-logo {
+    max-width: 33vw;
+  }
+}

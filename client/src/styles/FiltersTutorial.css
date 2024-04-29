@@ -32,6 +32,7 @@
 }
 
 .filters-tutorial > div {
+  width: 100%;
   display: grid;
   grid-template: 1fr 1fr 1fr / 1fr;
   justify-items: center;
@@ -83,5 +84,11 @@
     align-items: center;
   }
 
-  /* TODO : gérer l'UL et la taille des icones. */
+  .filters-tutorial > div > ul {
+    width: 60%;
+  }
+
+  .filters-tutorial img {
+    height: min(10vh, 10vw);
+  }
 }
