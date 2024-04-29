@@ -21,7 +21,7 @@
   height: min(90vh, 40vw);
 }
 
-.plant-card:nth-child(even) figure {
+.cards-container > .plant-card:nth-child(even) figure {
   flex-direction: row-reverse;
   justify-content: space-between;
 }
@@ -98,12 +98,47 @@
   width: 100%;
 }
 
-.plant-card figcaption > hgroup > h2 {
-  width: 100%;
-  overflow: hidden;
+.plant-card figcaption > hgroup > h2,
+.plant-card figcaption > hgroup > button > h2,
+.compact-plant-card figcaption > hgroup > button > h2,
+.compact-plant-card figcaption > hgroup > h2 {
+  font-family: var(--font-family-title);
   font-weight: bold;
   font-size: var(--font-size-h2);
+  width: 100%;
+  overflow: hidden;
   margin: 0;
+  text-align: start;
+}
+.compact-plant-card figcaption > hgroup > button > h2,
+.compact-plant-card figcaption > hgroup > h2 {
+  font-size: var(--font-size-h3);
+}
+
+.plant-card figcaption > hgroup > button,
+.compact-plant-card figcaption > hgroup > button {
+  padding: 0;
+  width: auto;
+  height: auto;
+  transition-property: scale;
+  transition: 0.2s;
+}
+
+.plant-card figcaption > hgroup > button:hover,
+:focus,
+.compact-plant-card figcaption > hgroup > button:hover,
+:focus,
+.compact-plant-card figcaption > hgroup > button:hover > h2,
+.compact-plant-card figcaption > hgroup > button:focus > h2 {
+  color: var(--accent-hover-color);
+  cursor: pointer;
+}
+
+.plant-card figcaption > hgroup > button:hover,
+:focus,
+.compact-plant-card figcaption > hgroup > button:hover,
+:focus {
+  transform: scale(1.1);
 }
 
 .plant-card figcaption > hgroup > h3 {
@@ -248,10 +283,26 @@
   width: auto;
 }
 
+/* Part about making the cards clickable */
+.compact-cards-container > .plant-card {
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+
+@media screen and (max-width: 1628px) {
+  .compact-cards-container > .plant-card {
+    grid-column-end: 3;
+  }
+}
+
 @media screen and (max-width: 1200px) {
   .cards-container {
     --gap: 24px;
   }
+  .plant-card {
+    grid-column-end: 1;
+  }
+
   .plant-card .waterIcons > li > img {
     width: 15px;
   }
@@ -260,16 +311,19 @@
   }
 
   .compact-cards-container {
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    grid-template-rows: repeat(auto-fit, 228px);
+    grid-template-columns: 1fr 1fr;
     --gap: 16px;
+  }
+
+  .compact-plant-card figure {
+    gap: 10px;
   }
 
   .compact-plant-card {
     padding: 24px;
     max-height: 228px;
   }
-  /* TODO : use logic to compute the heigth of the image based on the row heigth minus the padding, that can vary */
+
   .compact-plant-card figure .img-frame {
     --diameter: 180px;
   }
@@ -297,7 +351,7 @@
   .compact-plant-card {
     padding: 16px;
     max-height: 122px;
-    max-width: 90vw;
+    max-width: 92vw;
   }
 
   .compact-plant-card figure .img-frame {
@@ -305,8 +359,7 @@
   }
 
   .compact-cards-container {
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    grid-template-rows: repeat(auto-fit, 122px);
+    grid-template-columns: 1fr;
     --gap: 16px;
   }
 }
