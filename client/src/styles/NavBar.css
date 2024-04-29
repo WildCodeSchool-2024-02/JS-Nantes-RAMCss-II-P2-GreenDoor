@@ -17,7 +17,7 @@ nav {
   padding: 0px 10px;
 }
 
-.buttonLogo {
+.button-logo {
   height: 55px;
   justify-self: left;
 }
@@ -54,14 +54,14 @@ nav > h2 {
   font-size: var(--font-size-h2);
 }
 
-.buttonLogo {
+.button-logo {
   position: relative;
   width: 64px;
   height: 64px;
 }
 
-.greenDoorPot,
-.greenDoorPotGreen {
+.greendoor-pot,
+.greendoor-pot-green {
   position: absolute;
   top: 0;
   left: 0;
@@ -72,20 +72,20 @@ nav > h2 {
   transition: opacity 0.3s ease;
 }
 
-.greenDoorPot {
+.greendoor-pot {
   background-image: url("../assets/images/greenDoorPot.svg");
 }
 
-.greenDoorPotGreen {
+.greendoor-pot-green {
   background-image: url("../assets/images/greenDoorPot_Green.svg");
   opacity: 0;
 }
 
-.buttonLogo:hover .greenDoorPot {
+.button-logo:hover .greendoor-pot {
   opacity: 0;
 }
 
-.buttonLogo:hover .greenDoorPotGreen {
+.button-logo:hover .greendoor-pot-green {
   opacity: 1;
 }
 
@@ -98,7 +98,7 @@ nav > h2 > strong {
     display: none;
   }
 
-  .buttonLogo {
+  .button-logo {
     height: calc(1.3 * var(--font-size-h1));
   }
 }

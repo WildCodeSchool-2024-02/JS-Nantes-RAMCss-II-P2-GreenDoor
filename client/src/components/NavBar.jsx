@@ -1,12 +1,13 @@
 import { NavLink } from "react-router-dom";
+
 import "../styles/NavBar.css";
 
 function NavBar() {
   return (
     <nav>
-      <div className="buttonLogo">
-        <div className="greenDoorPot" />
-        <div className="greenDoorPotGreen" />
+      <div className="button-logo">
+        <div className="greendoor-pot" />
+        <div className="greendoor-pot-green" />
       </div>
       <h2>
         <strong>green</strong>Door
