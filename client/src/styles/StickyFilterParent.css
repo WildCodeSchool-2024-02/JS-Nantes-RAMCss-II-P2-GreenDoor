@@ -43,3 +43,26 @@
 .sticky-filters-parent button:hover {
   transform: scale(1.1);
 }
+
+@media screen and (max-width: 800px) {
+  .sticky-filters-parent {
+    height: 7vh;
+    bottom: 1vh;
+    right: 1vw;
+    position: sticky;
+    bottom: 0;
+    left: 0;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    margin-left: 15%;
+  }
+
+  .sticky-filters-parent div ul {
+    margin-right: 5vw;
+    margin-left: 1vw;
+  }
+  .sticky-filters-parent div ul li button img {
+    height: 2.5vh;
+  }
+}
