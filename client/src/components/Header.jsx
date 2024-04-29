@@ -38,7 +38,10 @@ function Header({ filteredPlant, search, inputHandler, handleSubmit }) {
       </form>
 
       {search === "" ? (
-        ""
+        <h3>
+          {" "}
+          Use searchbar to find <strong>your plants</strong>{" "}
+        </h3>
       ) : (
         <h3>
           {" "}
