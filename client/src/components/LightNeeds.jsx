@@ -2,6 +2,7 @@ import PropTypes from "prop-types";
 import { assignLightFilterValue } from "./assignFilterValue";
 
 function LightNeeds({ lightIdeal, lightTolered, iconActive, iconInactive }) {
+
   return (
     <div>
       <ul className="sunIcons">
