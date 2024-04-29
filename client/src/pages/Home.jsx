@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Header from "../components/Header";
 import FiltersTutorial from "../components/FiltersTutorial";
 import StickyFilterParent from "../components/StickyFilterParent";
@@ -13,12 +13,52 @@ import lightIconInactive from "../assets/icons/SunGrey.png";
 import lightIconActive from "../assets/icons/SunYellow.png";
 
 function Home() {
-  // these filters can have three values : 0,1 and 2.
   const [waterFilter, setWaterFilter] = useState(1);
   const [lightFilter, setLightFilter] = useState(1);
+
+  const [search, setSearch] = useState("");
+  const [filteredPlant, setFilteredPlant] = useState([]);
+
+  useEffect(() => {
+    const filteredData = plants.filter((el) => {
+      if (search === "") {
+        return true;
+      }
+      if (
+        el.commonName !== null &&
+        el.commonName.join("").toLowerCase().includes(search)
+      ) {
+        return true;
+      }
+      return false;
+    });
+    setFilteredPlant(filteredData);
+  }, [search]);
+
+  const inputHandler = (e) => {
+    const lowerCase = e.target.value.toLowerCase();
+    setSearch(lowerCase);
+  };
+
+  const handleSubmit = (e) => {
+    const targetSection = document.getElementsByClassName("cards-container")[0];
+    if (targetSection) {
+      e.preventDefault();
+      targetSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <main>
-      <Header />
+      <Header
+        inputHandler={inputHandler}
+        handleSubmit={handleSubmit}
+        setSearch={setSearch}
+        search={search}
+        filteredPlant={filteredPlant}
+        setFilteredPlant={setFilteredPlant}
+      />
+
       <FiltersTutorial
         waterFilter={waterFilter}
         setWaterFilter={setWaterFilter}
@@ -29,6 +69,7 @@ function Home() {
         lightIconActive={lightIconActive}
         lightIconInactive={lightIconInactive}
       />
+
       <StickyFilterParent
         waterFilter={waterFilter}
         setWaterFilter={setWaterFilter}
@@ -39,8 +80,9 @@ function Home() {
         lightIconActive={lightIconActive}
         lightIconInactive={lightIconInactive}
       />
+
       <section className="cards-container">
-        {plants.map((el) => (
+        {filteredPlant.map((el) => (
           <PlantCards
             key={el.id}
             plantId={el.id}
