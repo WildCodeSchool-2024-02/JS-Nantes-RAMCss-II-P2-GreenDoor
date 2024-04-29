@@ -1,7 +1,3 @@
-/* * {
-  border : solid black 2px;
-} */
-
 .cards-container {
   display: grid;
   grid-template-columns: 1fr;
@@ -361,5 +357,34 @@
   .compact-cards-container {
     grid-template-columns: 1fr;
     --gap: 16px;
+  }
+
+  /* CARROUSEL  */
+
+  .plant-card {
+    padding: 0;
+    overflow: hidden;
+    height: 80vh;
+    max-width: 100%;
+    grid-column-end: auto;
+  }
+
+  .plant-card figure {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .cards-container > .plant-card:nth-child(even) figure {
+    flex-direction: column;
+  }
+
+  .plant-card figcaption {
+    max-width: 100%;
+    padding: var(--gap);
+  }
+
+  .plant-card figure .img-frame {
+    border-radius: 0px;
   }
 }
