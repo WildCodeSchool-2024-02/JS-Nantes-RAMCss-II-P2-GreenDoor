@@ -94,7 +94,7 @@ nav > h2 > strong {
 
   .burger-button {
     display: flex;
-    height: 55px;
+    height: 5vh;
     justify-content: flex-end;
     align-items: center;
     background: none;
@@ -110,8 +110,7 @@ nav > h2 > strong {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    width: 40px;
-    height: auto;
+    height: inherit;
   }
 
   .mobile-menu-on {
