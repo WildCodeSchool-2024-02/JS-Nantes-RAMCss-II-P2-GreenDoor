@@ -75,3 +75,8 @@
     --font-size-text: 12px;
   }
 }
+
+/* Global behaviours */
+button:hover {
+  cursor: pointer;
+}

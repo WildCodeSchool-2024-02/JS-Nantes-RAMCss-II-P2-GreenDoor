@@ -32,7 +32,10 @@ function Header({ foundPlants, search, inputHandler, handleSubmit }) {
                   key={plant.id}
                   value={plant.commonName !== null && plant.commonName[0]}
                   alt="input"
-                />
+                >
+                  {plant.commonName !== null &&
+                    `${plant.commonName[0]} (${plant.latinName})`}
+                </option>
               ))}
         </datalist>
       </form>

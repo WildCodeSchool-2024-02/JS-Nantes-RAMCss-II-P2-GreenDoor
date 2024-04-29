@@ -30,8 +30,9 @@ function Home() {
         return true;
       }
       if (
-        el.commonName !== null &&
-        el.commonName.join("").toLowerCase().includes(search)
+        (el.commonName !== null &&
+          el.commonName.join("").toLowerCase().includes(search)) ||
+        (el.latinName !== null && el.latinName.toLowerCase().includes(search))
       ) {
         return true;
       }
