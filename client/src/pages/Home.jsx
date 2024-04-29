@@ -25,8 +25,8 @@ function Home() {
   const filteredPlants = plants.filter((plant) => {
     // si water filter est supérieur et pareil pour sun filter
     if (
-      waterFilter >= assignWaterFilterValue(plant.watering) &&
-      lightFilter >=
+      waterFilter === assignWaterFilterValue(plant.watering) &&
+      lightFilter ===
         assignLightFilterValue(plant.lightIdeal, plant.lightTolered)
     ) {
       return true;
