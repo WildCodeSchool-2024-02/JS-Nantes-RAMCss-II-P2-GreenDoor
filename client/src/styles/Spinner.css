@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.spinner-zone {
+  display: flex;
+  justify-content: center;
+  height: 60vh;
+  align-items: center;
+}
+
+.spinner-logo {
+  animation-name: rotate;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0turn);
+  }
+  33% {
+    transform: rotate(2turn);
+  }
+  66% {
+    transform: rotate(0turn);
+  }
+  100% {
+    transform: rotate(2turn);
+  }
+}

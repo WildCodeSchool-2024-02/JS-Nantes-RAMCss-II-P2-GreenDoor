@@ -3,18 +3,47 @@
   padding: 0;
   width: auto;
   height: auto;
+  transition-duration: 0.2s;
+  transition-property: transform;
+}
+
+.click-like-icon:focus,
+.click-like-icon:hover {
+  cursor: pointer;
+  transform: scale(1.2);
 }
 
 #like-empty,
 #like-red {
   width: 70px;
   height: auto;
-  transition-duration: 0.2s;
-  transition-property: transform;
 }
 
-#like-empty:hover,
-#like-red:hover {
-  cursor: pointer;
-  transform: scale(1.2);
+/* small laptop */
+@media screen and (max-width: 1450px) {
+  #like-empty,
+  #like-red {
+    width: 64px;
+  }
+}
+/* tablets */
+@media screen and (max-width: 1200px) {
+  #like-empty,
+  #like-red {
+    width: 40px;
+  }
+}
+.plant-card figure .img-section div {
+  padding: 12px;
+}
+/* mobile */
+@media screen and (max-width: 800px) {
+  #like-empty,
+  #like-red {
+    width: 32px;
+  }
+
+  .plant-card figure .img-section div {
+    padding: 8px;
+  }
 }

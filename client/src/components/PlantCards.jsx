@@ -1,3 +1,4 @@
+import { useState } from "react";
 import PropTypes from "prop-types";
 import WaterNeeds from "./WaterNeeds";
 import LightNeeds from "./LightNeeds";
@@ -24,23 +25,59 @@ function PlantCard({
   lightIconInactive,
   compactDisplay,
 }) {
+  const [displayMode, setDisplayMode] = useState(compactDisplay);
+
+  function scrollToCard() {
+    setTimeout(() => {
+      const targetCard = document.getElementById(plantId);
+      targetCard.scrollIntoView({
+        behavior: "smooth",
+        block: "center",
+        inline: "nearest",
+      });
+    }, 200);
+  }
+
+  function toggleDisplayMode() {
+    if (compactDisplay) setDisplayMode(() => !displayMode);
+  }
+
   if (commonName)
     return (
-      <article className={compactDisplay ? "compact-plant-card" : "plant-card"}>
+      <article
+        id={plantId}
+        className={displayMode ? "compact-plant-card" : "plant-card"}
+      >
         <figure>
           <section className="img-section">
             <figure className="img-frame">
               <img src={img} alt={commonName} />
             </figure>
-
             <LikeIcon plantId={plantId} />
           </section>
 
           <figcaption>
             <hgroup>
-              <h2>
-                {typeof commonName === "string" ? commonName : commonName[0]}
-              </h2>
+              {" "}
+              {compactDisplay ? (
+                <button
+                  type="button"
+                  onClick={() => {
+                    toggleDisplayMode();
+                    scrollToCard();
+                  }}
+                >
+                  <h2>
+                    {typeof commonName === "string"
+                      ? commonName
+                      : commonName[0]}
+                  </h2>
+                </button>
+              ) : (
+                <h2>
+                  {typeof commonName === "string" ? commonName : commonName[0]}
+                </h2>
+              )}
               <h3>{latinName}</h3>
             </hgroup>
             <section className="needs-icons">
