@@ -6,6 +6,11 @@ import PlantCards from "../components/PlantCards";
 import QuizzRedirection from "../components/QuizzRedirection";
 import Footer from "../components/Footer";
 
+import {
+  assignLightFilterValue,
+  assignWaterFilterValue,
+} from "../components/assignFilterValue";
+
 import plants from "../plants.json";
 import waterIconInactive from "../assets/icons/WaterGrey.png";
 import waterIconActive from "../assets/icons/WaterBlue.png";
@@ -17,10 +22,10 @@ function Home() {
   const [lightFilter, setLightFilter] = useState(1);
 
   const [search, setSearch] = useState("");
-  const [filteredPlant, setFilteredPlant] = useState([]);
+  const [foundPlants, setFoundPlants] = useState([]);
 
   useEffect(() => {
-    const filteredData = plants.filter((el) => {
+    const foundData = plants.filter((el) => {
       if (search === "") {
         return true;
       }
@@ -32,7 +37,7 @@ function Home() {
       }
       return false;
     });
-    setFilteredPlant(filteredData);
+    setFoundPlants(foundData);
   }, [search]);
 
   const inputHandler = (e) => {
@@ -48,6 +53,24 @@ function Home() {
     }
   };
 
+  // this clears the search field whenever a fliter is activated
+  useEffect(() => {
+    const searchInput = document.getElementById("search-form");
+    searchInput.value = "";
+    setSearch("");
+  }, [waterFilter, lightFilter]);
+
+  const filteredPlants = plants.filter((plant) => {
+    if (
+      waterFilter === assignWaterFilterValue(plant.watering) &&
+      lightFilter ===
+        assignLightFilterValue(plant.lightIdeal, plant.lightTolered)
+    ) {
+      return true;
+    }
+    return false;
+  });
+
   return (
     <main>
       <Header
@@ -55,8 +78,8 @@ function Home() {
         handleSubmit={handleSubmit}
         setSearch={setSearch}
         search={search}
-        filteredPlant={filteredPlant}
-        setFilteredPlant={setFilteredPlant}
+        foundPlants={foundPlants}
+        setFoundPlants={setFoundPlants}
       />
 
       <FiltersTutorial
@@ -82,7 +105,7 @@ function Home() {
       />
 
       <section className="cards-container">
-        {filteredPlant.map((el) => (
+        {(search === "" ? filteredPlants : foundPlants).map((el) => (
           <PlantCards
             key={el.id}
             plantId={el.id}

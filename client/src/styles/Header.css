@@ -64,6 +64,7 @@ header > h3 {
   padding-top: 20px;
   color: #726e6e;
   font-size: var(--font-size-h3);
+  font-family: var(--font-family-body);
 }
 
 header > h3 > strong {

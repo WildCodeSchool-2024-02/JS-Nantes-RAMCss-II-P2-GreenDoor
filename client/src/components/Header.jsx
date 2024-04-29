@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 import "../styles/Header.css";
 import searchIcon from "../assets/icons/SearchIcon.png";
 
-function Header({ filteredPlant, search, inputHandler, handleSubmit }) {
+function Header({ foundPlants, search, inputHandler, handleSubmit }) {
   return (
     <header>
       <h1>Find the perfect plants for your interior</h1>
@@ -26,7 +26,7 @@ function Header({ filteredPlant, search, inputHandler, handleSubmit }) {
         <datalist id="browsers" className="search-option">
           {search === ""
             ? ""
-            : filteredPlant.map((plant) => (
+            : foundPlants.map((plant) => (
                 <option
                   className="search-option"
                   key={plant.id}
@@ -45,7 +45,7 @@ function Header({ filteredPlant, search, inputHandler, handleSubmit }) {
       ) : (
         <h3>
           {" "}
-          We found <strong>{filteredPlant.length} plants</strong>, see it below
+          We found <strong>{foundPlants.length} plants</strong>, see it below
         </h3>
       )}
     </header>
@@ -56,6 +56,6 @@ Header.propTypes = {
   search: PropTypes.string.isRequired,
   inputHandler: PropTypes.string.isRequired,
   handleSubmit: PropTypes.element.isRequired,
-  filteredPlant: PropTypes.element.isRequired,
+  foundPlants: PropTypes.element.isRequired,
 };
 export default Header;
