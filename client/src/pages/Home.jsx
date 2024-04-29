@@ -18,8 +18,8 @@ import lightIconInactive from "../assets/icons/SunGrey.png";
 import lightIconActive from "../assets/icons/SunYellow.png";
 
 function Home() {
-  const [waterFilter, setWaterFilter] = useState(1);
-  const [lightFilter, setLightFilter] = useState(1);
+  const [waterFilter, setWaterFilter] = useState(0);
+  const [lightFilter, setLightFilter] = useState(0);
 
   const [search, setSearch] = useState("");
   const [foundPlants, setFoundPlants] = useState([]);
