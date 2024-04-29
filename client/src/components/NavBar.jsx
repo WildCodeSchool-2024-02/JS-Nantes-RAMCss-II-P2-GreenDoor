@@ -1,7 +1,7 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import { useState } from "react";
-import burger from "../assets/icons/burger-bar.png";
-import cross from "../assets/icons/green-cross.png";
+import burger from "../assets/icons/burgerMenu_white.svg";
+import cross from "../assets/icons/cross_green.svg";
 
 function NavBar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -9,12 +9,19 @@ function NavBar() {
   function menuClick() {
     setMenuOpen(!menuOpen);
   }
+
+  function autoCloseMenu() {
+    setTimeout(() => setMenuOpen(false), 500);
+  }
+
+  const navigate = useNavigate();
+
   return (
     <nav>
-      <div className="button-logo">
+      <button onClick={() => navigate(`/`)} className="button-logo">
         <div className="greendoor-pot" />
         <div className="greendoor-pot-green" />
-      </div>
+      </button>
       <h2>
         <strong>green</strong>Door
       </h2>
@@ -38,13 +45,19 @@ function NavBar() {
         }
       >
         <li>
-          <NavLink to="/">Home</NavLink>
+          <NavLink onClick={autoCloseMenu} to="/">
+            Home
+          </NavLink>
         </li>
         <li>
-          <NavLink to="quizz">Plant Quizz</NavLink>
+          <NavLink onClick={autoCloseMenu} to="quizz">
+            Plant Quizz
+          </NavLink>
         </li>
         <li>
-          <NavLink to="myplants">My Plants</NavLink>
+          <NavLink onClick={autoCloseMenu} to="myplants">
+            My Plants
+          </NavLink>
         </li>
       </ul>
     </nav>
