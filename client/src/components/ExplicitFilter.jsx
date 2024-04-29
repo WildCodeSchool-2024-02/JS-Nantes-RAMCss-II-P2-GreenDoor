@@ -1,3 +1,4 @@
+import { useState } from "react";
 import PropTypes from "prop-types";
 
 function ExplicitFilter({
@@ -8,22 +9,32 @@ function ExplicitFilter({
   filter,
   setFilter,
 }) {
+  const [displayedDescription, setDisplayedDescription] = useState(filter);
   return (
     <div>
       <h3>{title}</h3>
       <ul>
         {[0, 1, 2].map((index) => (
           <li key={index}>
-            <button type="button" onClick={() => setFilter(() => index)}>
+            <button
+              type="button"
+              onClick={() => setFilter(() => index)}
+              onMouseEnter={() => setDisplayedDescription(index)}
+              onMouseLeave={() => setDisplayedDescription(filter)}
+            >
               <img
-                src={filter >= index ? iconActive : iconInactive}
+                src={
+                  filter >= index || displayedDescription >= index
+                    ? iconActive
+                    : iconInactive
+                }
                 alt={filtersDescriptions[filter]}
               />
             </button>
           </li>
         ))}
       </ul>
-      <p>{filtersDescriptions[filter]}</p>
+      <p>{filtersDescriptions[displayedDescription]}</p>
     </div>
   );
 }
