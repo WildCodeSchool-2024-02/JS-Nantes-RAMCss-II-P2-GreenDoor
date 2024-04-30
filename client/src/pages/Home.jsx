@@ -23,6 +23,9 @@ function Home() {
 
   const [search, setSearch] = useState("");
   const [foundPlants, setFoundPlants] = useState([]);
+  const [maxScroll, setMaxScroll] = useState(
+    document.documentElement.scrollHeight - window.innerHeight
+  );
 
   useEffect(() => {
     const foundData = plants.filter((el) => {
@@ -59,6 +62,9 @@ function Home() {
     const searchInput = document.getElementById("search-form");
     searchInput.value = "";
     setSearch("");
+    setMaxScroll(
+      () => document.documentElement.scrollHeight - window.innerHeight
+    );
   }, [waterFilter, lightFilter]);
 
   const filteredPlants = plants.filter((plant) => {
@@ -130,6 +136,7 @@ function Home() {
         setLightFilter={setLightFilter}
         lightIconActive={lightIconActive}
         lightIconInactive={lightIconInactive}
+        maxScroll={maxScroll}
       />
     </main>
   );

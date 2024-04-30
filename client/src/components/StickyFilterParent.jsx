@@ -12,13 +12,21 @@ function StickyFilterParent({
   setLightFilter,
   lightIconActive,
   lightIconInactive,
+  maxScroll,
 }) {
   const [isVisible, setIsvisible] = useState(false);
-  const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 500 && window.scrollY < maxScroll - 500) {
+      const mobileDisplay = window.innerWidth <= 800;
+
+      if (mobileDisplay && window.scrollY > window.innerHeight) {
+        setIsvisible(true);
+      } else if (
+        !mobileDisplay &&
+        window.scrollY > 500 &&
+        window.scrollY < maxScroll - 500
+      ) {
         setIsvisible(true);
       } else {
         setIsvisible(false);
