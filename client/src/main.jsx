@@ -6,6 +6,7 @@ import App from "./App";
 import Quizz from "./pages/Quizz";
 import Results from "./pages/Results";
 import MyPlants from "./pages/MyPlants";
+import ErrorPage from "./pages/ErrorPage";
 
 const router = createBrowserRouter([
   {
@@ -28,6 +29,10 @@ const router = createBrowserRouter([
         path: "results/:answers",
         element: <Results />,
       },
+      {
+        path:'*',
+        element: <ErrorPage />,
+      }
     ],
   },
 ]);

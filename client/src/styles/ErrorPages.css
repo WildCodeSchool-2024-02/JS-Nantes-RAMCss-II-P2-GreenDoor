@@ -1,0 +1,65 @@
+.error-content {
+  height: 80vh;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: start;
+  padding-top: 50px;
+  padding-left: 50px;
+  font-size: var(--font-size-h1);
+  font-family: var(--font-family-title);
+  color: black;
+  gap: 10px;
+
+  background-image: url("../assets/images/ordinateur_2.png");
+  background-size: max(150vw, 150vh);
+
+  background-position-x: 70%;
+  background-position-y: 20% ;
+  background-repeat: no-repeat;
+ 
+}
+
+.error-content > h3 {
+  align-items: start;
+  text-align: left;
+  font-size: var(--font-size-h3);
+  font-family: var(--font-family-body);
+  color: var(--dark-color);
+}
+
+.error-content > h3 > strong {
+  color: var(--accent-color);
+}
+
+/* @media screen and (max-width: 1450px) {
+  .error-content {
+    background-size: max(150vw, 150vh);
+    background-position-x: calc(10%);
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .error-content {
+    background-size: max(150vw, 150vh);
+    background-position-x: calc(5%);
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .error-content {
+    background-size: max(150vw, 150vh);
+    background-position-x: calc(0%);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .error-content {
+    font-size: 30px;
+    background-size: max(150vw, 150vh);
+    background-position-x: calc(0%);
+  }
+  .error-content > h3 {
+    font-size: 14px;
+  }
+} */
