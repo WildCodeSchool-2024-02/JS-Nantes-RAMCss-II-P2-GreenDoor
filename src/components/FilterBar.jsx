@@ -66,15 +66,8 @@ function FilterBar({ maxScroll }) {
   );
 }
 
-StickyFilterParent.propTypes = {
-  waterFilter: PropTypes.number.isRequired,
-  setWaterFilter: PropTypes.func.isRequired,
-  waterIconActive: PropTypes.string.isRequired,
-  waterIconInactive: PropTypes.string.isRequired,
-  lightFilter: PropTypes.number.isRequired,
-  setLightFilter: PropTypes.func.isRequired,
-  lightIconActive: PropTypes.string.isRequired,
-  lightIconInactive: PropTypes.string.isRequired,
+FilterBar.propTypes = {
+  maxScroll: PropTypes.number.isRequired,
 };
 
 export default FilterBar;

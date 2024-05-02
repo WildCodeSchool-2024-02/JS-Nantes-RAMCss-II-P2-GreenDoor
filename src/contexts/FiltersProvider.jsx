@@ -1,4 +1,4 @@
-import { useState, useContext, createContext, useMemo, useEffect } from "react";
+import { useState, useContext, createContext} from "react";
 import PropTypes from "prop-types";
 import waterIconInactive from "../assets/icons/WaterGrey.png";
 import waterIconActive from "../assets/icons/WaterBlue.png";
@@ -8,7 +8,7 @@ import lightIconActive from "../assets/icons/SunYellow.png";
 const FiltersContext = createContext();
 
 function FiltersProvider({ children }) {
-    
+
   // these filters can have three values : 0,1 and 2.
   const [waterFilter, setWaterFilter] = useState(0);
   const [lightFilter, setLightFilter] = useState(0);
