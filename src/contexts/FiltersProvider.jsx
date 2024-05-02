@@ -8,8 +8,12 @@ import lightIconActive from "../assets/icons/SunYellow.png";
 const FiltersContext = createContext();
 
 function FiltersProvider({ children }) {
+    
+  // these filters can have three values : 0,1 and 2.
   const [waterFilter, setWaterFilter] = useState(0);
   const [lightFilter, setLightFilter] = useState(0);
+
+  // these explain what the filters correspond to.
   const waterFiltersDescriptions = [
     "Little need for water",
     "Average need for water",
@@ -46,5 +50,5 @@ export const useFilters = () => useContext(FiltersContext);
 export default FiltersProvider;
 
 FiltersProvider.propTypes = {
-    children: PropTypes.string.isRequired,
-  };
+  children: PropTypes.string.isRequired,
+};
