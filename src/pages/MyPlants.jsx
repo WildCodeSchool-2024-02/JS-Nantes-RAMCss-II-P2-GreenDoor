@@ -60,7 +60,7 @@ function MyPlants() {
       </section>
       {likedPlants.length === 0 && (
         <section className="my-plants-redirect">
-          <h2>Don't know where to start ?</h2>
+          <h2>{`Don't know where to start ?`}</h2>
           <NavLink className="redirect" to="/quizz">
             TAKE OUR QUIZZ
           </NavLink>

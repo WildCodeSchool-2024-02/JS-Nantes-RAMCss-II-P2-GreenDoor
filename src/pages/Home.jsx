@@ -1,10 +1,11 @@
 import { useState, useEffect } from "react";
 import Header from "../components/Header";
 import FiltersTutorial from "../components/FiltersTutorial";
-import StickyFilterParent from "../components/StickyFilterParent";
+import FilterBar from "../components/FilterBar";
 import PlantCards from "../components/PlantCards";
 import QuizzRedirection from "../components/QuizzRedirection";
 import Footer from "../components/Footer";
+import { useFilters } from "../contexts/FiltersProvider";
 
 import {
   assignLightFilterValue,
@@ -12,15 +13,16 @@ import {
 } from "../components/assignFilterValue";
 
 import plants from "../plants.json";
-import waterIconInactive from "../assets/icons/WaterGrey.png";
-import waterIconActive from "../assets/icons/WaterBlue.png";
-import lightIconInactive from "../assets/icons/SunGrey.png";
-import lightIconActive from "../assets/icons/SunYellow.png";
 
 function Home() {
-  const [waterFilter, setWaterFilter] = useState(0);
-  const [lightFilter, setLightFilter] = useState(0);
-
+  const {
+    waterIconActive,
+    waterIconInactive,
+    waterFilter,
+    lightIconActive,
+    lightIconInactive,
+    lightFilter,
+  } = useFilters();
   const [search, setSearch] = useState("");
   const [foundPlants, setFoundPlants] = useState([]);
   const [maxScroll, setMaxScroll] = useState(
@@ -89,16 +91,7 @@ function Home() {
         setFoundPlants={setFoundPlants}
       />
 
-      <FiltersTutorial
-        waterFilter={waterFilter}
-        setWaterFilter={setWaterFilter}
-        waterIconActive={waterIconActive}
-        waterIconInactive={waterIconInactive}
-        lightFilter={lightFilter}
-        setLightFilter={setLightFilter}
-        lightIconActive={lightIconActive}
-        lightIconInactive={lightIconInactive}
-      />
+      <FiltersTutorial />
 
       <section className="cards-container">
         {(search === "" ? filteredPlants : foundPlants).map((el) => (
@@ -127,15 +120,7 @@ function Home() {
       </section>
       <QuizzRedirection />
       <Footer />
-      <StickyFilterParent
-        waterFilter={waterFilter}
-        setWaterFilter={setWaterFilter}
-        waterIconActive={waterIconActive}
-        waterIconInactive={waterIconInactive}
-        lightFilter={lightFilter}
-        setLightFilter={setLightFilter}
-        lightIconActive={lightIconActive}
-        lightIconInactive={lightIconInactive}
+      <FilterBar
         maxScroll={maxScroll}
       />
     </main>

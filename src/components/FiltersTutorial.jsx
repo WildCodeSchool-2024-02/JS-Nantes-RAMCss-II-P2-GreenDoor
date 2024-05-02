@@ -1,17 +1,17 @@
-// import { useState } from "react";
-import PropTypes from "prop-types";
 import ExplicitFilter from "./ExplicitFilter";
+import { useFilters } from "../contexts/FiltersProvider";
 
-function FiltersTutorial({
-  waterFilter,
-  setWaterFilter,
-  waterIconActive,
-  waterIconInactive,
-  lightFilter,
-  setLightFilter,
-  lightIconActive,
-  lightIconInactive,
-}) {
+function FiltersTutorial() {
+  const {
+    waterIconActive,
+    waterIconInactive,
+    waterFilter,
+    setWaterFilter,
+    lightIconActive,
+    lightIconInactive,
+    lightFilter,
+    setLightFilter,
+  } = useFilters();
   // these filters can have three values : 0,1 and 2.
 
   // TODO : Ask Theo if he's okay to change the desciptions with "water me every now and then", "i need to be watered regularly","i need to be watered every couple of days" or smth
@@ -48,16 +48,5 @@ function FiltersTutorial({
     </section>
   );
 }
-
-FiltersTutorial.propTypes = {
-  waterFilter: PropTypes.number.isRequired,
-  setWaterFilter: PropTypes.func.isRequired,
-  waterIconActive: PropTypes.string.isRequired,
-  waterIconInactive: PropTypes.string.isRequired,
-  lightFilter: PropTypes.number.isRequired,
-  setLightFilter: PropTypes.func.isRequired,
-  lightIconActive: PropTypes.string.isRequired,
-  lightIconInactive: PropTypes.string.isRequired,
-};
 
 export default FiltersTutorial;

@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 
-function StickyFilter({
+function Filter({
   filtersDescriptions,
   iconActive,
   iconInactive,
@@ -25,7 +25,7 @@ function StickyFilter({
   );
 }
 
-StickyFilter.propTypes = {
+Filter.propTypes = {
   filtersDescriptions: PropTypes.arrayOf(PropTypes.string).isRequired,
   iconActive: PropTypes.string.isRequired,
   iconInactive: PropTypes.string.isRequired,
@@ -33,4 +33,4 @@ StickyFilter.propTypes = {
   setFilter: PropTypes.func.isRequired,
 };
 
-export default StickyFilter;
+export default Filter;

@@ -1,19 +1,23 @@
 import { useState, useEffect } from "react";
 import PropTypes from "prop-types";
-import StickyFilter from "./StickyFilter";
+import Filter from "./Filter";
 import "../styles/StickyFilterParent.css";
+import { useFilters } from "../contexts/FiltersProvider";
 
-function StickyFilterParent({
-  waterFilter,
-  setWaterFilter,
-  waterIconActive,
-  waterIconInactive,
-  lightFilter,
-  setLightFilter,
-  lightIconActive,
-  lightIconInactive,
-  maxScroll,
-}) {
+function FilterBar({ maxScroll }) {
+  const {
+    waterFilter,
+    setWaterFilter,
+    waterIconActive,
+    waterIconInactive,
+    waterFiltersDescriptions,
+    lightFilter,
+    setLightFilter,
+    lightIconActive,
+    lightIconInactive,
+    lightFiltersDescriptions,
+  } = useFilters();
+
   const [isVisible, setIsvisible] = useState(false);
 
   useEffect(() => {
@@ -40,29 +44,18 @@ function StickyFilterParent({
     };
   }, [maxScroll]);
 
-  const waterFiltersDescriptions = [
-    "Little need for water",
-    "Average need for water",
-    "High need for water",
-  ];
-  const lightFiltersDescriptions = [
-    "Can withstand poorly lit environnement",
-    "Needs a relatively well lit environement",
-    "High need for sunlight",
-  ];
-
   return (
     <section
       className={`sticky-filters-parent ${isVisible ? "visible" : "hidden"}`}
     >
-      <StickyFilter
+      <Filter
         filtersDescriptions={waterFiltersDescriptions}
         iconActive={waterIconActive}
         iconInactive={waterIconInactive}
         filter={waterFilter}
         setFilter={setWaterFilter}
       />
-      <StickyFilter
+      <Filter
         filtersDescriptions={lightFiltersDescriptions}
         iconActive={lightIconActive}
         iconInactive={lightIconInactive}
@@ -84,4 +77,4 @@ StickyFilterParent.propTypes = {
   lightIconInactive: PropTypes.string.isRequired,
 };
 
-export default StickyFilterParent;
+export default FilterBar;
